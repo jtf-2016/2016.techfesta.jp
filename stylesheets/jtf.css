@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+body{
+	margin:0px;
+    padding:0px;
+    text-align:center;
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+li.clearFloat {
+	clear: both;
+}
+
+
+#img_headerBG {
+	background-image: url(../images/img_header.png);
+	width:100%;
+	min-width:1365px;
+	height: 41px;
+	position: fixed;
+	z-index: 999;
+}
+
+#img_header {
+	position: relative;
+    margin: 0 auto;
+    text-align:left;
+	width: 1365px;
+	height: 41px;
+}
+#img_header .logo {
+  position: absolute;
+  left: 90px;
+}
+#img_header .snss {
+  position: absolute;
+  right: 100px; margin-top:8px; color:#FFF;
+}
+#img_header .icons { font-size:160%; margin-left:15px;}
+#img_header a {  color:#FFF;}
+
+
+#main {
+    margin: 0 auto;
+    text-align:left;
+	width: 1365px;
+	padding: 41px 0 0 0;
+}
+
+#img_top {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 1089px;
+	margin-bottom: 0;
+	width: 1365px;
+	background-image: url(../images/img_top.png);
+}
+
+#img_top .order {
+  position: absolute;
+  left: 540px;
+  top: 360px;
+}
+
+
+
+#img_left {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 1141px;
+	margin-bottom: 0;
+	width: 636px;
+	background-image: url(../images/img_left.png);
+}
+#img_center {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 1141px;
+	margin-bottom: 0;
+	width: 646px;
+	background-image: url(../images/img_center.png);
+	padding:20px 40px 10px 40px;
+}
+#img_right {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	height: 1141px;
+	margin-bottom: 0;
+	width: 83px;
+	background-image: url(../images/img_right.png);
+}
+
+
+#img_footerBG {
+	background-image: url(../images/img_footerBG.png);
+	width:100%;
+	min-width:1365px;
+	height: 1729px;
+}
+#img_footer {
+	position: relative;
+    margin: 0 auto;
+    text-align:left;
+	height: 1729px;
+	width: 1365px;
+	background-image: url(../images/img_footer.png);
+}
+
+#img_footer .order {
+  position: absolute;
+  left: 900px;  top: 125px;
+}
+#img_footer .logo {
+  position: absolute;
+  left: 830px;  top: 197px;
+}
+#img_footer .cp {
+  position: absolute;
+  left: 1050px;  top: 210px;
+}
