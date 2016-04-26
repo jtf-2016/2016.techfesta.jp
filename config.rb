@@ -9,6 +9,13 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :css_dir, 'assets/css'
+set :js_dir, 'assets/js'
+set :images_dir, 'assets/img'
+
+activate :relative_assets
+set :relative_links, true
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -48,6 +55,10 @@ helpers do
     else
       start_year.to_s + '-' + end_year.to_s
     end
+  end
+  def navi_li(text, url)
+    class_name = 'active' if url == current_page.url
+    content_tag(:li, link_to(text, url), :class => class_name)
   end
 end
 
@@ -124,14 +135,14 @@ configure :build do
         { icon: "mstile-150x150.png", size: "150x150" },
         { icon: "mstile-310x310.png", size: "310x310" },
         { icon: "mstile-310x150.png", size: "310x150" }
-      ],
-      "images/favicon.png" => [
-        { icon: "favicon.png", size: "16x16" },
-        { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
-      ]
-    }
+        ],
+        "images/favicon.png" => [
+          { icon: "favicon.png", size: "16x16" },
+          { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
+        ]
+      }
+    end
   end
-end
 
 ###
 # Deploy
