@@ -3,34 +3,34 @@
 @import "bootstrap/bootstrap.min.css";
 
 body{
-	margin:0px;
+  margin:0px;
   padding: 0px;
   text-align: center;
-	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
 .navbar {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .navbar-default {
-	background-color: $FrenchWine;
+  background-color: $FrenchWine;
 }
 
 .navbar-brand {
-	padding: 7px;
+  padding: 7px;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background-color: transparent;
+  background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a {
-	color: $White;
+  color: $White;
   &:visited {
     color: $White;
   }
 
   &:hover {
-		color: $White;
+    color: $White;
   }
 }
 
@@ -44,72 +44,72 @@ body{
 }
 
 .img_top {
-	height: auto;
-	background-image: url(../images/promotion.png);
-	@media screen and (min-width:1090px) {
-	  // 画面サイズが768pxからはここを読み込む
-		background-size: cover;
-		height: 1089px;
-		p {
-			text-align: center;
-			padding-top: 310px;
-		}
-	}
-	@media screen and (max-width:1089px) {
-	  // 画面サイズが768px以下はここを読み込む
-		background-size: cover;
-		height: auto;
-		width: 100%;
-		background-repeat: no-repeat;
-		p {
-			text-align: center;
-			padding-top: 215px;
-		}
-	}
-	@media screen and (max-width:800px) {
-	  // 画面サイズが768px以下はここを読み込む
-		background-size: cover;
-		height: 519px;
-		p {
-			text-align: center;
-			padding-top: 180px;
-		}
-	}
-	@media screen and (max-width:480px) {
-		// 画面サイズが768px以下はここを読み込む
-		background-size: cover;
-		height: 338px;
-		p {
-			text-align: center;
-			padding-top: 100px;
-		}
-	}
-	img {
-		padding-bottom: 2px;
-	}
+  height: auto;
+  background-image: url(../images/promotion.png);
+  @media screen and (min-width:1090px) {
+    // 画面サイズが768pxからはここを読み込む
+    background-size: cover;
+    height: 1089px;
+    p {
+      text-align: center;
+      padding-top: 310px;
+    }
+  }
+  @media screen and (max-width:1089px) {
+    // 画面サイズが768px以下はここを読み込む
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    p {
+      text-align: center;
+      padding-top: 215px;
+    }
+  }
+  @media screen and (max-width:800px) {
+    // 画面サイズが768px以下はここを読み込む
+    background-size: cover;
+    height: 519px;
+    p {
+      text-align: center;
+      padding-top: 180px;
+    }
+  }
+  @media screen and (max-width:480px) {
+    // 画面サイズが768px以下はここを読み込む
+    background-size: cover;
+    height: 338px;
+    p {
+      text-align: center;
+      padding-top: 100px;
+    }
+  }
+  img {
+    padding-bottom: 2px;
+  }
 }
 
 .media {
-	background-color: White;
-	text-align: left;
-	padding: 5px;
-	img {
-		padding-bottom: 2px;
-	}
+  background-color: White;
+  text-align: left;
+  padding: 5px;
+  img {
+    padding-bottom: 2px;
+  }
 }
 
 .bs-docs-footer {
-	background-color: $FrenchWine;
-	background-image: url(../images/img_footer.png);
-	background-repeat: repeat;
-	@media screen and (min-width:768px) {
-	  // 画面サイズが768pxからはここを読み込む
-		background-size: cover;
-		height: 400px;
-	}
-	@media screen and (max-width:768px) {
-	  // 画面サイズが768px以下はここを読み込む
-		background-size: cover;
-		height: 150px;
-	}
+  background-color: $FrenchWine;
+  background-image: url(../images/img_footer.png);
+  background-repeat: repeat;
+  @media screen and (min-width:768px) {
+    // 画面サイズが768pxからはここを読み込む
+    background-size: cover;
+    height: 400px;
+  }
+  @media screen and (max-width:768px) {
+    // 画面サイズが768px以下はここを読み込む
+    background-size: cover;
+    height: 150px;
+  }
 }

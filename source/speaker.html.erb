@@ -1,0 +1,57 @@
+<div class="headback">
+  <div class="container">
+    <div class="headtopcontents speaker">
+      <img src="assets/img/speaker/speaker-title.png" alt="">
+    </div>
+  </div>
+</div>
+<div class="section-view">
+  <div class="section-backview colorview1"></div>
+  <div class="section-backview colorview2"></div>
+  <div class="section-backview colorview3"></div>
+  <div class="container">
+    <div class="backwhite-inner">
+      <%= partial "modules/ticketbar" %>
+      <div class="row">
+        <div class="col-md-12 box-section">
+          <h1><%= data.speaker.title%></h1>
+          <p><%= data.speaker.description%></p>
+        </div>
+        <div class="col-md-12 box-section">
+          <% data.speaker.speakers.each_slice(2) do |speaker| %>
+          <div class="col-md-12">
+            <% speaker.each do |s| %>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="col-md-4">
+                    <img src="assets/img/<%= s.imgthumb %>" alt="userprofileimg" class="userprofileimg">
+                  </div>
+                  <div class="col-md-8">
+                    <h2><%= s.name %></h2>
+                    <p>
+                      <% s.detail.each do |d| %>
+                      <small><%= d %></small><br/>
+                      <% end %>
+                      <ul class="userprofile">
+                        <% s.history.each do |h| %>
+                        <li><%= h %></li>
+                        <% end %>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <h3><%= s.messagetitle %></h3>
+                  <small><%= s.messagebody %></small>
+                </div>
+              </div>
+            </div>
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

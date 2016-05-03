@@ -1,0 +1,65 @@
+<div class="englishcafe-page">
+  <div class="headback">
+    <div class="container">
+      <div class="headtopcontents englishcafe">
+        <img src="assets/img/english/english-title.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="section-view">
+    <div class="section-backview colorview1"></div>
+    <div class="section-backview colorview2"></div>
+    <div class="section-backview colorview3"></div>
+    <div class="container">
+      <div class="backwhite-inner">
+        <%= partial "modules/ticketbar" %>
+        <div class="row">
+          <div class="col-md-12 box-section">
+            <h1><%= data.englishcafe.title%></h1>
+            <p><%= data.englishcafe.description%></p>
+          </div>
+          <div class="col-md-12 box-section">
+            <% data.englishcafe.teachers.each_slice(2) do |teacher| %>
+            <div class="col-md-12">
+              <% teacher.each do |t| %>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-4">
+                      <img src="assets/img/<%= t.imgthumb %>" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-8">
+                      <h2><%= t.name %></h2>
+                      <p>
+                        <% t.detail.each do |d| %>
+                        <small><%= d %></small><br/>
+                        <% end %>
+                        <ul class="userprofile">
+                          <% t.history.each do |h| %>
+                          <li><%= h %></li>
+                          <% end %>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <h3>講師からのアドバイス</h3>
+                    <small><%= t.message %></small>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <% data.englishcafe.contents.each do |content|%>
+          <div class="col-md-12 box-section">
+            <h1><%= content.title %></h1>
+            <p><%= content.body %></p>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

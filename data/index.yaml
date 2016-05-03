@@ -1,0 +1,44 @@
+about:
+  title: 開催主催
+  detail: クラウド環境が技術者のアジリティを めているのを象徴するかのように、昨今は関連する新し いツールが毎 のように話題になっています。こうした激変し続けるITトレンドの中から、技術 者は真に  の業務を変 するものを探し続けており、情報交換と 脈構築の場が求められてい ます。これらの意欲と活動に応じるため、ITに係るエンジニアの知的興味を満 するための夏の 祭典として「IoTxAIxインフラ時代の最新技術、やってみたSP  俺の屍を超えていけ 」をス ローガンに当イベントを開催いたします。
+
+thema:
+  title: Jult Tech Festaのテーマ
+  detail: IoT、AI、インフラの変化は近年ますます加速しています。変化のためにいろんな人が試行錯誤して新しい技術を生み出したり業務で活用するために検証したりしています。そんないろんな成功談・失敗談を共有していきたいという強い思いから今回のテーマとなりました。より良い開催となるためには皆さんの努力の結晶を是非共有していただきたいと思っています。そしてこれからどうなっていくのか次の１年が見えてくるような、そんなJulyTechFestaにしたいと思っています。皆様のご参加お待ちしています！！
+
+keynote:
+ title: 基調講演
+ detail: 「現実が正解だ！ やってみんとわからんことだらけ。 さくらのIoT企画・開発365日の軌跡。そして、次の365日へ。」
+ content: さくらインターネットでIoTのプラットフォームを作ろうと企画を持ち込んだのが2015年7月。出戻りの初老プロデューサーがバズワード扱いのテーマで社内外の協力者を獲得する無理ゲーから始まり、運命のエンジニアとの出会いと別れ、奇跡的なビジネス開発ストーリー、予測の付かない仕様変更、まだ鳴り止まない爆音のデスマーチ、トップの決断、ニューリーダーの出現…。僕らはこの1年でなにを乗り越え、どこへ向かうのか？"
+ speaker: 小笠原 治（おがさはら・おさむ）
+ thumb: keytalker.png
+ profile: 株式会社ABBALab株式会社nomad代表取締役、さくらインターネット フェロー、DMM.make エヴェンジェリスト、京都造形芸術大学 顧問、awabarオーナー、fabbitオーナー
+ detailprofile: 1990年、京都市の建築設計事務所に入社。98年より、さくらインターネット株式会社の共同ファウンダーを経て、ネット系事業会社の代表を歴任。2011年、株式会社nomadを設立し「Open x Share x Join」をキーワードにシード投資とシェアスペースの運営などスタートアップ支援事業を軸に活動。13年、ハードウェア・スタートアップ向け投資プログラムを法人化し株式会社ABBALabとしてプロトタイピングに特化した投資事業を開始。同年、DMM.makeのプロデューサーとしてDMM.make 3Dプリントを立上げ、14年にはDMM.make AKIBAを設立。15年８月からエヴェンジェリスト。同年、さくらインターネットにフェローとして復帰。ほか、経済産業省新ものづくり研究会委員及びフロンティアメーカーズ育成事業プロジェクトマネージャー、NEDO TCP事業委員、北九州ソーシャルイノベーション機能構築会議委員、経済産業省主催の研究会「メイカーズ2.0研究会」委員、福岡市スタートアップ・サポーターズ理事などを歴任。
+
+prise:
+  wood:
+  platinum:
+  - sponsorname: TIS株式会社
+    imgname: tis.png
+    url: https://www.tis.co.jp/
+  gold:
+  - sponsorname: 株式会社はてな
+    imgname: hatena-logotype.svg
+    url: http://hatenacorp.jp/
+  - sponsorname: NHN テコラス株式会社
+    imgname: nhn-techorus.png
+    url: https://nhn-techorus.com/
+  - sponsorname: 株式会社ハートビーツ
+    imgname: hb.svg
+    url: http://heartbeats.jp/
+  - sponsorname: ニュータニックス　ジャパン　合同会社
+    imgname: nutanix.png
+    url: http://www.nutanix.jp
+  silver:
+  - sponsorname: ティントリジャパン合同会社
+    imgname: tintri.png
+    url: http://tintri.co.jp
+  - sponsorname: 株式会社Blueship
+    imgname: blueship.png
+    url: http://www.blueship.co.jp
+  bronze:
