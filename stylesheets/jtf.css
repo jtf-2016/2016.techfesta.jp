@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url(bootstrap/bootstrap.min.css);
+/* line 5, jtf.css.scss */
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif; }
+
+/* line 12, jtf.css.scss */
+.navbar {
+  margin-bottom: 0px; }
+
+/* line 15, jtf.css.scss */
+.navbar-default {
+  background-color: #ac1e44; }
+
+/* line 19, jtf.css.scss */
+.navbar-brand {
+  padding: 7px; }
+
+/* line 23, jtf.css.scss */
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+/* line 26, jtf.css.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF; }
+  /* line 28, jtf.css.scss */
+  .navbar-default .navbar-nav > li > a:visited {
+    color: #FFFFFF; }
+  /* line 32, jtf.css.scss */
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #FFFFFF; }
+
+/* line 37, jtf.css.scss */
+.icons {
+  font-size: 160%;
+  margin-left: 15px; }
+
+/* line 41, jtf.css.scss */
+.container {
+  margin: 0 auto;
+  text-align: left; }
+
+/* line 46, jtf.css.scss */
+.img_top {
+  height: auto;
+  background-image: url(../images/promotion.png); }
+  @media screen and (min-width: 1090px) {
+    /* line 46, jtf.css.scss */
+    .img_top {
+      background-size: cover;
+      height: 1089px; }
+      /* line 53, jtf.css.scss */
+      .img_top p {
+        text-align: center;
+        padding-top: 310px; } }
+  @media screen and (max-width: 1089px) {
+    /* line 46, jtf.css.scss */
+    .img_top {
+      background-size: cover;
+      height: auto;
+      width: 100%;
+      background-repeat: no-repeat; }
+      /* line 64, jtf.css.scss */
+      .img_top p {
+        text-align: center;
+        padding-top: 215px; } }
+  @media screen and (max-width: 800px) {
+    /* line 46, jtf.css.scss */
+    .img_top {
+      background-size: cover;
+      height: 519px; }
+      /* line 73, jtf.css.scss */
+      .img_top p {
+        text-align: center;
+        padding-top: 180px; } }
+  @media screen and (max-width: 480px) {
+    /* line 46, jtf.css.scss */
+    .img_top {
+      background-size: cover;
+      height: 338px; }
+      /* line 82, jtf.css.scss */
+      .img_top p {
+        text-align: center;
+        padding-top: 100px; } }
+  /* line 87, jtf.css.scss */
+  .img_top img {
+    padding-bottom: 2px; }
+
+/* line 92, jtf.css.scss */
+.media {
+  background-color: White;
+  text-align: left;
+  padding: 5px; }
+  /* line 96, jtf.css.scss */
+  .media img {
+    padding-bottom: 2px; }
+
+/* line 101, jtf.css.scss */
+.bs-docs-footer {
+  background-color: #ac1e44;
+  background-image: url(../images/img_footer.png);
+  background-repeat: repeat; }
+  @media screen and (min-width: 768px) {
+    /* line 101, jtf.css.scss */
+    .bs-docs-footer {
+      background-size: cover;
+      height: 400px; } }
+  @media screen and (max-width: 768px) {
+    /* line 101, jtf.css.scss */
+    .bs-docs-footer {
+      background-size: cover;
+      height: 150px; } }
