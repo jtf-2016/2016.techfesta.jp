@@ -16,7 +16,7 @@
       <div class="container">
         <div id="carousel-jtf-generic" class="carousel slide" data-ride="carousel">
           <div class="overcaroucel">
-            <div><img src="assets/img/toplogo.png"></div>
+            <div><img src="/assets/img/toplogo.png"></div>
             <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default btn-ticket topTicketBtn">
               <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
             </a>
@@ -31,19 +31,19 @@
 
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="assets/img/topback.png" alt="jtf-top1">
+              <img src="/assets/img/topback.png" alt="jtf-top1">
             </div>
             <div class="item">
-              <img src="assets/img/topback_1.jpg" alt="jtf-top2">
+              <img src="/assets/img/topback_1.jpg" alt="jtf-top2">
             </div>
             <div class="item">
-              <img src="assets/img/topback_2.jpg" alt="jtf-top3">
+              <img src="/assets/img/topback_2.jpg" alt="jtf-top3">
             </div>
             <div class="item">
-              <img src="assets/img/topback_3.jpg" alt="jtf-top4">
+              <img src="/assets/img/topback_3.jpg" alt="jtf-top4">
             </div>
             <div class="item">
-              <img src="assets/img/topback_4.jpg" alt="jtf-top5">
+              <img src="/assets/img/topback_4.jpg" alt="jtf-top5">
             </div>
           </div>
           <a class="left carousel-control" href="#carousel-jtf-generic" role="button" data-slide="prev">
@@ -66,7 +66,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="col-md-5 col-sm-5 col-xs-12">
-                  <img src="assets/img/about.png" alt="about" class="sectioncapt-img">
+                  <img src="/assets/img/about.png" alt="about" class="sectioncapt-img">
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
                   <h1><%= data.index.about.title %></h1>
@@ -89,7 +89,7 @@
                   </ul>
                   <ul class="nav nav-pills">
                     <li role="presentation">
-                      <a href="http://jtf2016.peatix.com/" target="_blank"><img src="assets/img/button_off.png" alt="peatix" class="jtf-ticket-img"></a>
+                      <a href="http://jtf2016.peatix.com/" target="_blank"><img src="/assets/img/button_off.png" alt="peatix" class="jtf-ticket-img"></a>
                     </li>
                   </ul>
                 </div>
@@ -108,7 +108,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
-                  <img src="assets/img/theme.png" alt="theme" class="sectioncapt-img">
+                  <img src="/assets/img/theme.png" alt="theme" class="sectioncapt-img">
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
                   <h1><%= data.index.theme.title %></h1>
@@ -129,7 +129,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="col-md-3 col-sm-3 col-xs-12">
-                  <img src="assets/img/news.png" alt="news" class="sectioncapt-img">
+                  <img src="/assets/img/news.png" alt="news" class="sectioncapt-img">
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-12">
                   <h1><%= data.index.news.title %></h1>
@@ -141,7 +141,6 @@
                         <% news.each do |news| %>
                         <div class="panel">
                           <div class="panel-heading">
-                            <div class="text-center">
                               <div class="row">
                                 <div class="col-sm-6 col-xs-9">
                                   <h3 class="pull-left"><%= news.title %></h3>
@@ -152,14 +151,13 @@
                                   </h4>
                                 </div>
                               </div>
-                            </div>
                           </div>
                           <div class="panel-body">
                             <%= news.description %>
                           </div>
                           <div class="panel-footer">
                             <% news.tag.each do |tag| %>
-                            <span class="label label-default"><%= tag %></span>
+                            <span class="label label-default label-red"><%= tag %></span>
                             <% end %>
                           </div>
                         </div>
@@ -185,7 +183,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="col-md-3 col-sm-3 col-xs-12 pull-right">
-                  <img src="assets/img/sns.png" alt="sns" class="sectioncapt-img">
+                  <img src="/assets/img/sns.png" alt="sns" class="sectioncapt-img">
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-12">
                   <div class="row">
@@ -218,10 +216,10 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="col-md-5 col-sm-5 col-xs-12">
-                  <img src="assets/img/keynote.png" alt="about" class="sectioncapt-img">
+                  <img src="/assets/img/keynote.png" alt="about" class="sectioncapt-img">
                   <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12 text-center">
-                      <img src="assets/img/<%= data.index.keynote.thumb %>" alt="<%= data.index.keynote.speaker %>" class="keynote-thumb">
+                      <img src="/assets/img/<%= data.index.keynote.thumb %>" alt="<%= data.index.keynote.speaker %>" class="keynote-thumb">
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12">
                       <h2><%= data.index.keynote.speaker %></h2>
@@ -255,7 +253,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
-                  <img src="assets/img/access.png" alt="access" class="sectioncapt-img">
+                  <img src="/assets/img/access.png" alt="access" class="sectioncapt-img">
                   <div class="topmap">
                     <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8404452756768!2d139.74691811525676!3d35.60700218021175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a75bdbd28f7%3A0x84ee382f1580be53!2z55Sj5qWt5oqA6KGT5aSn5a2m6Zmi5aSn5a2m!5e0!3m2!1sja!2sjp!4v1461569085114"
@@ -300,15 +298,15 @@
             <div class="section-cell-inner-free">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <img src="assets/img/sponsor.png" alt="sponsor" class="sectioncapt-sponsor-img">
+                  <img src="/assets/img/sponsor.png" alt="sponsor" class="sectioncapt-sponsor-img">
                   <% unless data.index.prise.mithril.nil? %>
                   <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 prise-title mithril">
-                    <img src="assets/img/mithril.png" alt="">
+                    <img src="/assets/img/mithril.png" alt="">
                   </div>
                   <% data.index.prise.mithril.each_slice(1) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-mithril eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -319,12 +317,12 @@
                   <% end %>
                   <% unless data.index.prise.platinum.nil? %>
                   <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 prise-title platinum">
-                    <img src="assets/img/platinum.png" alt="">
+                    <img src="/assets/img/platinum.png" alt="">
                   </div>
                   <% data.index.prise.platinum.each_slice(3) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-platinum eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -335,12 +333,12 @@
                   <% end %>
                   <% unless data.index.prise.gold.nil? %>
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title gold">
-                    <img src="assets/img/gold.png" alt="">
+                    <img src="/assets/img/gold.png" alt="">
                   </div>
                   <% data.index.prise.gold.each_slice(3) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-gold eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -352,13 +350,13 @@
                   <% unless (data.index.prise.silver.nil? || data.index.prise.mono.nil?) %>
                   <% unless data.index.prise.silver.nil? %>
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title silver">
-                    <img src="assets/img/silver.png" alt="">
+                    <img src="/assets/img/silver.png" alt="">
                   </div>
                   <% data.index.prise.silver.each_slice(3) do |prise| %>
                   <div class="row">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-silver eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -372,7 +370,7 @@
                   <% data.index.prise.mono.each_slice(3) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-mono eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -384,12 +382,12 @@
                   <% end %>
                   <% unless data.index.prise.backsupport.nil? %>
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title backsupport">
-                    <img src="assets/img/backsupport.png" alt="">
+                    <img src="/assets/img/backsupport.png" alt="">
                   </div>
                   <% data.index.prise.backsupport.each_slice(3) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-backsupport eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -400,12 +398,12 @@
                   <% end %>
                   <% unless data.index.prise.cohost.nil? %>
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title cohost">
-                    <img src="assets/img/cohost.png" alt="">
+                    <img src="/assets/img/cohost.png" alt="">
                   </div>
                   <% data.index.prise.cohost.each_slice(3) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-cohost eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
@@ -416,12 +414,12 @@
                   <% end %>
                   <% unless data.index.prise.media.nil? %>
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title medias">
-                    <img src="assets/img/media.png" alt="">
+                    <img src="/assets/img/media.png" alt="">
                   </div>
                   <% data.index.prise.media.each_slice(3) do |prise| %>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 eqh">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
                         <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-medias eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
