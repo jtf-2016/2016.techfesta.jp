@@ -165,8 +165,13 @@ speakers:
     - OSSラボ株式会社
    history:
     - １９８１年関西学院大学卒業。グループワンソフトウェア株式会社営業本部長、株式会社ネットマークス　マネージメントサービス技術部部長、日本IBM株式会社Webサーバー製品事業部NUMA-Q事業推進、シークエントコンピューターズジャパン株式会社 ディレクターを歴任し、ハードウェアから、サービス、ソフトウェアまで幅広い製品を、数人のベンチャーから30万人以上のグローバル企業にわたって、事業責任者または営業責任者として実績を積んできました。バロースという外資系メインフレーマーから始まり、PC、UNIX、SMPハイエンドサーバー、ERP、BI、無線技術、セキュリティ、ネットワークサービス、ソフトウェアと扱う物は変わってきましたが、最先端の技術を見極め、お客様の変化し続けるニーズに結びつけ、常に新たな付加価値とそれに伴うビジネスモデルを創出し、常にビジネスパートナー様とともにお客様に最大の満足をお届けします。
-   messagetitle: エンタープライズは Site Reliability Engineering (SRE) の夢を見るか？
-   messagebody: Googleによって注目を浴びるようになった Site Reliability Engineering (SRE)について、エンタープライズITの観点から考察します。内容： 1.SREの定義 2.dev-opsとの違い 3.エンタープライズとの違い 4.今やるべき事と理由
+   messagetitle: 運用を劇的に変えるSite Reliability Engineering (SRE)の世界 － Googleでの展開から、エンタープライズへの夢は見れるか
+   messagebody: "Googleによって注目を浴びるようになった Site Reliability Engineering (SRE)について、エンタープライズITの観点から考察します。
+   内容： 
+   1.SREの定義 
+   2.dev-opsとの違い 
+   3.エンタープライズとの違い 
+   4.今やるべき事と理由"
  - name: saya
    programid: S07
    imgthumb: saya.png
