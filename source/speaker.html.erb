@@ -22,48 +22,52 @@
             <div class="col-md-12">
               <% speaker.each do |s| %>
               <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="row">
+                <div class="row" id="<%= s.programid %>">
                     <hr/>
                     <h3><%= s.messagetitle %></h3>
                   <div class="col-md-6">
+<% envelop = [s];
+   if s.group then envelop = s.group; end;
+   envelop.each do |x| %>
                       <div class="row">
-                        <div class="col-md-3 col-sm-3 col-xs-12" id="<%= s.programid %>">
-                        <img src="/assets/img/<%= s.imgthumb %>" alt="userprofileimg" class="userprofileimg">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="/assets/img/<%= x.imgthumb %>" alt="userprofileimg" class="userprofileimg">
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12">
-                      <h2><%= s.name %></h2>
-                      <% if s.sns.present? %>
-                        <% if s.sns.twitter %>
-                          <a href="https://twitter.com/<%= s.sns.twitter %>" target=="_blank">
+                      <h2><%= x.name %></h2>
+                      <% if x.sns.present? %>
+                        <% if x.sns.twitter %>
+                          <a href="https://twitter.com/<%= x.sns.twitter %>" target=="_blank">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                           </a>
                         <% else %>
                         <% end %>
-                        <% if s.sns.facebook %>
-                          <a href="https://www.facebook.com/<%= s.sns.facebook %>" target="_blank">
+                        <% if x.sns.facebook %>
+                          <a href="https://www.facebook.com/<%= x.sns.facebook %>" target="_blank">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                           </a>
                         <% else %>
                         <% end %>
-                        <% if s.sns.github %>
-                          <a href="https://github.com/<%= s.sns.github %>" target="_blank">
+                        <% if x.sns.github %>
+                          <a href="https://github.com/<%= x.sns.github %>" target="_blank">
                             <i class="fa fa-github-alt" aria-hidden="true"></i>
                           </a>
                         <% else %>
                         <% end %>
                       <% end %>
                       <p>
-                        <% s.detail.each do |d| %>
+                        <% x.detail.each do |d| %>
                         <small><%= d %></small><br/>
                         <% end %>
                         <ul class="userprofile">
-                          <% s.history.each do |h| %>
+                          <% x.history.each do |h| %>
                           <li><%= h %></li>
                           <% end %>
                         </ul>
                       </p>
                     </div>
                 </div>
+<% end %>
                   </div>
                   <div class="col-md-6">
                      <h4>講演内容</h4>

@@ -379,8 +379,8 @@ speakers:
     - 2009年にワークスアプリケーションズに入社し、途中でAWSに転職するもワークスに戻るなど紆余曲折を経つつ、一貫してクラウドの調査研究を主に担当。現在は自社サービスにおけるクラウド型のアーキテクチャについて悩む日々。
    messagetitle: AWSをフル活用してマイナンバーを管理するサービスを作った話
    messagebody: SaaSの提供経験の無い私がAWSをフル活用することで高度なセキュリティを求められるマイナンバーの管理サービスを作った話です。AWSのDynamoDB、Beanstalk、CloudFormation、IAM、KMSなどを活用し、稼働率100%を目指し設計しました。特にどのように厳しいセキュリティ要件を満たし、どのように稼働率100%を目指して設計し、障害のないサービスにできたのか解説します。
- - name: 青嶋智久
-   programid: S10
+ - programid: S10
+   name: 青嶋智久
    imgthumb: a.tomohisa.png
    sns:
      twitter:
@@ -392,3 +392,29 @@ speakers:
     - ソフトウェアエンジニア。元々はiOS, Androidアプリの開発を行っていました。2年前にクラウド技術に携わりたくてニフティに入社。現在はニフティクラウド mobile backend サーバサイドの開発・運用を担当しています。最近気になっている分野はSREや分散処理。
    messagetitle: マルチテナント メッセージング基盤を刷新して一年運用した話
    messagebody: ニフティクラウド mobile backend はスマートフォン向けアプリケーションを作る上で、汎用的な機能を提供するクラウドサービスです。提供機能は複数あるわけですが、当セッションではニフティクラウド mobile backend でも人気の高いプッシュ通知機能の裏側をお話しします。個別配信、大量配信が混じり合うメッセージの分散処理を実現する上で分散KVSを選択した背景や、運用してみた見解などを紹介できればと考えています。
+
+ 
+#  - programid: S10
+#   group: # THIS KEY MUST BE PUT HERE, AND FOLLOW AN ARRAY OF EACH PROFILE.
+#   - name: 青嶋智久
+#     imgthumb: a.tomohisa.png
+#     sns:
+#       twitter:
+#       facebook:
+#       github:
+#     detail:
+#      - ニフティ株式会社 IoTデザインセンター
+#     history:
+#      - ソフトウェアエンジニア。元々はiOS, Androidアプリの開発を行っていました。2年前にクラウド技術に携わりたくてニフティに入社。現在はニフティクラウド mobile backend サーバサイドの開発・運用を担当しています。最近気になっている分野はSREや分散処理。
+#   - name: 青嶋智久
+#     imgthumb: a.tomohisa.png
+#     sns:
+#       twitter:
+#       facebook:
+#       github:
+#     detail:
+#      - ニフティ株式会社 IoTデザインセンター
+#     history:
+#      - ソフトウェアエンジニア。元々はiOS, Androidアプリの開発を行っていました。2年前にクラウド技術に携わりたくてニフティに入社。現在はニフティクラウド mobile backend サーバサイドの開発・運用を担当しています。最近気になっている分野はSREや分散処理。
+#   messagetitle: マルチテナント メッセージング基盤を刷新して一年運用した話
+#   messagebody: ニフティクラウド mobile backend はスマートフォン向けアプリケーションを作る上で、汎用的な機能を提供するクラウドサービスです。提供機能は複数あるわけですが、当セッションではニフティクラウド mobile backend でも人気の高いプッシュ通知機能の裏側をお話しします。個別配信、大量配信が混じり合うメッセージの分散処理を実現する上で分散KVSを選択した背景や、運用してみた見解などを紹介できればと考えています。
