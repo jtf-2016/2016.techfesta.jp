@@ -392,7 +392,7 @@ speakers:
     messagebody: 国立情報学研究所(NII)では、プライベートクラウドとしてベアメタルクラウドを独自に運用しています。NIIのクラウド運用チームでは、Literate Computing for Reproducible Infrastructureというコンセプトのもと、Jupyter NotebookとAnsibleを活用してインフラの運用の機械化(自動化)を試みています。この講演では、実際のNIIでの利用を例に、谷沢がJupyter NotebookとAnsibleを使ったインフラ運用の機械化の実例と苦労話を紹介します。また、丸岡がその中で開発を進めている、インフラ運用をより効果的におこなうためのNotebook Extensionsの概要とJupyterならではの開発の苦労についてお話しします。運用しているメンバーが、これらの実例を交えながら、自分たちが目指す機械化/自動化のかたちと、Literate Computing for Reproducible Infrastructureのコンセプトについてご紹介します。
   - name: 遠藤博樹
     programid: S11
-    imgthumb: white.png
+    imgthumb: endo.png
     sns:
       twitter:
       facebook:
