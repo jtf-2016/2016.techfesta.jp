@@ -42,26 +42,32 @@ programtable:
      rowsize: 1
      subsection:
        - roomid: A10
+         programid: S17
    - content:
      rowsize: 1
      subsection:
        - roomid: B10
+         programid: S02
    - content:
      rowsize: 1
      subsection:
        - roomid: C10
+         programid: S33
    - content:
      rowsize: 1
      subsection:
        - roomid: D10
+         programid: S07
    - content:
      rowsize: 1
      subsection:
        - roomid: E10
+         programid: S05
    - content:
      rowsize: 1
      subsection:
        - roomid: F10
+         programid: S36
    - content:
      rowsize: 1
      subsection:
@@ -70,11 +76,13 @@ programtable:
      rowsize: 1
      subsection:
        - roomid: H10
+         programid: S08
  section3:
    - content:
      rowsize: 1
      subsection:
        - roomid: A20
+         programid: S38
    - content:
      rowsize: 1
      subsection:
@@ -83,127 +91,162 @@ programtable:
      rowsize: 1
      subsection:
        - roomid: C20
+         programid: S11
    - content:
      rowsize: 1
      subsection:
        - roomid: D20
+         programid: S18
    - content:
      rowsize: 1
      subsection:
        - roomid: E20
+         programid: S23
    - content:
      rowsize: 1
      subsection:
        - roomid: F20
+         programid: S15
    - content:
      rowsize: 2
      subsection:
        - roomid: G20
+         programid: S34
    - content:
      rowsize: 2
      subsection:
        - roomid: H20
+         programid: S08
  section4:
    - content:
      rowsize: 1
      subsection:
        - roomid: A30
+         programid: S41
    - content:
      rowsize: 1
      subsection:
        - roomid: B30
+         programid: S20
    - content:
      rowsize: 1
      subsection:
        - roomid: C30
+         programid: S19
    - content:
      rowsize: 1
      subsection:
        - roomid: D30
+         programid: S12
    - content:
      rowsize: 1
      subsection:
        - roomid: E30
+         programid: S01
    - content:
      rowsize: 1
      subsection:
        - roomid: F30
+         programid: S16
  section5:
    - content:
      rowsize: 1
      subsection:
        - roomid: A40
+         programid: S28
    - content:
      rowsize: 1
      subsection:
        - roomid: B40
+         programid: S24
    - content:
      rowsize: 1
      subsection:
        - roomid: C40
+         programid: S32
    - content:
      rowsize: 1
      subsection:
        - roomid: D40
+         programid: S14
    - content:
      rowsize: 1
      subsection:
        - roomid: E40
+         programid: S03
+       - roomid: E41
+         programid: S04
+       - roomid: E24
+         programid: S06
    - content:
      rowsize: 1
      subsection:
        - roomid: F40
+         programid: S40
    - content:
      rowsize: 2
      subsection:
        - roomid: G40
+         programid: S22
    - content:
      rowsize: 2
      subsection:
        - roomid: H40
+         programid: S08
  section6:
    - content:
      rowsize: 1
      subsection:
        - roomid: A50
+         programid: S31
    - content:
      rowsize: 1
      subsection:
        - roomid: B50
+         programid: S13
    - content:
      rowsize: 1
      subsection:
        - roomid: C50
+         programid: S25
    - content:
      rowsize: 1
      subsection:
        - roomid: D50
+         programid: S29
+       - roomid: D51
+         programid: S30
    - content:
      rowsize: 1
      subsection:
        - roomid: E50
+         programid: S09
    - content:
      rowsize: 1
      subsection:
        - roomid: F50
+         programid: S21
  section7:
    - content:
      rowsize: 1
      subsection:
        - roomid: A60
-         label: 招待講演
+         programid: S27
    - content:
      rowsize: 1
      subsection:
        - roomid: B60
+         programid: S35
    - content:
      rowsize: 1
      subsection:
        - roomid: C60
+         programid: S37
    - content:
      rowsize: 1
      subsection:
        - roomid: D60
+         programid: S26
    - content:
      rowsize: 1
      subsection:
