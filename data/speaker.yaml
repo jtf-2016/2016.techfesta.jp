@@ -4,7 +4,7 @@ description: "今年の登壇者一覧です。講演者から情報を頂き次
 speakers:
   - name: 小笠原 治 (おがさはら・おさむ)
     programid: SS
-    imgthumb: ogasahara.png
+    imgthumb: ogasahara.jpg
     sns:
       twitter:
       facebook:
