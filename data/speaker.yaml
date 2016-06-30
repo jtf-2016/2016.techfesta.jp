@@ -265,9 +265,9 @@ speakers:
     detail:
       - TIS株式会社
     history:
-      - TIS株式会社勤務、きれいどころPostgreSQL女子エンジニア
-    messagetitle: きれいどころPostgreSQL女子エンジニアの東海道歩き旅
-    messagebody: 東海道は慶長6年に江戸-大坂間の幹線として整備され、昔から現在まで日本の大動脈としての役割を果たし、江戸後期の歌川広重の「東海道五十三次」はあまりに有名である。東海道には、箱根、大井川等の難所があり、女性には中山道のほうが好まれたとも言われている。しかし、難所に立ち向かうのがきれいどころPostgreSQL女子エンジニアである。今回はエンジニアとしてのレベルアップのための東海道歩き旅の体験談とPostgreSQLのカスタマイズへの活用を取り上げ、後進へのノウハウを提供したい。
+      - TIS株式会社勤務、PostgreSQL女子エンジニア
+    messagetitle: PostgreSQL女子エンジニアの東海道歩き旅
+    messagebody: 東海道は慶長6年に江戸-大坂間の幹線として整備され、昔から現在まで日本の大動脈としての役割を果たし、江戸後期の歌川広重の「東海道五十三次」はあまりに有名である。東海道には、箱根、大井川等の難所があり、女性には中山道のほうが好まれたとも言われている。しかし、難所に立ち向かうのがPostgreSQL女子エンジニアである。今回はエンジニアとしてのレベルアップのための東海道歩き旅の体験談とPostgreSQLのカスタマイズへの活用を取り上げ、後進へのノウハウを提供したい。
   - name: 山崎泰宏
     programid: S07
     imgthumb: yamazakiys.png
@@ -448,6 +448,21 @@ speakers:
       - ソフトウェアエンジニア。元々はiOS, Androidアプリの開発を行っていました。2年前にクラウド技術に携わりたくてニフティに入社。現在はニフティクラウド mobile backend サーバサイドの開発・運用を担当しています。最近気になっている分野はSREや分散処理。
     messagetitle: マルチテナント メッセージング基盤を刷新して一年運用した話
     messagebody: ニフティクラウド mobile backend はスマートフォン向けアプリケーションを作る上で、汎用的な機能を提供するクラウドサービスです。提供機能は複数あるわけですが、当セッションではニフティクラウド mobile backend でも人気の高いプッシュ通知機能の裏側をお話しします。個別配信、大量配信が混じり合うメッセージの分散処理を実現する上で分散KVSを選択した背景や、運用してみた見解などを紹介できればと考えています。
+  - programid: S34
+    name: 上田隆一
+    imgthumb: ueda.png
+    sns:
+      twitter: ryuichiueda
+      facebook: 675930229170437
+      github:
+    detail:
+      - 千葉工業大学先進工学部未来ロボティクス学科准教授
+    history:
+      - 千葉工業大学先進工学部未来ロボティクス学科准教授。巷ではシェル芸おじさんで知られる。著書に「シェルスクリプト高速開発手法入門」「シェルプログラミング実用テクニック」。日経Linuxにて「RaspberryPiで作ろう お手軽ロボット教室」連載中。博士（工学）
+    messagetitle: ロボットに関する多くのオープンソース共通基盤 ROS（robot operating system）を触ってみよう
+    messagebody: "ロボットに関する多くのオープンソースを利用するための共通基盤となっているROS（robot operating system）を使ってみるハンズオンです。<br />
+      お願い:<br />
+      Ubuntu Server/Desktop 14.04 LTS（仮想マシン可）環境をご準備ください。また、できる人は、https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu14.04_server のREADME.ja.mdに従って、ROSのインストールを行ってから参加ください。（ハンズオンはインストールから行いますが、トラフィック削減のため）"
   - programid: S03
     name: しょっさん
     imgthumb: sho-san.png
