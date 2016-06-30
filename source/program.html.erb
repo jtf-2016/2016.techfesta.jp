@@ -43,15 +43,15 @@
                     <td>英会話カフェ</td>
                   </tr>
                   <tr>
-                    <td>230ホール</td>
-                    <td>351a室</td>
-                    <td>358室</td>
-                    <td>351b室</td>
-                    <td>433室</td>
-                    <td>452-453室</td>
-                    <td>357室</td>
-                    <td>354室</td>
-                    <td>269室</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -63,8 +63,10 @@
                     <% data.program.programtable.section1.each do |programblock| %>
                     <td rowspan="<%= programblock.rowsize %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -76,8 +78,10 @@
                     <% data.program.programtable.section2.each do |programblock| %>
                     <td rowspan="<%= programblock.rowsize %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -96,8 +100,10 @@
                     <% data.program.programtable.section3.each do |programblock| %>
                     <td rowspan="<%= programblock.rowsize %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -109,8 +115,10 @@
                     <% data.program.programtable.section4.each do |programblock| %>
                     <td rowspan="<%= programblock.rowsize %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -126,8 +134,10 @@
                     <% data.program.programtable.section5.each do |programblock| %>
                     <td rowspan="<%= programblock.rowsize %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -139,8 +149,10 @@
                     <% data.program.programtable.section6.each do |programblock| %>
                     <td rowspan="<%= programblock.rowsize %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -153,21 +165,20 @@
                   </tr>
                   <tr>
                     <td>17:30-<br>18:30</td>
-                    <td>招待講演:<br>
-                      <a href="http://2015.techfesta.jp/p/program.html#game_cloud">今明かされる! シンラ・テクノロジーのインフラへの挑戦と舞台裏</a>
+                    <% data.program.programtable.section7.each do |programblock| %>
+                    <td rowspan="<%= programblock.rowsize %>">
+                      <% programblock.subsection.each do |program| %>
+                        <% if program.programid then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= data.speaker.speakers.find{|p| p.programid==program.programid}.messagetitle %></a>
+                        <% end %>
+                      <% end %>
                     </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <% end %>
                   </tr>
                   <tr>
                     <td>19:00-<br>21:00</td>
-                    <td colspan="9">懇親会 (HUMMER CAFE)</td>
+                    <td colspan="9">懇親会</td>
                   </tr>
                 </tbody>
               </table>
