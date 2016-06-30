@@ -8,7 +8,7 @@ programtable:
      subsection:
        - roomid: A00
          label: 基調講演
-         programid: A01
+         programid: S00
    - content:
      rowsize: 1
      subsection:
