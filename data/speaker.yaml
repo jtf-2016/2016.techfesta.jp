@@ -203,6 +203,19 @@ speakers:
       2.dev-opsとの違い <br />
       3.エンタープライズとの違い <br />
       4.今やるべき事と理由"
+  - name: 中井悦司
+    programid: S31
+    imgthumb: nakai.png
+    sns:
+      twitter:
+      facebook:
+      github:
+    detail:
+      -
+    history:
+      -
+    messagetitle: ディープラーニング入門-DQN（Deep Q-Network）の理論解説とTensorFlowを用いたシンプルな実装例
+    messagebody: ビデオゲームの自動プレイで有名になり、AlphaGoでも利用されているDQN（Deep Q-Network：多層ニューラルネットワークを利用した強化学習）について理論的な仕組みを解説した上で、簡単な例題でTensorFlowによる実装例を紹介します。みなさんもこの機会に、ディープラーニングに触れてみませんか。
   - name: saya
     programid: S30
     imgthumb: saya.png
@@ -252,9 +265,9 @@ speakers:
     detail:
       - TIS株式会社
     history:
-      - TIS株式会社勤務、きれいどころPostgreSQL女子エンジニア
-    messagetitle: きれいどころPostgreSQL女子エンジニアの東海道歩き旅
-    messagebody: 東海道は慶長6年に江戸-大坂間の幹線として整備され、昔から現在まで日本の大動脈としての役割を果たし、江戸後期の歌川広重の「東海道五十三次」はあまりに有名である。東海道には、箱根、大井川等の難所があり、女性には中山道のほうが好まれたとも言われている。しかし、難所に立ち向かうのがきれいどころPostgreSQL女子エンジニアである。今回はエンジニアとしてのレベルアップのための東海道歩き旅の体験談とPostgreSQLのカスタマイズへの活用を取り上げ、後進へのノウハウを提供したい。
+      - TIS株式会社勤務、PostgreSQL女子エンジニア
+    messagetitle: PostgreSQL女子エンジニアの東海道歩き旅
+    messagebody: 東海道は慶長6年に江戸-大坂間の幹線として整備され、昔から現在まで日本の大動脈としての役割を果たし、江戸後期の歌川広重の「東海道五十三次」はあまりに有名である。東海道には、箱根、大井川等の難所があり、女性には中山道のほうが好まれたとも言われている。しかし、難所に立ち向かうのがPostgreSQL女子エンジニアである。今回はエンジニアとしてのレベルアップのための東海道歩き旅の体験談とPostgreSQLのカスタマイズへの活用を取り上げ、後進へのノウハウを提供したい。
   - name: 山崎泰宏
     programid: S07
     imgthumb: yamazakiys.png
@@ -435,6 +448,21 @@ speakers:
       - ソフトウェアエンジニア。元々はiOS, Androidアプリの開発を行っていました。2年前にクラウド技術に携わりたくてニフティに入社。現在はニフティクラウド mobile backend サーバサイドの開発・運用を担当しています。最近気になっている分野はSREや分散処理。
     messagetitle: マルチテナント メッセージング基盤を刷新して一年運用した話
     messagebody: ニフティクラウド mobile backend はスマートフォン向けアプリケーションを作る上で、汎用的な機能を提供するクラウドサービスです。提供機能は複数あるわけですが、当セッションではニフティクラウド mobile backend でも人気の高いプッシュ通知機能の裏側をお話しします。個別配信、大量配信が混じり合うメッセージの分散処理を実現する上で分散KVSを選択した背景や、運用してみた見解などを紹介できればと考えています。
+  - programid: S34
+    name: 上田隆一
+    imgthumb: ueda.png
+    sns:
+      twitter: ryuichiueda
+      facebook: 675930229170437
+      github:
+    detail:
+      - 千葉工業大学先進工学部未来ロボティクス学科准教授
+    history:
+      - 千葉工業大学先進工学部未来ロボティクス学科准教授。巷ではシェル芸おじさんで知られる。著書に「シェルスクリプト高速開発手法入門」「シェルプログラミング実用テクニック」。日経Linuxにて「RaspberryPiで作ろう お手軽ロボット教室」連載中。博士（工学）
+    messagetitle: ロボットに関する多くのオープンソース共通基盤 ROS（robot operating system）を触ってみよう
+    messagebody: "ロボットに関する多くのオープンソースを利用するための共通基盤となっているROS（robot operating system）を使ってみるハンズオンです。<br />
+      お願い:<br />
+      Ubuntu Server/Desktop 14.04 LTS（仮想マシン可）環境をご準備ください。また、できる人は、https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu14.04_server のREADME.ja.mdに従って、ROSのインストールを行ってから参加ください。（ハンズオンはインストールから行いますが、トラフィック削減のため）"
   - programid: S03
     name: しょっさん
     imgthumb: sho-san.png
@@ -465,3 +493,103 @@ speakers:
       ・ハイパーコンバージドインフラとNutanixの技術解説<br />
       ・Nutanix Community Editionの紹介<br />
       ・Nutanix 最新アップデート情報"
+  - programid: S33
+    name: 山田修司
+    imgthumb: white.png
+    sns:
+      twitter: uzyexe
+      facebook: shuji.yamada.798
+      github:
+    detail:
+      - さくらインターネット株式会社
+    history:
+      - 2007年さくらインターネット株式会社に入社。Dockerコンテナホスティング「Arukas」の企画/開発/運用担当。
+    messagetitle: さくらのDockerコンテナホスティング-Arukasの解説とインフラを支える技術
+    messagebody: さくらインターネットは、Dockerコンテナホスティングサービス「Arukas」(https://arukas.io/)を開発し、無償試用できるオープンβテストを開始しました。ArukasはDockerコンテナホスティングとしてはまだ珍しい共用（シェアード）型のホスティングサービスです。今回はこのArukasのサービス内容の簡単なご紹介と、裏側のインフラなどを解説します。
+  - programid: S13
+    name: 川又幸恵
+    imgthumb: kawamata.png
+    sns:
+      twitter: Strange_bird496
+      facebook:
+      github:
+    detail:
+      - 株式会社インターネットイニシアティブ
+    history:
+      - 大学でOpenFlow 等のSoftware-Defined Network を研究。その後、オンラインゲーム提供会社での基盤ネットワーク構築運用保守業務を経て、現在は、株式会社インターネットイニシアティブにてクラウドサービス基盤ネットワークの開発、運用業務に従事。
+    messagetitle: 仮想ネットワークアプライアンスで実現するネットワークエンジニアのためのDevOps
+    messagebody: システムインフラの土台となるネットワーク機器にも運用の自動化が求められている昨今ではありますが、運用自動化のためのツール開発や、検証から運用につなげていくためのプロセスには、まだまだ壁が多く感じます。開発検証環境の確保が、難しい課題の１つで、物理的な開発検証用ネットワーク機器の確保はコスト的に厳しく、オペレータが触れる事が出来るネットワーク機器も本番環境の機器のみです。そこで、本セッションでは、手元の端末でVirtualBox等の仮想化ソフトウェアを用いて、ネットワーク機器ベンダが提供している実機をエミュレートした仮想ネットワークアプライアンスを利用した、仮想的な開発検証環境を構築する手法をデモをまじえて紹介します。このような仮想環境を用いることで、開発者は開発から検証、運用導入までをスムーズに行い、オペレータは実機同様のトレーニングを行いながら本番環境に導入することができます。ネットワークエンジニアのみなさんも、今回紹介する仮想検証環境を利用して運用自動化への取り組みを始めてみませんか？
+  - programid: S38
+    name: 井上誠一郎
+    imgthumb: inoue.png
+    sns:
+      twitter:
+      facebook:
+      github:
+    detail:
+      - 株式会社ワークスアプリケーションズ　Partner/Executive Fellow
+    history:
+      - 株式会社ワークスアプリケーションズのエグゼクティブフェローとして、製品横断のパフォーマンス改善、開発インフラの改善、採用(グローバル)、教育等に従事。新製品である世界初の人工知能型ERP「HUE」開発のアーキテクチャー責任者を務め、グローバルでの開発を指揮している。
+    messagetitle: Kubernetesにまつわるエトセトラ（主に苦労話）
+    messagebody: Dockerをちゃんと使おうと考えていたらKubernetesに出会いました。ERPのシステム開発でkubernetesを使おうとして苦労した、あるいは現在進行形で苦労していることを、そもそもKubernetesが解決しようとしている課題やそのアーキテクチャそのものにも言及しながらお話します。Dockerをベースにシステム設計を行おうとしている方にノウハウ（主に苦労話）を共有します。
+  - programid: S41
+    name: 高橋和也
+    imgthumb: white.png
+    sns:
+      twitter:
+      facebook:
+      github:
+    detail:
+      - TIS株式会社 戦略技術センター
+    history:
+      - 運用業務やAWSをはじめとする各種クラウドサービスの検証を経て、クラウドやOSSを活用したシステムの設計・構築や運用の自動化などに従事。現在は運用業務における機械学習の活用についても模索中。
+    messagetitle: 機械学習を用いたAWS CloudTrailログの積極的活用
+    messagebody: AWSにはCloudTrail、VPC Flow Logs、S3 Bucket Loggingなど、AWS上の様々なログを記録･保管するサービスが存在します。これらのログはうまく活用すれば不審な操作の検出からIAM Policy設定不備の検出まで様々なことに役立ちますが、大量に記録されるログを日々管理者が確認して判断することは現実的ではありません。そこでこれらのログをさらに有効活用すべく、機械学習を用いて試行錯誤した軌跡についてお話します。
+  - programid: S19
+    name: 伊藤祐司
+    imgthumb: itou.png
+    sns:
+      twitter:
+      facebook: ito.yuuji
+      github: llamerada-jp
+    detail:
+      - 平成27年度 総務省異能vationプログラム最終選考通過
+    history:
+      - 2008年度から2014年までSIerとして様々なシステムの設計や開発を行っていました。平成27年度 総務省 異能vationプログラム最終選考を通過しPROCESS WARPの研究開発を行っています。
+    messagetitle: PROCESS WARP「プロセスがデバイス間で移動する」仕組みを作る
+    messagebody: "スマートフォン、IoTデバイスやウェアラブルデバイスなど、私達の周りには様々なコンピュータが増えつつあります。私は、前述のような多くのコンピュータ同士がシームレスに協調できる仕組みが簡単に使えれば、新しいコンピュータの世界が拓けるのではないかと考えました。前述の考えから、以下の様な特徴を持つPROCESS WARPというシステムを研究開発しています。<br />
+      ・アプリケーションが、PCやスマートフォン、SoCなどの間で実行した状態のまま移動する<br />
+      ・作業スレッドを複数のコンピュータに分散させ、1台のコンピュータでは実行できない処理を行う<br />
+      ・特定のコンピュータが停止しても他のコンピュータで作業を継続することを可能にする<br />
+      デモなどを使いPROCESS WARPの特徴や目指す世界、仕組みなどについて紹介いたします。また、研究開発の一環として、RaspberryPiを32台利用した可搬型クラスタ実験環境を作成しています。そのような研究開発の過程で得た技術などについても紹介いたします。"
+  - programid: S40
+    name: 森元敏雄
+    imgthumb: morimoto.png
+    sns:
+      twitter:
+      facebook:
+      github:
+    detail:
+      - TIS株式会社 戦略技術センター
+    history:
+      - 金融系システムの開発部門から、R&D部門である戦略技術センターに異動。戦略技術センターではインフラ設計・保守および、OSSを中心とした技術検証を担当している。Impress Think IT(https://thinkit.co.jp/)やITmedia @IT(http://www.atmarkit.co.jp/)に技術情報記事を寄稿や、社内技術blog(http://tech-sketch.jp/author/morimoto)を執筆している。金融系システムの開発部門から、R&D部門である戦略技術センターに異動。戦略技術センターではインフラ設計・保守および、OSSを中心とした技術検証を担当している。Impress Think IT(https://thinkit.co.jp/)やITmedia @IT(http://www.atmarkit.co.jp/)に技術情報記事を寄稿や、社内技術blog(http://tech-sketch.jp/author/morimoto)を執筆している。
+    messagetitle: サーバ構築をbashスクリプトから自動化ツールに変えてみませんか？
+    messagebody: "手作業でサーバ構築をされている方、これからサーバ構築作業を担当される方、大量のサーバの保守にうんざりされている方など、皆さまの作業負荷を軽減できるサーバ構築自動化（構成管理）ツールをご紹介させて頂きます。<br />
+      サーバ構築自動化（構成管理）ツールの中でも特に利用者の多い、「Chef」「Ansible」「Puppet」「Itamae」の4製品の概要のご紹介と、インストール時のコマンド上での操作と「Ansible」で実装した場合との比較を行いながら機能の解説を行います。<br />
+      初心者の方向けですので、中上級者の方には、既知の情報になってしまうことをご容赦ください。<br />
+      ※本公演は以下の＠IT上の以下の記事をベースにしております。OSSのサーバ構築自動化ツール、4製品徹底検証 2016年版<br />
+      http://www.atmarkit.co.jp/ait/articles/1606/14/news011.html <br />
+      http://www.atmarkit.co.jp/ait/articles/1606/15/news017.html"
+  - programid: S42
+    name: 藤崎正範
+    imgthumb: fj.png
+    sns:
+      twitter:
+      facebook:
+      github:
+    detail:
+      -
+    history:
+      -
+    messagetitle: Walti.ioで簡単にWordPressで作ったサイトの脆弱性スキャンをしてみる
+    messagebody: Walti.ioは、ペネトレーションテスト系のOSSでWebシステムに対して脆弱性スキャンをすることができるSaaSです。
