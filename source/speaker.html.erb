@@ -18,7 +18,7 @@
           <p><%= data.speaker.description%></p>
         </div>
         <div class="col-md-12 box-section">
-	        <% data.speaker.speakers.sort {|l,r| l.programid<=>r.programid }.each do |s| %>
+        <% data.speaker.speakers.sort {|l,r| l.programid<=>r.programid }.each do |s| %>
             <div class="col-md-12">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="row" id="<%= s.programid %>">
