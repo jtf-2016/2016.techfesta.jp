@@ -6,324 +6,209 @@ programtable:
    - content:
      rowsize: 1
      subsection:
-       - programid: A00
+       - roomid: A00
          label: 基調講演
-         title: ベンチャーCTO、AWSエバンジェリストを経て考える、クラウド時代に向き合うエンジニア像のこれから
+         programid: A01
    - content:
      rowsize: 1
      subsection:
-       - programid: B00
-         label: B00
-         title: ベンチャーCTO、AWSエバンジェリストを経て考える、クラウド時代に向き合うエンジニア像のこれから
+       - roomid: B00
    - content:
      rowsize: 1
      subsection:
-       - programid: C00
-         label:
-         title:
+       - roomid: C00
    - content:
      rowsize: 1
      subsection:
-       - programid: D00
-         label:
-         title:
+       - roomid: D00
    - content:
      rowsize: 1
      subsection:
-       - programid: E00
-         label:
-         title:
+       - roomid: E00
    - content:
      rowsize: 1
      subsection:
-       - programid: F00
-         label:
-         title:
+       - roomid: F00
    - content:
      rowsize: 1
      subsection:
-       - programid: G00
-         label:
-         title:
+       - roomid: G00
    - content:
      rowsize: 1
      subsection:
-       - programid: H00
-         label:
-         title:
+       - roomid: H00
  section2:
    - content:
      rowsize: 1
      subsection:
-       - programid: A10
-         label: A10
-         title: 数学の知識不要! ITエンジニアのための「機械学習理論」入門
+       - roomid: A10
    - content:
      rowsize: 1
      subsection:
-       - programid: B10
-         label:
-         title:
+       - roomid: B10
    - content:
      rowsize: 1
      subsection:
-       - programid: C10
-         label:
-         title:
+       - roomid: C10
    - content:
      rowsize: 1
      subsection:
-       - programid: D10
-         label:
-         title:
+       - roomid: D10
    - content:
      rowsize: 1
      subsection:
-       - programid: E10
-         label:
-         title:
+       - roomid: E10
    - content:
      rowsize: 1
      subsection:
-       - programid: F10
-         label:
-         title:
+       - roomid: F10
    - content:
      rowsize: 1
      subsection:
-       - programid: G10
-         label:
-         title:
+       - roomid: G10
    - content:
      rowsize: 1
      subsection:
-       - programid: H10
-         label:
-         title:
+       - roomid: H10
  section3:
    - content:
      rowsize: 1
      subsection:
-       - programid: A20
-         label: A20
-         title: エンジニアのスキルパターンを作ってみた話
+       - roomid: A20
    - content:
      rowsize: 1
      subsection:
-       - programid: B20
-         label:
-         title:
+       - roomid: B20
    - content:
      rowsize: 1
      subsection:
-       - programid: C20
-         label:
-         title:
+       - roomid: C20
    - content:
      rowsize: 1
      subsection:
-       - programid: D20
-         label:
-         title:
+       - roomid: D20
    - content:
      rowsize: 1
      subsection:
-       - programid: E20
-         label:
-         title:
+       - roomid: E20
    - content:
      rowsize: 1
      subsection:
-       - programid: F20
-         label:
-         title:
+       - roomid: F20
    - content:
      rowsize: 2
      subsection:
-       - programid: G20
-         label: G20
-         title: 高速でスケーラブルなウェブサイトをNginxとWordPressでSoftLayer上に構築しよう
+       - roomid: G20
    - content:
      rowsize: 2
      subsection:
-       - programid: H20
-         label: H20
-         title: パブリッククラウドを利用した初心者向けDockerハンズオン(受講者の方はおみやげに「さくらのクラウド2万円クーポン」プレゼント)
+       - roomid: H20
  section4:
    - content:
      rowsize: 1
      subsection:
-       - programid: A30
-         label:
-         title:
+       - roomid: A30
    - content:
      rowsize: 1
      subsection:
-       - programid: B30
-         label:
-         title:
+       - roomid: B30
    - content:
      rowsize: 1
      subsection:
-       - programid: C30
-         label:
-         title:
+       - roomid: C30
    - content:
      rowsize: 1
      subsection:
-       - programid: D30
-         label: D30
-         title: ショートセッション
-       - programid: D31
-         label: D31
-         title: OWASP Japan ― 情報セキュリティとのうまい付き合い方 ―
-       - programid: D32
-         label: D32
-         title: 外部サービスを使わずにPullRequestベースの開発をするために行ったこと
-       - programid: D33
-         label: D33
-         title: インフラエンジニアがUnityをやるべき、たった一つの理由
+       - roomid: D30
    - content:
      rowsize: 1
      subsection:
-       - programid: E30
-         label:
-         title:
+       - roomid: E30
    - content:
      rowsize: 1
      subsection:
-       - programid: F30
-         label:
-         title:
+       - roomid: F30
  section5:
    - content:
      rowsize: 1
      subsection:
-       - programid: A40
-         label: A40
-         title: 最前線で戦う若手インフラエンジニアたちが語る「技術トレンド」と「数年後の未来」
+       - roomid: A40
    - content:
      rowsize: 1
      subsection:
-       - programid: B40
-         label: B40
-         title: 全部見せます！データホテル・フルマネージドホスティングサービスを支えるOSSと、活用事例
+       - roomid: B40
    - content:
      rowsize: 1
      subsection:
-       - programid: C40
-         label: C40
-         title: 仮想化とストレージの新しい形！ハイパーコンバージドインフラの技術解説
+       - roomid: C40
    - content:
      rowsize: 1
      subsection:
-       - programid: D40
-         label: D40
-         title: CDP（Cloud Design Pattern）はもう古い？これからはMCDP（Multi Cloud Design Pattern）
+       - roomid: D40
    - content:
      rowsize: 1
      subsection:
-       - programid: E40
-         label: E40
-         title: セキュリティ的に「硬い」インフラを作ろう ― MINI Hardening Project
+       - roomid: E40
    - content:
      rowsize: 1
      subsection:
-       - programid: F40
-         label: F40
-         title: ショートセッション
-       - programid: F41
-         label: F41
-         title: Dockerをみんなで便利に使えるRancher.io入門
-       - programid: F42
-         label: F42
-         title: クラウド基盤を15分で構築しよう！Wakame-vdcで始めるお手軽クラウド生活
-       - programid: F43
-         label: F43
-         title: グラフデータベースについて理解しよう
+       - roomid: F40
    - content:
      rowsize: 2
      subsection:
-       - programid: G40
-         label: G40
-         title: Mackerelを使ったサーバー管理+クラウドサーバーのオンラインスケールアップ！+できたてほやほやIDCFクラウドのRDBを使ってみよう！（IDCFクラウドのクーポンあるよ）
+       - roomid: G40
    - content:
      rowsize: 2
      subsection:
-       - programid: H40
-         label: H40
-         title: Consulによる運用自律化体験ハンズオンとConsul活用事例紹介
+       - roomid: H40
  section6:
    - content:
      rowsize: 1
      subsection:
-       - programid: A50
-         label: A50
-         title: HashiCorpとAtlasのインフラ管理 ― 運用に自動化を求めるのは間違っているだろうか（仮）
+       - roomid: A50
    - content:
      rowsize: 1
      subsection:
-       - programid: B50
-         label: B50
-         title: Googleが描く、MapReduceを超えたビッグデータの世界
+       - roomid: B50
    - content:
      rowsize: 1
      subsection:
-       - programid: C50
-         label: C50
-         title: High Usability Applicationでの100ミリ秒レスポンスを実現するクライアントサイドの開発技術
+       - roomid: C50
    - content:
      rowsize: 1
      subsection:
-       - programid: D50
-         label: D50
-         title: OSSで手軽に実現！クラウドの構成管理を自動化する基盤CMDBuildとは
+       - roomid: D50
    - content:
      rowsize: 1
      subsection:
-       - programid: E50
-         label: E50
-         title: フリーでできるセキュリティチェック
+       - roomid: E50
    - content:
      rowsize: 1
      subsection:
-       - programid: F50
-         label: F50
-         title: グラフデータベースのためのデータモデリング
+       - roomid: F50
  section7:
    - content:
      rowsize: 1
      subsection:
-       - programid: A60
+       - roomid: A60
          label: 招待講演
-         title: 今明かされる! シンラ・テクノロジーのインフラへの挑戦と舞台裏
    - content:
      rowsize: 1
      subsection:
-       - programid: B60
-         label:
-         title:
+       - roomid: B60
    - content:
      rowsize: 1
      subsection:
-       - programid: C60
-         label:
-         title:
+       - roomid: C60
    - content:
      rowsize: 1
      subsection:
-       - programid: D60
-         label:
-         title:
+       - roomid: D60
    - content:
      rowsize: 1
      subsection:
-       - programid: E70
-         label:
-         title:
+       - roomid: E70
    - content:
      rowsize: 1
      subsection:
-       - programid: F70
-         label:
-         title:
+       - roomid: F70
