@@ -87,6 +87,7 @@ programtable:
      rowsize: 1
      subsection:
        - roomid: B20
+         programid: S39
    - content:
      rowsize: 1
      subsection:
@@ -216,6 +217,8 @@ programtable:
          programid: S29
        - roomid: D51
          programid: S30
+       - roomid: D52
+         programid: S42
    - content:
      rowsize: 1
      subsection:
@@ -241,12 +244,12 @@ programtable:
      rowsize: 1
      subsection:
        - roomid: C60
-         programid: S37
+         programid: S26
    - content:
      rowsize: 1
      subsection:
        - roomid: D60
-         programid: S26
+         programid: S37
    - content:
      rowsize: 1
      subsection:
