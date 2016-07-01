@@ -572,7 +572,7 @@ speakers:
     detail:
       - TIS株式会社 戦略技術センター
     history:
-      - 金融系システムの開発部門から、R&D部門である戦略技術センターに異動。戦略技術センターではインフラ設計・保守および、OSSを中心とした技術検証を担当している。Impress Think IT(https://thinkit.co.jp/)やITmedia @IT(http://www.atmarkit.co.jp/)に技術情報記事を寄稿や、社内技術blog(http://tech-sketch.jp/author/morimoto)を執筆している。金融系システムの開発部門から、R&D部門である戦略技術センターに異動。戦略技術センターではインフラ設計・保守および、OSSを中心とした技術検証を担当している。Impress Think IT(https://thinkit.co.jp/)やITmedia @IT(http://www.atmarkit.co.jp/)に技術情報記事を寄稿や、社内技術blog(http://tech-sketch.jp/author/morimoto)を執筆している。
+      - 金融系システムの開発部門から、R&D部門である戦略技術センターに異動。戦略技術センターではインフラ設計・保守および、OSSを中心とした技術検証を担当している。Impress Think IT(https://thinkit.co.jp/)やITmedia @IT(http://www.atmarkit.co.jp/)に技術情報記事を寄稿や、社内技術blog(http://tech-sketch.jp/author/morimoto)を執筆している。
     messagetitle: サーバ構築をbashスクリプトから自動化ツールに変えてみませんか？
     messagebody: "手作業でサーバ構築をされている方、これからサーバ構築作業を担当される方、大量のサーバの保守にうんざりされている方など、皆さまの作業負荷を軽減できるサーバ構築自動化（構成管理）ツールをご紹介させて頂きます。<br />
       サーバ構築自動化（構成管理）ツールの中でも特に利用者の多い、「Chef」「Ansible」「Puppet」「Itamae」の4製品の概要のご紹介と、インストール時のコマンド上での操作と「Ansible」で実装した場合との比較を行いながら機能の解説を行います。<br />
@@ -580,6 +580,19 @@ speakers:
       ※本公演は以下の＠IT上の以下の記事をベースにしております。OSSのサーバ構築自動化ツール、4製品徹底検証 2016年版<br />
       http://www.atmarkit.co.jp/ait/articles/1606/14/news011.html <br />
       http://www.atmarkit.co.jp/ait/articles/1606/15/news017.html"
+  - programid: S37
+    name: 木内満歳
+    imgthumb: white.png
+    sns:
+      twitter:
+      facebook:
+      github:
+    detail:
+      -
+    history:
+      -
+    messagetitle: Mesosphere DC/OS-データセンターOSの世界
+    messagebody: クラウド時代（Cloud Era）に入った現在、アプリケーションの開発手法、インフラの構築、データのハンドリング手法など、様々な要素が同時並行的に変化しつつあります。DC/OSは、Big Dataアプリケーションやマイクロサービスをサーバーの集合体上に構成するOSであり、企業特有のスケーリング要求に合った利用環境をすばやく構築することを可能とします。
   - programid: S42
     name: 藤崎正範
     imgthumb: fj.png
