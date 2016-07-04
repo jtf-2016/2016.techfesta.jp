@@ -63,6 +63,15 @@ a.navbar-brand:hover{
   font-size: 1.5em;
 }
 
+.eqh{
+  float: none;
+  display: table-cell;
+}
+
+img.eqhadaption{
+  width: 100%;
+  max-width: 280px;
+}
 /* footer */
 .footerback{
   position: relative;
@@ -527,5 +536,12 @@ tbody.programtable tr td{
   .keynote-thumb{
     width: 100px;
     height: 100px;
+  }
+  .eqh{
+    display: inline-block;
+    float: none;
+  }
+  img.eqhadaption{
+    width: 100%;
   }
 }

@@ -304,11 +304,11 @@
                     <img src="/assets/img/mithril.png" alt="">
                   </div>
                   <% data.index.prise.mithril.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-mithril" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-mithril eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
@@ -319,12 +319,12 @@
                   <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 prise-title platinum">
                     <img src="/assets/img/platinum.png" alt="">
                   </div>
-                  <% data.index.prise.platinum.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.platinum.each_slice(3) do |prise| %>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-platinum" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-platinum eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
@@ -335,12 +335,12 @@
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title gold">
                     <img src="/assets/img/gold.png" alt="">
                   </div>
-                  <% data.index.prise.gold.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.gold.each_slice(3) do |prise| %>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-gold" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-gold eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
@@ -352,25 +352,27 @@
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title silver">
                     <img src="/assets/img/silver.png" alt="">
                   </div>
-                  <% data.index.prise.silver.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.silver.each_slice(3) do |prise| %>
+                  <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-silver" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-silver eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
                   </div>
+                  </div>
                   <% end %>
                   <% end %>
                   <% unless data.index.prise.mono.nil? %>
-                  <% data.index.prise.mono.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.mono.each_slice(3) do |prise| %>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-mono" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-mono eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
@@ -382,12 +384,12 @@
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title backsupport">
                     <img src="/assets/img/backsupport.png" alt="">
                   </div>
-                  <% data.index.prise.backsupport.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.backsupport.each_slice(3) do |prise| %>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-backsupport" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-backsupport eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
@@ -398,12 +400,12 @@
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title cohost">
                     <img src="/assets/img/cohost.png" alt="">
                   </div>
-                  <% data.index.prise.cohost.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.cohost.each_slice(3) do |prise| %>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-cohost" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-cohost eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
@@ -414,12 +416,12 @@
                   <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title medias">
                     <img src="/assets/img/media.png" alt="">
                   </div>
-                  <% data.index.prise.media.each_slice(1) do |prise| %>
-                  <div class="col-md-12">
+                  <% data.index.prise.media.each_slice(3) do |prise| %>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
                     <% prise.each do |p| %>
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 col-sm-4 col-xs-12 eqh">
                       <a class="linkwhite" href="<%= p.url %>">
-                        <img src="/assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-medias" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
+                        <img src="assets/img/sponsor/<%= p.imgname %>" alt="<%= p.sponsorname %>" class="sponsor-img sponsor-size-medias eqhadaption" <%= (p.zoom.nil?)?"":"style=\"width:"+p.zoom+"\"" %> >
                       </a>
                     </div>
                     <% end %>
