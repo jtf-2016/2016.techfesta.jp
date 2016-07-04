@@ -473,7 +473,24 @@ tbody.programtable tr td{
   padding: 8px;
   width: 140px;
 }
-
+.vertical_table {
+  width: 100%;
+}
+.vertical_table tr td{
+  padding: 0.5em;
+}
+.vertical_table_headline {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background: #b1144b;
+}
+.vertical_table_row0 {
+  background: white;
+}
+.vertical_table_row1 {
+  background: #f8f8f8;
+}
 
 @media (max-width: 1200px) {
   .section-cell{
@@ -527,5 +544,8 @@ tbody.programtable tr td{
   .keynote-thumb{
     width: 100px;
     height: 100px;
+  }
+  .mobile_hide{
+    display: none;
   }
 }
