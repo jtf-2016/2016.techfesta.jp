@@ -17,7 +17,7 @@ programtable:
     end_time: "10:00"
     section:
       - subsection:
-          - label: Reception
+          - label: 受付
         colsize: 9
   - begin_time: "10:00"
     end_time: "11:00"
@@ -74,7 +74,7 @@ programtable:
     end_time: "13:00"
     section:
       - subsection:
-          - label: Recruting Session
+          - label: スカウティングセッション(A会場)
         colsize: 9
   - begin_time: "13:00"
     end_time: "13:45"
@@ -133,7 +133,7 @@ programtable:
     end_time: "15:15"
     section:
       - subsection:
-          - label: Recruting Session
+          - label: スカウティングセッション(A会場)
         colsize: 9
   - begin_time: "15:15"
     end_time: "16:00"
@@ -200,7 +200,7 @@ programtable:
     end_time: "17:30"
     section:
       - subsection:
-          - label: Recruting Session
+          - label: スカウティングセッション(A会場)
         colsize: 9
   - begin_time: "17:30"
     end_time: "18:15"
@@ -231,13 +231,13 @@ programtable:
     end_time: "18:30"
     section:
       - subsection:
-          - label: Closing Session
+          - label: クロージングセッション(A会場)
         colsize: 9
   - begin_time: "19:00"
     end_time: "21:00"
     section:
       - subsection:
-          - label: Party Night
+          - label: 懇親会(ハートンホテル)
         colsize: 9
 
 
