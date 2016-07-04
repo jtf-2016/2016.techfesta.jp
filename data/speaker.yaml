@@ -495,7 +495,7 @@ speakers:
       ・Nutanix 最新アップデート情報"
   - programid: S33
     name: 山田修司
-    imgthumb: white.png
+    imgthumb: s-yamada.png
     sns:
       twitter: uzyexe
       facebook: shuji.yamada.798
@@ -582,15 +582,15 @@ speakers:
       http://www.atmarkit.co.jp/ait/articles/1606/15/news017.html"
   - programid: S37
     name: 木内満歳
-    imgthumb: white.png
+    imgthumb: m-kiuchi_001.png
     sns:
-      twitter:
+      twitter: creationline
       facebook:
       github:
     detail:
-      -
+      - クリエーションライン(株) 
     history:
-      -
+      - 外資系コンピュータメーカーにてプリセールス・インテグレーションエンジニアとしてスーパーコンピュータシステム、教育システム、ISP、IP放送システムの設計・構築を担当。クリエーションラインではデータ分析、グラフデータベース、IoTシステム、マイクロサービスのコンサルティング、構築を担当
     messagetitle: Mesosphere DC/OS-データセンターOSの世界
     messagebody: クラウド時代（Cloud Era）に入った現在、アプリケーションの開発手法、インフラの構築、データのハンドリング手法など、様々な要素が同時並行的に変化しつつあります。DC/OSは、Big Dataアプリケーションやマイクロサービスをサーバーの集合体上に構成するOSであり、企業特有のスケーリング要求に合った利用環境をすばやく構築することを可能とします。
   - programid: S42
