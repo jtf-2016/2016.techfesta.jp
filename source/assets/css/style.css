@@ -489,7 +489,7 @@ tbody.programtable tr td{
   background: white;
 }
 .vertical_table_row1 {
-  background: #f0f0f0;
+  background: #f8f8f8;
 }
 
 @media (max-width: 1200px) {
@@ -544,5 +544,8 @@ tbody.programtable tr td{
   .keynote-thumb{
     width: 100px;
     height: 100px;
+  }
+  .mobile_hide{
+    display: none;
   }
 }

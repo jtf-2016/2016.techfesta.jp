@@ -25,7 +25,7 @@
             </div>
           </div>
   
-          <div class="col-md-12 box-section">
+          <div class="mobile_hide col-md-12 box-section">
             <h3>Table Layout</h3>
             <span>※左右にスクロールすることができます。</span>
             <div class="ui-flickable-wrapper">
@@ -34,11 +34,10 @@
                  <tbody class="programtable">
                    <tr>
                     <td rowspan="2">時間</td>
-                    <% room_name = ["A会場","B会場","C会場","D会場","E会場","F会場","G会場","H会場","英会話カフェ"]; %>
-                    <% room_name.each do |name| %><td>i<%= name %></td><% end %>
+                    <% data.program.roominfo.each do |room| %><td><%= room.name %></td><% end %>
                   </tr>
                   <tr>
-                    <% room_name.size.times do %><td></td><% end %>
+                    <% data.program.roominfo.size.times do %><td></td><% end %>
                   </tr>
 	          <% data.program.programtable.each do |parallel_sessions| %>
                   <tr>
@@ -62,39 +61,39 @@
               <div style="clear:both;"></div>
             </div>
           </div>
-
-          <div>
-            <h3>Vertical Layout</h3>
-            <table border="1" class="vertical_table">
-              <% data.program.programtable.each do |parallel_sessions| %>
-              <thead>
-                <tr>
-                  <td class="vertical_table_headline"><%= parallel_sessions.begin_time %>-<%= parallel_sessions.end_time %></td>
-                </tr>
-              </thead>
-              <tbody>
-                <% i=0; j=0; parallel_sessions.section.each do |programblock| %>
-                <% display=true; programblock.subsection.each do |program|; display = display && (program.programid || program.label); end; if display then %>
-                <tr class="vertical_table_row<%= j%2 %>">
-                  <td>
-                    <%= room_name[i] %><br />
-                    <% programblock.subsection.each do |program| %>
-                      <% if program.programid && p=data.speaker.speakers.find{|p| p.programid==program.programid} then %>
-                        [<%= program.label ? program.label : program.roomid %>] <a href="speaker.html#<%= program.programid %>"><%= p.messagetitle ? p.messagetitle : "NO DATA" %></a><br />
-                      <% else %>
-                        <%= program.label ? program.label : "&nbsp;" %>
-                      <% end %>
-                    <% end %>
-                  </td>
-                </tr>
-                <% j=j+1; end; %>
-                <% i=i+1; end; %>
-              </tbody>
-              <% end %>
-            </table>
-          </div>
-
         </div>
+
+        <div class="col-md-12 box-section">
+          <h3>Vertical Layout</h3>
+          <table border="1" class="vertical_table">
+            <% data.program.programtable.each do |parallel_sessions| %>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline"><%= parallel_sessions.begin_time %>-<%= parallel_sessions.end_time %></td>
+              </tr>
+            </thead>
+            <tbody>
+              <% i=0; j=0; parallel_sessions.section.each do |programblock| %>
+              <% display=true; programblock.subsection.each do |program|; display = display && (program.programid || program.label); end; if display then %>
+              <tr class="vertical_table_row<%= j%2 %>">
+                <td>
+                  <%= data.program.roominfo[i].name %><br />
+                  <% programblock.subsection.each do |program| %>
+                    <% if program.programid && p=data.speaker.speakers.find{|p| p.programid==program.programid} then %>
+                      [<%= program.label ? program.label : program.roomid %>] <a href="speaker.html#<%= program.programid %>"><%= p.messagetitle ? p.messagetitle : "NO DATA" %></a><br />
+                    <% else %>
+                      <%= program.label ? program.label : "&nbsp;" %>
+                    <% end %>
+                  <% end %>
+                </td>
+              </tr>
+              <% j=j+1; end; %>
+              <% i=i+1; end; %>
+            </tbody>
+            <% end %>
+          </table>
+        </div>
+
       </div>
     </div>
   </div>
