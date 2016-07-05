@@ -23,14 +23,14 @@ members:
   avatar_url: assets/img/members/watanabe.jpg
   body: いわゆるSIerとしてOSSの布教活動に努めていたところ、気づけばZabbixJapanとして本体にコントリビュートされていました。OSSに限らず面白いものを伝える事に生きがいを感じ、JTFでは広報として活動させて頂いてます。JTFというお祭りを楽しく過ごしていただけるよう精進しておりますのでどうぞよろしくお願いします。
 - name: 千代 浩之
-  avatar_url: assets/img/members/chishiro.png
+  avatar_url: assets/img/chishiro.png
   body: 2016年4月から産業技術大学院大学で助教として働いております．2012年3月に慶應義塾大学大学院理工学研究科後期博士課程を修了し，日本学術振興会特別研究員（PD），ノースカロライナ大学チャペルヒル校訪問研究員，慶應義塾大学理工学部情報工学科助教として働いた後，現在に至ります．JTFでは運営委員に従事するだけでなく，私の研究を発表させて頂きますので，よろしくお願い致します．
 - name: 沖田 慎平
-  avatar_url: assets/img/members/okt.png
+  avatar_url: assets/img/okt.png
   body: エンジニア兼声出し役をやっています。
 - name: 荒井 康宏
-  avatar_url: assets/img/members/arai.png
+  avatar_url: assets/img/arai.png
   body: クラウド利用促進機構(CUPA)で、さまざまな活動を通して企業と個人のクラウドの利用促進と普及に努めており、クラウドサービスプロバイダへのサービスコンサルティング・技術支援も行っている。 AWS Users Group Japan、日本OpenStackユーザ会、日本CloudStackユーザ会、オープンクラウドキャンパス/オープンクラウド実証実験タスクフォース、MSP協会の設立・活動の支援を行っている。
 - name: 下雅意 美紀
-  avatar_url: assets/img/members/shimogai.png
+  avatar_url: assets/img/shimogai.png
   body: TISが提供するOSSサポートサービスにおいてOSSのサポート業務に従事。日本PostgreSQLユーザ会（JPUG），PostgreSQLエンタープライズコンソーシアム（PGECons）といったPostgreSQL関連のコミュニティで積極的に活動しており，2014年度のJPUG感謝賞を受賞。そんなこんなでSIer3年目も頑張ります。
