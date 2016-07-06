@@ -51,6 +51,7 @@
                         <% else %>
                           <%= program.label ? program.label : "&nbsp;" %>
                         <% end %>
+                        <% if program.sublabel then %><br /><%= program.sublabel %><% end %>
                       <% end %>
                     </td>
                     <% end %>
@@ -84,6 +85,7 @@
                     <% else %>
                       <%= program.label ? program.label : "&nbsp;" %>
                     <% end %>
+                    <% if program.sublabel then %><br /><%= program.sublabel %><% end %>
                   <% end %>
                 </td>
               </tr>
