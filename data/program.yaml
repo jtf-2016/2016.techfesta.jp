@@ -75,7 +75,7 @@ programtable:
     section:
       - subsection:
           - label: スカウティングセッション(A会場)
-            sublabel: Wantedly, WorksApplications, Sakura, Nutanix, HB, Hatena
+            sublabel: Wantedly → ワークスアプリケーションズ → さくらインターネット → Nutanix → ハートビーツ → はてな
         colsize: 9
   - begin_time: "13:00"
     end_time: "13:45"
@@ -135,7 +135,7 @@ programtable:
     section:
       - subsection:
           - label: スカウティングセッション(A会場)
-            sublabel: TIS, IDCF, Techolus
+            sublabel: TIS → IDCフロンティア → NHNテコラス
         colsize: 9
   - begin_time: "15:15"
     end_time: "16:00"
@@ -203,7 +203,7 @@ programtable:
     section:
       - subsection:
           - label: スカウティングセッション(A会場)
-            sublabel: DMM, Nifty, CL
+            sublabel: DMM.comラボ → ニフティ → クリエーションライン
         colsize: 9
   - begin_time: "17:30"
     end_time: "18:15"
