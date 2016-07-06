@@ -75,6 +75,7 @@ programtable:
     section:
       - subsection:
           - label: スカウティングセッション(A会場)
+            sublabel: Wantedly, WorksApplications, Sakura, Nutanix, HB, Hatena
         colsize: 9
   - begin_time: "13:00"
     end_time: "13:45"
@@ -134,6 +135,7 @@ programtable:
     section:
       - subsection:
           - label: スカウティングセッション(A会場)
+            sublabel: TIS, IDCF, Techolus
         colsize: 9
   - begin_time: "15:15"
     end_time: "16:00"
@@ -201,6 +203,7 @@ programtable:
     section:
       - subsection:
           - label: スカウティングセッション(A会場)
+            sublabel: DMM, Nifty, CL
         colsize: 9
   - begin_time: "17:30"
     end_time: "18:15"
