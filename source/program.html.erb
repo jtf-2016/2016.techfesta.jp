@@ -78,7 +78,9 @@
               <% display=true; programblock.subsection.each do |program|; display = display && (program.programid || program.label); end; if display then %>
               <tr class="vertical_table_row<%= j%2 %>">
                 <td>
-                  <%= data.program.roominfo[i].name %> (<%= data.program.roominfo[i].room %>)<br />
+                  <% if parallel_sessions.place==nil || parallel_sessions.place.to_s=="inside" then %>
+                    <%= data.program.roominfo[i].name %> (<%= data.program.roominfo[i].room %>)<br />
+                  <% end %>
                   <% programblock.subsection.each do |program| %>
                     <% if program.programid && p=data.speaker.speakers.find{|p| p.programid==program.programid} then %>
                       [<%= program.label ? program.label : program.roomid %>] <a href="speaker.html#<%= program.programid %>"><%= p.messagetitle ? p.messagetitle : "NO DATA" %></a><br />

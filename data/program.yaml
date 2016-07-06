@@ -169,7 +169,7 @@ programtable:
             programid: S03
           - roomid: F41
             programid: S04
-          - roomid: F24
+          - roomid: F42
             programid: S06
       - subsection:
           - roomid: G40
@@ -247,6 +247,7 @@ programtable:
         colsize: 9
   - begin_time: "19:00"
     end_time: "21:00"
+    place: "outside"
     section:
       - subsection:
           - label: 懇親会(ハートンホテル)
