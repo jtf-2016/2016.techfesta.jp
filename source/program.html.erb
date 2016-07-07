@@ -24,157 +24,80 @@
               <p><%= data.program.description %></p>
             </div>
           </div>
-          <div class="col-md-12 box-section">
+  
+          <div class="mobile_hide col-md-12 box-section">
+            <h3>Table Layout</h3>
             <span>※左右にスクロールすることができます。</span>
             <div class="ui-flickable-wrapper">
               <div class="ui-flickable-content" style="overflow: scroll;">
                 <table border="1" cellpadding="0" cellspacing="0" style="width:1200px;">
                  <tbody class="programtable">
                    <tr>
-                    <td>時間</td>
-                    <td>A会場</td>
-                    <td>B会場</td>
-                    <td>C会場</td>
-                    <td>D会場</td>
-                    <td>E会場</td>
-                    <td>F会場</td>
-                    <td>G会場</td>
-                    <td>H会場</td>
-                    <td>英会話カフェ</td>
+                    <td rowspan="2">時間</td>
+                    <% data.program.roominfo.each do |room| %><td><%= room.name %></td><% end %>
                   </tr>
                   <tr>
-                    <td>230ホール</td>
-                    <td>351a室</td>
-                    <td>358室</td>
-                    <td>351b室</td>
-                    <td>433室</td>
-                    <td>452-453室</td>
-                    <td>357室</td>
-                    <td>354室</td>
-                    <td>269室</td>
-                    <td></td>
+                    <% data.program.roominfo.each do |room| %><td><%= room.room %></td><% end %>
                   </tr>
+	          <% data.program.programtable.each do |parallel_sessions| %>
                   <tr>
-                    <td>9:00-<br>10:00</td>
-                    <td colspan="9">受付</td>
-                  </tr>
-                  <tr>
-                    <td>10:00-<br>11:00</td>
-                    <% data.program.programtable.section1.each do |programblock| %>
-                    <td rowspan="<%= programblock.rowsize %>">
+                    <td><%= parallel_sessions.begin_time %>-<br><%= parallel_sessions.end_time %></td>
+                    <% parallel_sessions.section.each do |programblock| %>
+                    <td rowspan="<%= programblock.rowsize ? programblock.rowsize : "1" %>" colspan="<%= programblock.colsize ? programblock.colsize : "1" %>">
                       <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
-                      <% end %>
-                    </td>
-                    <% end %>
-                    <!-- english cafe -->
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>11:15-<br>12:00</td>
-                    <% data.program.programtable.section2.each do |programblock| %>
-                    <td rowspan="<%= programblock.rowsize %>">
-                      <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
-                      <% end %>
-                    </td>
-                    <% end %>
-                    <!-- english cafe -->
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>12:00-<br>13:00</td>
-                    <td colspan="9">
-                      昼食・スカウティングセッション(A会場)<br>
-                      はてな、IDCフロンティア、日本アイ・ビー・エム、クリエーションライン、ワークスアプリケーションズ
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>13:00-<br>13:45</td>
-                    <% data.program.programtable.section3.each do |programblock| %>
-                    <td rowspan="<%= programblock.rowsize %>">
-                      <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
-                      <% end %>
-                    </td>
-                    <% end %>
-                    <!-- english cafe -->
-                    <td rowspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td>14:00-<br>14:45</td>
-                    <% data.program.programtable.section4.each do |programblock| %>
-                    <td rowspan="<%= programblock.rowsize %>">
-                      <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
+                        <% if program.programid && p=data.speaker.speakers.find{|p| p.programid==program.programid} then %>
+                          <%= program.label ? program.label : program.roomid %><br/>
+                          <a href="speaker.html#<%= program.programid %>"><%= p.messagetitle ? p.messagetitle : "NO DATA" %></a><br />
+                        <% else %>
+                          <%= program.label ? program.label : "&nbsp;" %>
+                        <% end %>
+                        <% if program.sublabel then %><br /><%= program.sublabel %><% end %>
                       <% end %>
                     </td>
                     <% end %>
                   </tr>
-                  <tr>
-                    <td>14:45-<br>15:15</td>
-                    <td colspan="9">
-                      スカウティングセッション(A会場)<br>テコラス、ニュータニックス・ジャパン、ビッグローブ
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>15:15-<br>16:00</td>
-                    <% data.program.programtable.section5.each do |programblock| %>
-                    <td rowspan="<%= programblock.rowsize %>">
-                      <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
-                      <% end %>
-                    </td>
-                    <% end %>
-                    <!-- english cafe -->
-                    <td rowspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td>16:15-<br>17:00</td>
-                    <% data.program.programtable.section6.each do |programblock| %>
-                    <td rowspan="<%= programblock.rowsize %>">
-                      <% programblock.subsection.each do |program| %>
-                      <%= program.label %><br/>
-                      <a href="speaker.html#<%= program.programid %>"><%= program.title %></a>
-                      <% end %>
-                    </td>
-                    <% end %>
-                  </tr>
-                  <tr>
-                    <td>17:00-<br>17:30</td>
-                    <td colspan="9">
-                      スカウティングセッション(A会場)<br>ニフティ、さくらインターネット、DMM.comラボ
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>17:30-<br>18:30</td>
-                    <td>招待講演:<br>
-                      <a href="http://2015.techfesta.jp/p/program.html#game_cloud">今明かされる! シンラ・テクノロジーのインフラへの挑戦と舞台裏</a>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>19:00-<br>21:00</td>
-                    <td colspan="9">懇親会 (HUMMER CAFE)</td>
-                  </tr>
+                  <% end %>
                 </tbody>
               </table>
               <div style="clear:both;"></div>
             </div>
           </div>
         </div>
+
+        <div class="col-md-12 box-section">
+          <h3>Vertical Layout</h3>
+          <table border="1" class="vertical_table">
+            <% data.program.programtable.each do |parallel_sessions| %>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline"><%= parallel_sessions.begin_time %>-<%= parallel_sessions.end_time %></td>
+              </tr>
+            </thead>
+            <tbody>
+              <% i=0; j=0; parallel_sessions.section.each do |programblock| %>
+              <% display=true; programblock.subsection.each do |program|; display = display && (program.programid || program.label); end; if display then %>
+              <tr class="vertical_table_row<%= j%2 %>">
+                <td>
+                  <% if parallel_sessions.place==nil || parallel_sessions.place.to_s=="inside" then %>
+                    <%= data.program.roominfo[i].name %> (<%= data.program.roominfo[i].room %>)<br />
+                  <% end %>
+                  <% programblock.subsection.each do |program| %>
+                    <% if program.programid && p=data.speaker.speakers.find{|p| p.programid==program.programid} then %>
+                      [<%= program.label ? program.label : program.roomid %>] <a href="speaker.html#<%= program.programid %>"><%= p.messagetitle ? p.messagetitle : "NO DATA" %></a><br />
+                    <% else %>
+                      <%= program.label ? program.label : "&nbsp;" %>
+                    <% end %>
+                    <% if program.sublabel then %><br /><%= program.sublabel %><% end %>
+                  <% end %>
+                </td>
+              </tr>
+              <% j=j+1; end; %>
+              <% i=i+1; end; %>
+            </tbody>
+            <% end %>
+          </table>
+        </div>
+
       </div>
     </div>
   </div>
