@@ -23,7 +23,10 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="row" id="<%= s.programid %>">
                     <hr/>
-                    <h3><%= s.messagetitle %> <a href="#<%= s.programid %>"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></h3>
+                    <h3><%= s.messagetitle %> <a href="#<%= s.programid %>"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=<%= s.messagetitle %>%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23<%= s.programid %>" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23<%= s.programid %>&amp;t=<%= s.messagetitle %>%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
                   <div class="col-md-6">
 <% envelop = [s];
    if s.group then envelop = s.group; end;
