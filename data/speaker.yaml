@@ -211,9 +211,9 @@ speakers:
       facebook:
       github:
     detail:
-      -
+      - Google
     history:
-      -
+      - Cloud Solutions Architect
     messagetitle: ディープラーニング入門-DQN（Deep Q-Network）の理論解説とTensorFlowを用いたシンプルな実装例
     messagebody: ビデオゲームの自動プレイで有名になり、AlphaGoでも利用されているDQN（Deep Q-Network：多層ニューラルネットワークを利用した強化学習）について理論的な仕組みを解説した上で、簡単な例題でTensorFlowによる実装例を紹介します。みなさんもこの機会に、ディープラーニングに触れてみませんか。
   - name: saya
