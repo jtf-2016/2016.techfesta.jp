@@ -1,12 +1,33 @@
 title: July Tech Festa 2016 運営チーム一覧
 description: July Tech Festaは、下記メンバーによって運営されています。(あいうえお順)
 members:
+- name: 荒井 康宏
+  avatar_url: assets/img/arai.png
+  body: クラウド利用促進機構(CUPA)で、さまざまな活動を通して企業と個人のクラウドの利用促進と普及に努めており、クラウドサービスプロバイダへのサービスコンサルティング・技術支援も行っている。 AWS Users Group Japan、日本OpenStackユーザ会、日本CloudStackユーザ会、オープンクラウドキャンパス/オープンクラウド実証実験タスクフォース、MSP協会の設立・活動の支援を行っている。
+- name: 沖田 慎平
+  avatar_url: assets/img/okt.png
+  body: エンジニア兼声出し役をやっています。
 - name: 倉持 健史
   avatar_url: assets/img/members/kuramochi.jpg
   body: 2015年は一般に参加しました。技術者の高みを目指すイベントとしてはこんな良い物はないと感じていたところ、同僚に誘いいただき今年はすこしばかり運営としても参加させていただきました。1978年東東京生まれ、TIS株式会社でOSSを推進する傍らインフラ技術者育成にも従事。尊敬するエバンジェリストのみなさんをめざして日々精進。趣味は筋トレ、鉄拳、漫画、etc。
+- name: 小山 裕司
+  avatar_url: assets/img/white.png
+  body: ピカチュウとウサギ、札幌、寿司、このキーワードにピンと来たら、AIITへ。
 - name: 坂部 広大 @koudaiii
   avatar_url: https://avatars2.githubusercontent.com/u/2929102?s=250
   body: Software Engineer, Developer Infrastructure
+- name: 下雅意 美紀
+  avatar_url: assets/img/shimogai.png
+  body: TISが提供するOSSサポートサービスにおいてOSSのサポート業務に従事。日本PostgreSQLユーザ会（JPUG），PostgreSQLエンタープライズコンソーシアム（PGECons）といったPostgreSQL関連のコミュニティで積極的に活動しており，2014年度のJPUG感謝賞を受賞。そんなこんなでSIer3年目も頑張ります。
+- name: 千代 浩之
+  avatar_url: assets/img/chishiro.png
+  body: 2016年4月から産業技術大学院大学で助教として働いております．2012年3月に慶應義塾大学大学院理工学研究科後期博士課程を修了し，日本学術振興会特別研究員（PD），ノースカロライナ大学チャペルヒル校訪問研究員，慶應義塾大学理工学部情報工学科助教として働いた後，現在に至ります．JTFでは運営委員に従事するだけでなく，私の研究を発表させて頂きますので，よろしくお願い致します．
+- name: 土屋 陽介
+  avatar_url: assets/img/white.png
+  body: バーガーキングの生まれ変わり。当日はさながら自国軍を操る司令塔として采配を振います。
+- name: Junich Hirose
+  avatar_url: assets/img/white.png
+  body: "クリエイティブディレクター/アートディレクター/JAGDA正会員。 デザイン、WEB、ゲーム、デジタルサイネージ業界などを経て、現在では企業ブランドコンサルや、枠にとらわれない独自の発想で企画アイデアを創造し、問題点の解決やビジネスの創出に取り組んでいる。DTP、WEB、アプリケーション、スマホアプリ、CI・VI、UI、空間デザイン、映像、3D・VR、デジタルサイネージなど、表現媒体を選ばない創造性が特徴。現在では主に、VRのソリューション開発やそれに関わるビジネス開発に取り組んでいる。<a href=\"http://www.360tsz.com\">http://www.360tsz.com</a>"
 - name: 藤崎　正範
   avatar_url: https://pbs.twimg.com/profile_images/433560192588853248/PCHpGM2o.png
   body: 1978年生まれ、福岡県北九州市出身、電気通信大学卒業。2005年4月に株式会社ハートビーツを設立、代表取締役に就任。インフラエンジニアとして各種Webシステムのインフラ運用に携わる。2014年7月に株式会社ウォルティを設立、代表取締役に就任。2013年のJTF立ち上げ時から毎年、JTF運営委員会に参画。主にチケットサイト管理、セッションのアレンジ、議事進行などを担当。トラブルシューティング・チューニングが大好き。趣味は将棋。
@@ -19,18 +40,13 @@ members:
 - name: 山崎 泰宏
   avatar_url: http://www.gravatar.com/avatar/9df9bea57ccabad4aa1ee7d825f2a0b5
   body: 寿司と鰻を食べていたら、何故かここに参加することになり、プログラムをまとめたり、Tシャツの絵を描いたり、Swiftの無茶振りセッションをやらされたり、Unityの発表もしましたけど、本当はJTFの金庫番を務めております。普段は株式会社あくしゅ(http://axsh.jp)の代表をやっています。経営とか苦手なので、誰か助けてください。
+- name: 油谷 実紀
+  avatar_url: assets/img/white.png
+  body: 部下が沢山いるらしい。
 - name: 渡邉 隼人
   avatar_url: assets/img/members/watanabe.jpg
   body: いわゆるSIerとしてOSSの布教活動に努めていたところ、気づけばZabbixJapanとして本体にコントリビュートされていました。OSSに限らず面白いものを伝える事に生きがいを感じ、JTFでは広報として活動させて頂いてます。JTFというお祭りを楽しく過ごしていただけるよう精進しておりますのでどうぞよろしくお願いします。
-- name: 千代 浩之
-  avatar_url: assets/img/chishiro.png
-  body: 2016年4月から産業技術大学院大学で助教として働いております．2012年3月に慶應義塾大学大学院理工学研究科後期博士課程を修了し，日本学術振興会特別研究員（PD），ノースカロライナ大学チャペルヒル校訪問研究員，慶應義塾大学理工学部情報工学科助教として働いた後，現在に至ります．JTFでは運営委員に従事するだけでなく，私の研究を発表させて頂きますので，よろしくお願い致します．
-- name: 沖田 慎平
-  avatar_url: assets/img/okt.png
-  body: エンジニア兼声出し役をやっています。
-- name: 荒井 康宏
-  avatar_url: assets/img/arai.png
-  body: クラウド利用促進機構(CUPA)で、さまざまな活動を通して企業と個人のクラウドの利用促進と普及に努めており、クラウドサービスプロバイダへのサービスコンサルティング・技術支援も行っている。 AWS Users Group Japan、日本OpenStackユーザ会、日本CloudStackユーザ会、オープンクラウドキャンパス/オープンクラウド実証実験タスクフォース、MSP協会の設立・活動の支援を行っている。
-- name: 下雅意 美紀
-  avatar_url: assets/img/shimogai.png
-  body: TISが提供するOSSサポートサービスにおいてOSSのサポート業務に従事。日本PostgreSQLユーザ会（JPUG），PostgreSQLエンタープライズコンソーシアム（PGECons）といったPostgreSQL関連のコミュニティで積極的に活動しており，2014年度のJPUG感謝賞を受賞。そんなこんなでSIer3年目も頑張ります。
+- name: Nrfm Watanabe
+  avatar_url: assets/img/white.png
+  body: 当日はキング土屋をサポートする予定だが、来年は下克上をします。
+  
