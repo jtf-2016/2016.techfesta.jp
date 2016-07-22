@@ -107,6 +107,19 @@ a.navbar-brand:hover{
   line-height: 40px;
   z-index:15;
 }
+.btn-award{
+  background: #002f7b;
+  font-weight: bold;
+  font-size: 14px;
+  color:#fff;
+  border-radius:0px;
+  border-color: #002f7b;
+  padding: 0px;
+  width: 320px;
+  height: 40px;
+  line-height: 40px;
+  z-index:15;
+}
 /* top page */
 /* caroucel */
 .carousel-indicators {
