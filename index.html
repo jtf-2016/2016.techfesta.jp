@@ -1,0 +1,680 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="JTF2016 IoT AI 機械学習 クラウド最新事情 コンテナ技術 DevOps" name="Keywords">
+    <meta content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp" name="description">
+    <meta content="JTF2016 Member" name="author">
+    <meta content="JTF2016, Sunday, July 24 at 10:00. at AIIT." property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp" property="og:description">
+    <meta content="http://2016.techfesta.jp/" property="og:url">
+    <meta content="http://2016.techfesta.jp/assets/img/topback_min.png" property="og:image">
+    <meta content="JTF2016" property="og:site_name">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@techfesta">
+    <meta name="twitter:creator" content="@techfesta">
+    <meta name="twitter:title" content="JTF2016, Sunday, July 24 at 10:00. at AIIT.">
+    <meta name="twitter:description" content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp">
+    <meta name="twitter:image" content="http://2016.techfesta.jp/assets/img/topback_min.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>July Tech Festa 2016 - JTF2016</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+  <body class="">
+    <nav class="navbar navbar-default jtfnav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="assets/img/logo.png" class="jtflogo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav jtfnavlist navbar-right">
+        <li><a href="/">ホーム</a></li>
+<!--        <li>
+          <a href="http://jtf2016.peatix.com/" target="_blank">
+            チケット購入
+          </a>
+        </li>
+-->
+        <li><a href="speaker.html">登壇者一覧</a></li>
+        <li><a href="program.html">タイムテーブル</a></li>
+        <li><a href="englishcafe.html">English Cafe</a></li>
+        <li><a href="sponsor.html">スポンサー紹介</a></li>
+        <li><a href="members.html">実行委員会</a></li>
+        <li>
+          <a href="https://www.facebook.com/techfesta/" target="_blank">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+            <span class="mobile_show">&ensp;facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/techfesta" target="_blank">
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="mobile_show">&ensp;twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6&appId=1593084884313156";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div class="home" id="home">
+  <div class="highlight_news"><a href="http://goo.gl/forms/6Uyswnm8mwQ8nnKJ2">ベスト参加レポート賞のご応募はこちら！</a></div>
+  <div class="carouselback">
+    <div class="carouselback-black">
+      <div class="container">
+        <div id="carousel-jtf-generic" class="carousel slide" data-ride="carousel">
+          <div class="overcaroucel">
+            <div><img src="assets/img/toplogo.png"></div>
+<!--            <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default btn-ticket topTicketBtn">
+              <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
+            </a>
+-->          </div>
+          <ol class="carousel-indicators jtf-indicator">
+            <li data-target="#carousel-jtf-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-jtf-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-jtf-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-jtf-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-jtf-generic" data-slide-to="4"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="assets/img/topback.png" alt="jtf-top1">
+            </div>
+            <div class="item">
+              <img src="assets/img/topback_1.jpg" alt="jtf-top2">
+            </div>
+            <div class="item">
+              <img src="assets/img/topback_2.jpg" alt="jtf-top3">
+            </div>
+            <div class="item">
+              <img src="assets/img/topback_3.jpg" alt="jtf-top4">
+            </div>
+            <div class="item">
+              <img src="assets/img/topback_4.jpg" alt="jtf-top5">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-jtf-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-jtf-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="about">
+    <div class="section-1">
+      <div class="container">
+        <div class="section-cell inner-about">
+          <div class="section-cell-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                  <img src="assets/img/about.png" alt="about" class="sectioncapt-img">
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <h1>開催趣旨</h1>
+                  <p>クラウド環境が技術者のアジリティを高めているのを象徴するかのように、昨今は関連する新しいツールが毎日のように話題になっています。こうした激変し続けるITトレンドの中から、技術者は真に自身の業務を変革するものを探し続けており、情報交換と人脈構築の場が求められています。これらの意欲と活動に応じるため、ITに係るエンジニアの知的興味を満足するための夏の祭典として「IoTxAIxインフラ時代の最新技術、やってみたSP ―俺の屍を超えていけ―」をスローガンに当イベントを開催いたします。</p>
+                  <h1>開催内容</h1>
+                  <p>July Tech Festa 2016 「IoTxAIxインフラ時代の最新技術、やってみたSP — 俺の屍を越えて行け —」</p>
+                  <p>2016/07/24 (日) 10:00 - 18:00 JST</p>
+                  <p>東京都品川区東大井1-10-40 産業技術大学院大学(公立大学法人 首都大学東京)</p>
+                  <h1>過去開催</h1>
+                  <ul class="nav nav-pills nav-justified">
+                    <li role="presentation">
+                      <a href="http://2015.techfesta.jp/" target="_blank">2015年</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="http://2014.techfesta.jp/" target="_blank">2014年</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="http://2013.techfesta.jp/" target="_blank">2013年</a>
+                    </li>
+                  </ul>
+<!--                  <ul class="nav nav-pills">
+                    <li role="presentation">
+                      <a href="http://jtf2016.peatix.com/" target="_blank"><img src="assets/img/button_off.png" alt="peatix" class="jtf-ticket-img"></a>
+                    </li>
+                  </ul>
+-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="theme">
+    <div class="section-2">
+      <div class="container">
+        <div class="section-cell inner-theme">
+          <div class="section-cell-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+                  <img src="assets/img/theme.png" alt="theme" class="sectioncapt-img">
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <h1>July Tech Festaのテーマ</h1>
+                  <p>IoT、AI、インフラの変化は近年ますます加速しています。変化のためにいろんな人が試行錯誤して新しい技術を生み出したり業務で活用するために検証したりしています。そんないろんな成功談・失敗談を共有していきたいという強い思いから今回のテーマとなりました。より良い開催となるためには皆さんの努力の結晶を是非共有していただきたいと思っています。そしてこれからどうなっていくのか次の１年が見えてくるような、そんなJulyTechFestaにしたいと思っています。皆様のご参加お待ちしています！！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="news">
+    <div class="section-1">
+      <div class="container">
+        <div class="section-cell inner-news">
+          <div class="section-cell-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <img src="assets/img/news.png" alt="news" class="sectioncapt-img">
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                  <h1>お知らせ</h1>
+                  <!-- blog part begin-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="postlist">
+                        <div class="panel">
+                          <div class="panel-heading">
+                              <div class="row">
+                                <div class="col-sm-6 col-xs-9">
+                                  <h3 class="pull-left">登壇者公開!</h3>
+                                </div>
+                                <div class="col-sm-6 col-xs-3">
+                                  <h4 class="pull-right">
+                                    <small>2016/06/08</small>
+                                  </h4>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="panel-body">
+                            講演者から情報を頂き次第、随時アップデートしていきます。<a href=\"https://www.facebook.com/techfesta/\">Facebook</a>や<a href=\"https://twitter.com/techfesta\">Twitter</a>で発信していきますので、今後も引き続きアップデート情報をお待ちください。
+                          </div>
+                          <div class="panel-footer">
+                            <span class="label label-default label-red">Speaker</span>
+                          </div>
+                        </div>
+                        <div class="panel">
+                          <div class="panel-heading">
+                              <div class="row">
+                                <div class="col-sm-6 col-xs-9">
+                                  <h3 class="pull-left">CFP 募集</h3>
+                                </div>
+                                <div class="col-sm-6 col-xs-3">
+                                  <h4 class="pull-right">
+                                    <small>2016/05/03</small>
+                                  </h4>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="panel-body">
+                            CPFの募集開始しました。5/10 締め切りです!
+                          </div>
+                          <div class="panel-footer">
+                            <span class="label label-default label-red">CFP</span>
+                            <span class="label label-default label-red">Wanted</span>
+                          </div>
+                        </div>
+                        <div class="panel">
+                          <div class="panel-heading">
+                              <div class="row">
+                                <div class="col-sm-6 col-xs-9">
+                                  <h3 class="pull-left">サイト開設</h3>
+                                </div>
+                                <div class="col-sm-6 col-xs-3">
+                                  <h4 class="pull-right">
+                                    <small>2016/05/01</small>
+                                  </h4>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="panel-body">
+                            JTF2016 サイト開設しました
+                          </div>
+                          <div class="panel-footer">
+                            <span class="label label-default label-red">News</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- blog part end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="sns">
+    <div class="section-2">
+      <div class="container">
+        <div class="section-cell inner-theme">
+          <div class="section-cell-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+                  <img src="assets/img/sns.png" alt="sns" class="sectioncapt-img">
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="fb-page" data-href="https://www.facebook.com/techfesta/" data-tabs="timeline" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+                        <div class="fb-xfbml-parse-ignore">
+                          <blockquote cite="https://www.facebook.com/techfesta/">
+                            <a href="https://www.facebook.com/techfesta/">JTF: July Tech Festa</a>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <a class="twitter-timeline" href="https://twitter.com/techfesta" data-widget-id="727780438526205952">@techfestaさんのツイート</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="keynote">
+    <div class="section-1">
+      <div class="container">
+        <div class="section-cell inner-keynote">
+          <div class="section-cell-inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                  <img src="assets/img/keynote.png" alt="about" class="sectioncapt-img">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                      <img src="assets/img/keytalker.png" alt="小笠原 治（おがさはら・おさむ）" class="keynote-thumb">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>小笠原 治（おがさはら・おさむ）</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <p>株式会社ABBALab株式会社nomad代表取締役、さくらインターネット フェロー、DMM.make エヴェンジェリスト、京都造形芸術大学 顧問、awabarオーナー、fabbitオーナー</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <h1>基調講演</h1>
+                  <p>「現実が正解だ！ やってみんとわからんことだらけ。 さくらのIoT企画・開発365日の軌跡。そして、次の365日へ。」</p>
+                  <p>さくらインターネットでIoTのプラットフォームを作ろうと企画を持ち込んだのが2015年7月。出戻りの初老プロデューサーがバズワード扱いのテーマで社内外の協力者を獲得する無理ゲーから始まり、運命のエンジニアとの出会いと別れ、奇跡的なビジネス開発ストーリー、予測の付かない仕様変更、まだ鳴り止まない爆音のデスマーチ、トップの決断、ニューリーダーの出現…。僕らはこの1年でなにを乗り越え、どこへ向かうのか？"</p>
+                  <h1>講師詳細</h1>
+                  <p>1990年、京都市の建築設計事務所に入社。98年より、さくらインターネット株式会社の共同ファウンダーを経て、ネット系事業会社の代表を歴任。2011年、株式会社nomadを設立し「Open x Share x Join」をキーワードにシード投資とシェアスペースの運営などスタートアップ支援事業を軸に活動。13年、ハードウェア・スタートアップ向け投資プログラムを法人化し株式会社ABBALabとしてプロトタイピングに特化した投資事業を開始。同年、DMM.makeのプロデューサーとしてDMM.make 3Dプリントを立上げ、14年にはDMM.make AKIBAを設立。15年８月からエヴェンジェリスト。同年、さくらインターネットにフェローとして復帰。ほか、経済産業省新ものづくり研究会委員及びフロンティアメーカーズ育成事業プロジェクトマネージャー、NEDO TCP事業委員、北九州ソーシャルイノベーション機能構築会議委員、経済産業省主催の研究会「メイカーズ2.0研究会」委員、福岡市スタートアップ・サポーターズ理事などを歴任。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="access">
+    <div class="section-3">
+      <div class="container">
+        <div class="section-cell aboid-padding-b">
+          <div class="section-cell-inner inner-access">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+                  <img src="assets/img/access.png" alt="access" class="sectioncapt-img">
+                  <div class="topmap">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8404452756768!2d139.74691811525676!3d35.60700218021175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a75bdbd28f7%3A0x84ee382f1580be53!2z55Sj5qWt5oqA6KGT5aSn5a2m6Zmi5aSn5a2m!5e0!3m2!1sja!2sjp!4v1461569085114"
+                    width="86%"
+                    height="240"
+                    frameborder="0"
+                    style="border:0"
+                    allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                  <div class="row">
+                    <h2>産業技術大学院大学(公立大学法人&nbsp;首都大学東京)東京都品川区東大井1-10-40</h2>
+                    <p>交通手段は電車・バスの２通りがあります。<br/>
+                      ▶ りんかい線の「品川シーサイド駅」Ｂ出口 から徒歩4分<br/>
+                      ▶ 都営バスの「都立産業技術高専品川キャンパス前」(直行01, 深夜07, 品91, 品川93, 井92)から徒歩3分</p>
+                      <p>
+                        都営バスによるアクセスは以下の経路をご確認下さい。<br/>
+                        ▶ <a href="http://www.navitime.co.jp/diagram/00017728_00004128_t4" class="linkwhite">目黒駅前からの経路</a><br/>
+                        ▶ <a href="http://www.navitime.co.jp/diagram/00016925_00004128_t4" class="linkwhite">品川駅高輪口からの経路</a><br/>
+                        ▶ <a href="http://www.navitime.co.jp/diagram/00016924_00004126_t4" class="linkwhite">品川駅港南口からの経路</a><br/>
+                        ▶ <a href="http://tobus.jp/blsys/navi?LCD=&VCD=csstopmap&ECD=reload&stopkey=947&polekey=2275" class="linkwhite">バス停地図はこちら</a>
+                      </p>
+
+                      <p>
+                        受付は産業技術大学院大学 正面玄関(2F 230ホール・A教室の前)で9時から行います。<br/>駅及びバス停からは若干遠回りですが、地図を参考にグランド側からご来場ください。
+                        基調講演開始(10時予定)の直前には混雑が予想されますので、早めに受付していただけますようご協力お願いします。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="after">
+      <div class="section-4">
+        <div class="container">
+          <div class="section-cell-free">
+            <div class="section-cell-inner-free">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <img src="assets/img/after.png"></img>
+                </div>
+                <div class="col-md-12 text-center">
+                  <h3 style="color: white;"><a href="http://www.hearton.co.jp/higashishinagawa/access/"  target="_blank" style="color: white;">ハートンホテル東品川2F&nbsp;REGINA前ホール</a>&nbsp;東京都品川区東品川4-13−27</h3>
+                  <h3 style="color: white;">開催時間&nbsp;19:00-21:00</h3>
+                  <p style="color: white;">参加証として、必ず受付時にお配りする名札をご持参下さい。</p>
+                  <h3 style="color: white;">今年も豪華な景品が！！！！</h3>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="ggmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3243.772969680633!2d139.74701166528646!3d35.60866643021121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x60188a75bdbd28f7%3A0x84ee382f1580be53!2z5p2x5Lqs6YO95ZOB5bed5Yy65p2x5aSn5LqV77yR5LiB55uu77yR77yQ4oiS77yU77yQIOeUo-alreaKgOihk-Wkp-WtpumZouWkp-Wtpg!3m2!1d35.6070022!2d139.7491068!4m5!1s0x60188a74850a02b3%3A0x95e8cbd9411edbea!2z5p2x5Lqs6YO95ZOB5bed5Yy65p2x5ZOB5bed77yU5LiB55uuIOODj-ODvOODiOODs-ODm-ODhuODq-adseWTgeW3nSBSZXN0YXVyYW50IFJFR0lOQQ!3m2!1d35.610304299999996!2d139.75035699999998!5e0!3m2!1sja!2sjp!4v1467810126173" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="sponsor">
+      <div class="section-4">
+        <div class="container">
+          <div class="section-cell-free">
+            <div class="section-cell-inner-free">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <img src="assets/img/sponsor.png" alt="sponsor" class="sectioncapt-sponsor-img">
+                  <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 prise-title mithril">
+                    <img src="assets/img/mithril.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.worksap.co.jp/">
+                        <img src="assets/img/sponsor/wap.png" alt="株式会社ワークスアプリケーションズ" class="sponsor-img sponsor-size-mithril"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 prise-title platinum">
+                    <img src="assets/img/platinum.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="https://www.tis.co.jp/">
+                        <img src="assets/img/sponsor/tis.png" alt="TIS株式会社" class="sponsor-img sponsor-size-platinum"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://labo.dmm.com/">
+                        <img src="assets/img/sponsor/dmm-labo.png" alt="株式会社DMM.comラボ" class="sponsor-img sponsor-size-platinum"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title gold">
+                    <img src="assets/img/gold.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.idcf.jp/cloud/iot/?cid=jtf2016">
+                        <img src="assets/img/sponsor/idcf.png" alt="株式会社IDCフロンティア" class="sponsor-img sponsor-size-gold" style="width:60%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://axsh.jp">
+                        <img src="assets/img/sponsor/axsh.png" alt="株式会社あくしゅ" class="sponsor-img sponsor-size-gold" style="width:50%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://site.wantedly.com/">
+                        <img src="assets/img/sponsor/wantedly.png" alt="ウォンテッドリー株式会社" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://aiit.ac.jp/">
+                        <img src="assets/img/sponsor/emp.png" alt="株式会社EMP" class="sponsor-img sponsor-size-gold" style="width:50%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.creationline.com/">
+                        <img src="assets/img/sponsor/creationline.png" alt="クリエーションライン株式会社" class="sponsor-img sponsor-size-gold" style="width:60%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="https://www.sakura.ad.jp/corporate/">
+                        <img src="assets/img/sponsor/sakura.png" alt="Sakura Internet" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="https://nhn-techorus.com/">
+                        <img src="assets/img/sponsor/nhn-techorus.png" alt="NHN テコラス株式会社" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://heartbeats.jp/">
+                        <img src="assets/img/sponsor/hb.svg" alt="株式会社ハートビーツ" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://hatenacorp.jp/">
+                        <img src="assets/img/sponsor/hatena-logotype.svg" alt="株式会社はてな" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.nifty.co.jp/">
+                        <img src="assets/img/sponsor/nifty.png" alt="Nifty" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.nutanix.jp">
+                        <img src="assets/img/sponsor/nutanix.png" alt="ニュータニックス　ジャパン　合同会社" class="sponsor-img sponsor-size-gold"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title silver">
+                    <img src="assets/img/silver.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://tintri.co.jp">
+                        <img src="assets/img/sponsor/tintri.png" alt="ティントリジャパン合同会社" class="sponsor-img sponsor-size-silver" style="width:50%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.blueship.co.jp">
+                        <img src="assets/img/sponsor/blueship.png" alt="株式会社Blueship" class="sponsor-img sponsor-size-silver" style="width:40%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.oisix.co.jp/">
+                        <img src="assets/img/sponsor/oisix.png" alt="オイシックス株式会社" class="sponsor-img sponsor-size-mono" style="width:50%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="https://www.nes-global.com/">
+                        <img src="assets/img/sponsor/nes-global.png" alt="ネスグローバル" class="sponsor-img sponsor-size-mono" style="width:35%" >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title backsupport">
+                    <img src="assets/img/backsupport.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="https://www.owasp.org/index.php/Japan">
+                        <img src="assets/img/sponsor/owasp.jpg" alt="OWASP Japan" class="sponsor-img sponsor-size-backsupport"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://mspj.jp/">
+                        <img src="assets/img/sponsor/mspj.svg" alt="日本MSP協会" class="sponsor-img sponsor-size-backsupport"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title cohost">
+                    <img src="assets/img/cohost.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://aiit.ac.jp/">
+                        <img src="assets/img/sponsor/aiit.png" alt="産業技術大学院大学" class="sponsor-img sponsor-size-cohost"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.cloud.or.jp/">
+                        <img src="assets/img/sponsor/cupa.svg" alt="クラウド利用促進機構" class="sponsor-img sponsor-size-cohost"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2  col-sm-12 col-xs-12 prise-title medias">
+                    <img src="assets/img/media.png" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.atmarkit.co.jp/">
+                        <img src="assets/img/sponsor/atmarkit.png" alt="atmarkIT" class="sponsor-img sponsor-size-medias"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="https://codezine.jp/">
+                        <img src="assets/img/sponsor/codezine.png" alt="CodeZine" class="sponsor-img sponsor-size-medias"  >
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-4">
+                      <a class="linkwhite" href="http://www.publickey1.jp/">
+                        <img src="assets/img/sponsor/publickey.jpeg" alt="Publickey" class="sponsor-img sponsor-size-medias"  >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- welcome -->
+
+    <footer class="site-footer">
+  <div class="footerback">
+<!--    <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default" id="btn-ticket-footer">
+      <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
+    </a>
+-->
+    <div class="container">
+      <div class="row text-center">
+        <p>
+          <img src="assets/img/footer.png" alt="">
+        </p>
+        <small class="copyright">©&ensp;July&ensp;Tech&ensp;Festa&ensp;2016実行委員会</small>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="mailto:info@techfesta.jp?subject=techfestaへのお問い合わせ">info@techfesta.jp</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+</html>

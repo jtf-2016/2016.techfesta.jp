@@ -1,0 +1,1626 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="JTF2016 IoT AI 機械学習 クラウド最新事情 コンテナ技術 DevOps" name="Keywords">
+    <meta content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp" name="description">
+    <meta content="JTF2016 Member" name="author">
+    <meta content="JTF2016, Sunday, July 24 at 10:00. at AIIT." property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp" property="og:description">
+    <meta content="http://2016.techfesta.jp/" property="og:url">
+    <meta content="http://2016.techfesta.jp/assets/img/topback_min.png" property="og:image">
+    <meta content="JTF2016" property="og:site_name">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@techfesta">
+    <meta name="twitter:creator" content="@techfesta">
+    <meta name="twitter:title" content="JTF2016, Sunday, July 24 at 10:00. at AIIT.">
+    <meta name="twitter:description" content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp">
+    <meta name="twitter:image" content="http://2016.techfesta.jp/assets/img/topback_min.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>July Tech Festa 2016 - JTF2016</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+  <body class="">
+    <nav class="navbar navbar-default jtfnav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="assets/img/logo.png" class="jtflogo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav jtfnavlist navbar-right">
+        <li><a href="/">ホーム</a></li>
+<!--        <li>
+          <a href="http://jtf2016.peatix.com/" target="_blank">
+            チケット購入
+          </a>
+        </li>
+-->
+        <li><a href="speaker.html">登壇者一覧</a></li>
+        <li><a href="program.html">タイムテーブル</a></li>
+        <li><a href="englishcafe.html">English Cafe</a></li>
+        <li><a href="sponsor.html">スポンサー紹介</a></li>
+        <li><a href="members.html">実行委員会</a></li>
+        <li>
+          <a href="https://www.facebook.com/techfesta/" target="_blank">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+            <span class="mobile_show">&ensp;facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/techfesta" target="_blank">
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="mobile_show">&ensp;twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <div class="headback">
+  <div class="container">
+    <div class="headtopcontents speaker">
+      <img src="assets/img/speaker/speaker-title.png" alt="">
+    </div>
+  </div>
+</div>
+<div class="section-view">
+  <div class="section-backview colorview1"></div>
+  <div class="section-backview colorview2"></div>
+  <div class="section-backview colorview3"></div>
+  <div class="container">
+    <div class="backwhite-inner">
+      <!--
+<div class="col-md-12 ticketbar">
+  <div class="pull-right">
+    <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default btn-ticket">
+      <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
+    </a>
+  </div>
+</div>
+-->
+
+      <div class="row">
+        <div class="col-md-12 box-section">
+          <h1>July Tech Festa 2016 登壇者一覧</h1>
+          <p>今年の登壇者一覧です。講演者から情報を頂き次第、随時アップデートしていきます。<a href="https://www.facebook.com/techfesta/">Facebook</a>や<a href="https://twitter.com/techfesta">Twitter</a>で発信していきますので、今後も引き続きアップデート情報をフォローしてください。</p>
+        </div>
+        <div class="col-md-12 box-section">
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S00">
+                    <hr/>
+                    <h3>現実が正解だ！ やってみんとわからんことだらけ。 さくらのIoT企画・開発365日の軌跡。そして、次の365日へ。 <a href="#S00"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E7%8F%BE%E5%AE%9F%E3%81%8C%E6%AD%A3%E8%A7%A3%E3%81%A0%EF%BC%81%20%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%93%E3%81%A8%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E3%81%93%E3%81%A8%E3%81%A0%E3%82%89%E3%81%91%E3%80%82%20%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEIoT%E4%BC%81%E7%94%BB%E3%83%BB%E9%96%8B%E7%99%BA365%E6%97%A5%E3%81%AE%E8%BB%8C%E8%B7%A1%E3%80%82%E3%81%9D%E3%81%97%E3%81%A6%E3%80%81%E6%AC%A1%E3%81%AE365%E6%97%A5%E3%81%B8%E3%80%82%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S00" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S00&amp;t=%E7%8F%BE%E5%AE%9F%E3%81%8C%E6%AD%A3%E8%A7%A3%E3%81%A0%EF%BC%81%20%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%93%E3%81%A8%E3%82%8F%E3%81%8B%E3%82%89%E3%82%93%E3%81%93%E3%81%A8%E3%81%A0%E3%82%89%E3%81%91%E3%80%82%20%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEIoT%E4%BC%81%E7%94%BB%E3%83%BB%E9%96%8B%E7%99%BA365%E6%97%A5%E3%81%AE%E8%BB%8C%E8%B7%A1%E3%80%82%E3%81%9D%E3%81%97%E3%81%A6%E3%80%81%E6%AC%A1%E3%81%AE365%E6%97%A5%E3%81%B8%E3%80%82%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/ogasahara.jpg" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>小笠原 治 (おがさはら・おさむ)</h2>
+                      <p>
+                        <small>株式会社ABBALab</small><br/>
+                        <small>株式会社nomad代表取締役</small><br/>
+                        <small>さくらインターネット フェロー</small><br/>
+                        <small>DMM.make エヴェンジェリスト</small><br/>
+                        <small>京都造形芸術大学 顧問</small><br/>
+                        <small>awabarオーナー</small><br/>
+                        <small>fabbitオーナー</small><br/>
+                        <ul class="userprofile">
+                          <li>1990年、京都市の建築設計事務所に入社。98年より、さくらインターネット株式会社の共同ファウンダーを経て、ネット系事業会社の代表を歴任。2011年、株式会社nomadを設立し「Open x Share x Join」をキーワードにシード投資とシェアスペースの運営などスタートアップ支援事業を軸に活動。13年、ハードウェア・スタートアップ向け投資プログラムを法人化し株式会社ABBALabとしてプロトタイピングに特化した投資事業を開始。同年、DMM.makeのプロデューサーとしてDMM.make 3Dプリントを立上げ、14年にはDMM.make AKIBAを設立。15年８月からエヴェンジェリスト。同年、さくらインターネットにフェローとして復帰。ほか、経済産業省新ものづくり研究会委員及びフロンティアメーカーズ育成事業プロジェクトマネージャー、NEDO TCP事業委員、北九州ソーシャルイノベーション機能構築会議委員、経済産業省主催の研究会「メイカーズ2.0研究会」委員、福岡市スタートアップ・サポーターズ理事などを歴任。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>さくらインターネットでIoTのプラットフォームを作ろうと企画を持ち込んだのが2015年7月。出戻りの初老プロデューサーがバズワード扱いのテーマで社内外の協力者を獲得する無理ゲーから始まり、運命のエンジニアとの出会いと別れ、奇跡的なビジネス開発ストーリー、予測の付かない仕様変更、まだ鳴り止まない爆音のデスマーチ、トップの決断、ニューリーダーの出現…。僕らはこの1年でなにを乗り越え、どこへ向かうのか？</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S01">
+                    <hr/>
+                    <h3>便利に使えるプライベートオンラインストレージ　ownCloudのあれこれと、一歩進んだチューニングを大公開！ <a href="#S01"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%BE%BF%E5%88%A9%E3%81%AB%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%80%80ownCloud%E3%81%AE%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C%E3%81%A8%E3%80%81%E4%B8%80%E6%AD%A9%E9%80%B2%E3%82%93%E3%81%A0%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%92%E5%A4%A7%E5%85%AC%E9%96%8B%EF%BC%81%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S01" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S01&amp;t=%E4%BE%BF%E5%88%A9%E3%81%AB%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%97%E3%83%A9%E3%82%A4%E3%83%99%E3%83%BC%E3%83%88%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E3%80%80ownCloud%E3%81%AE%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C%E3%81%A8%E3%80%81%E4%B8%80%E6%AD%A9%E9%80%B2%E3%82%93%E3%81%A0%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%92%E5%A4%A7%E5%85%AC%E9%96%8B%EF%BC%81%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/tetsrow.yanno.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>矢野哲朗</h2>
+                          <a href="https://www.facebook.com/tetsrow.yanno" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社スタイルズ ownCloudエバンジェリスト</small><br/>
+                        <ul class="userprofile">
+                          <li>もとは、ネットワーク屋だが、サーバーチューニング等をやっているうちになんだか変なところまで流れついてしまった。ownCloud で安全で自由なファイルのやり取りができるように目指している。データが自在に飛び回れる世界がきたらいいなあ。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>ownCloudをご存知でしょうか？会社でDropBoxを使いたい、でも使わせてくれない…。ownCloudは、そんなあなたの悩みを解決する、プライベートなオンラインストレージです。このセッションでは、ownCloudの便利さや使って嬉しいポイント、進化の歴史、快適にownCloudを使うためのチューニングポイントに加え、昨今話題になりがちなセキュリティーをアップするためのTipsも公開します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S02">
+                    <hr/>
+                    <h3>今話題のCognitive/AI系サービスを徹底分析！あなたに最適な選択を。 <a href="#S02"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%BB%8A%E8%A9%B1%E9%A1%8C%E3%81%AECognitive/AI%E7%B3%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E5%BE%B9%E5%BA%95%E5%88%86%E6%9E%90%EF%BC%81%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E6%9C%80%E9%81%A9%E3%81%AA%E9%81%B8%E6%8A%9E%E3%82%92%E3%80%82%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S02" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S02&amp;t=%E4%BB%8A%E8%A9%B1%E9%A1%8C%E3%81%AECognitive/AI%E7%B3%BB%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E5%BE%B9%E5%BA%95%E5%88%86%E6%9E%90%EF%BC%81%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E6%9C%80%E9%81%A9%E3%81%AA%E9%81%B8%E6%8A%9E%E3%82%92%E3%80%82%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/harada_kazuki.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>原田一樹</h2>
+                          <a href="https://twitter.com/harada_kazuki" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/kazuki.harada.359" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>日本マイクロソフト株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>日本マイクロソフト中途入社2ヶ月目。前職は大手SIerに所属し、AWSやAzure、Bluemixなどのクラウド技術と、AIやIoTなどの新技術実証業務に従事。2016年5月までBluemixユーザー会「BMXUG」のコミュニテイリーダーを務め、「BluemixHack @XCITE Spring2015」、「IBM BluemixChallenge 2015」、「第1回Watson 日本語版ハッカソン」の3つのコンテストすべてで最優秀賞を受賞。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>AI技術やIoTが熱を帯び、熱狂的になってきた昨今、Amazon、Google、Microsoft、IBM…各社のCognitive/AI系のサービスが利用できる状況になりました。このセッションでは、似たようなものもあれば独自のものもある状況における各社サービス・APIの得手不得手を徹底的に比較整理し、それぞれの利点を最大限に引き出せる活用手法をご紹介します。 本セッションは、所属会社の見解ではなく、私個人の見解としてお話しします。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S03">
+                    <hr/>
+                    <h3>Microservices の効率化について熟考したところ、 12Factor App にたどり着いたというお話 <a href="#S03"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Microservices%20%E3%81%AE%E5%8A%B9%E7%8E%87%E5%8C%96%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%86%9F%E8%80%83%E3%81%97%E3%81%9F%E3%81%A8%E3%81%93%E3%82%8D%E3%80%81%2012Factor%20App%20%E3%81%AB%E3%81%9F%E3%81%A9%E3%82%8A%E7%9D%80%E3%81%84%E3%81%9F%E3%81%A8%E3%81%84%E3%81%86%E3%81%8A%E8%A9%B1%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S03" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S03&amp;t=Microservices%20%E3%81%AE%E5%8A%B9%E7%8E%87%E5%8C%96%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%86%9F%E8%80%83%E3%81%97%E3%81%9F%E3%81%A8%E3%81%93%E3%82%8D%E3%80%81%2012Factor%20App%20%E3%81%AB%E3%81%9F%E3%81%A9%E3%82%8A%E7%9D%80%E3%81%84%E3%81%9F%E3%81%A8%E3%81%84%E3%81%86%E3%81%8A%E8%A9%B1%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/sho-san.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>しょっさん</h2>
+                          <a href="https://twitter.com/sho7650" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/sho7650" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small></small><br/>
+                        <ul class="userprofile">
+                          <li>高専までの10年間でプログラムを書くことに飽きてしまい、ソフトウェアエンジニアの道をやめ、ハードウェアのエンジニアとして生き抜く事を決意して、外資 系IT企業へCEとして入社。2000年問題の終わった後、心機一転してCEからインフラエンジニアとしてオープン系サーバの運用から始まり、インフラの構築、設計を経て、ITアーキテクト兼コンサルタントとして、お客さまへ日々、ITシステム全般を売り込む、営業のようなエンジニアをしていました。が、突如、SaaS/PaaS の会社へ転職し、プラットフォームのエンジニアとして開発寄りのお仕事に従事するようになりました。家では四人の娘と一人の妻に囲まれ、ハーレム気分で暮らしています。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>インフラのアーキテクチャ側面での Microservices と、それを実現するために必要なこととして「12Factor App」が有効ではないかという話です。Heroicで培った開発経験を基に起された12の要素、SaaSを作るうえでいかに効率的に立ち上げを行うか、それが「12 Factor App」です。参加してくださった方々へ方法論を含めわかりやすくお伝えできればと思います。すこしアプリよりな側面がありますが、O'REILLY から発刊されたマイクロサービスアーキテクチャの内容をうけて、JTF2015 からのアップデートとなります。昨年の一部内容を封印してMicroservices に寄せて話しますので、皆様ご期待ください。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S04">
+                    <hr/>
+                    <h3>「寝ている間に儲かる」、RT-Seedが実現する自動売買の未来 <a href="#S04"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%80%8C%E5%AF%9D%E3%81%A6%E3%81%84%E3%82%8B%E9%96%93%E3%81%AB%E5%84%B2%E3%81%8B%E3%82%8B%E3%80%8D%E3%80%81RT-Seed%E3%81%8C%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E8%87%AA%E5%8B%95%E5%A3%B2%E8%B2%B7%E3%81%AE%E6%9C%AA%E6%9D%A5%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S04" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S04&amp;t=%E3%80%8C%E5%AF%9D%E3%81%A6%E3%81%84%E3%82%8B%E9%96%93%E3%81%AB%E5%84%B2%E3%81%8B%E3%82%8B%E3%80%8D%E3%80%81RT-Seed%E3%81%8C%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E8%87%AA%E5%8B%95%E5%A3%B2%E8%B2%B7%E3%81%AE%E6%9C%AA%E6%9D%A5%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/chishiro.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>千代浩之</h2>
+                      <p>
+                        <small>産業技術大学院大学 産業技術研究科 情報アーキテクチャ専攻 助教</small><br/>
+                        <ul class="userprofile">
+                          <li>2008年慶應義塾大学理工学部情報工学科卒業．2012年同大学大学院理工学研究科開放環境科学専攻博士課程修了．博士（工学）．2012年度から日本学術振興会特別研究員（PD），2014年度から慶應義塾大学理工学部情報工学科助教をへて，2016年度から現在まで産業技術大学院大学産業技術研究科情報アーキテクチャ専修助教．リアルタイムシステム，オペレーティングシステム，ミドルウェア，トレーディングシステムの研究に従事．</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>株・為替の自動売買システムは、あらかじめ決められた銘柄選択、売買のタイミング等のルールにしたがって自動的に売買を行う仕組みであり、米国株取引の約50%を占めているとも言われている。RT-Seedは、株・為替の自動売買を行うリアルタイムトレーディングのために設計・実装したミドルウェアである。RT-Seedは，時間制約を保証しつつ余ったCPU時間を利用して並列処理により計算精度を向上させる並列インプリサイス計算モデルを実装している。また、RT-Seedは為替の過去の価格から将来の価格を予測するテクニカル分析（例:ボリンジャー・バンド）をサポートしていることも特徴である。今回は自動売買の基礎からRT-Seedを使った自動売買の仕組みを取り上げる。今後、RT-Seedは、AI及びビッグデータ技術を活用し、国・企業等の財政状況の健全性を分析するファンダメンタル分析（例:金利，雇用）を実装する等し、容易に自動売買アルゴリズムを実装できるソフトウェアプラットフォームの実現を目指し、「寝ている間に儲かる」可能性に言及する。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S05">
+                    <hr/>
+                    <h3>情シス戦線異状アリ！？ 自作のパケットレコーダーで海外拠点のLANを自動監視してみた <a href="#S05"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E6%83%85%E3%82%B7%E3%82%B9%E6%88%A6%E7%B7%9A%E7%95%B0%E7%8A%B6%E3%82%A2%E3%83%AA%EF%BC%81%EF%BC%9F%20%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%91%E3%82%B1%E3%83%83%E3%83%88%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80%E3%83%BC%E3%81%A7%E6%B5%B7%E5%A4%96%E6%8B%A0%E7%82%B9%E3%81%AELAN%E3%82%92%E8%87%AA%E5%8B%95%E7%9B%A3%E8%A6%96%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S05" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S05&amp;t=%E6%83%85%E3%82%B7%E3%82%B9%E6%88%A6%E7%B7%9A%E7%95%B0%E7%8A%B6%E3%82%A2%E3%83%AA%EF%BC%81%EF%BC%9F%20%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%91%E3%82%B1%E3%83%83%E3%83%88%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80%E3%83%BC%E3%81%A7%E6%B5%B7%E5%A4%96%E6%8B%A0%E7%82%B9%E3%81%AELAN%E3%82%92%E8%87%AA%E5%8B%95%E7%9B%A3%E8%A6%96%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/Clorets8lack.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>@Clorets8lack</h2>
+                          <a href="https://twitter.com/Clorets8lack" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社デベルアップジャパン代表取締役</small><br/>
+                        <ul class="userprofile">
+                          <li>某商社に勤務する情シス担当者。10ヵ国、21拠点の海外インフラを孤独に運用して、気付いたら10年目に突入していた。ダイバーシティ要素満載のカオス環境をテクノロジーで改善するテスト中。</li>
+                          <li>株式会社デベルアップジャパン代表取締役としてユーザー、開発、営業、経営のマルチタスクに挑戦する意識高い系エンジニア。</li>
+                          <li>東京にある農業大学の醸造学科出身。お酒の作り方について話し出すと止まらない、とよく人に言われる。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>事業のグローバル化が叫ばれる昨今、海外に拠点を構える企業が増えています。しかし多くの場合、現地に専任のIT担当者を置くことはコストの観点から極めて難しいのが実情です。海外拠点を日本から遠隔サポートするケースでは、時差や言語の問題だけでなく、政府による通信規制や現地業者の品質、機材の違い等、日本とはあまりに異なる状況が地獄のように担当者を苦しめます。そんな中、精度よく迅速にトラブルを解決し、現地スタッフの信頼を得つつ、ガバナンスを確立するにはどうしたら良いでしょうか。本セッションではパケットキャプチャを用いて海外拠点のLANをリアルタイムに監視し、統計処理により異常検知する仕組みを開発･運用した体験談をお話します。遠隔地のインフラを高品質に保守するノウハウについて、実際に発生したインシデント事例をもとにご紹介したいと思います。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S06">
+                    <hr/>
+                    <h3>LinuxとWindowsが手を結んだ！これからのインフラエンジニアは"Bash on Ubuntu on Windows"をこう使え！ <a href="#S06"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Linux%E3%81%A8Windows%E3%81%8C%E6%89%8B%E3%82%92%E7%B5%90%E3%82%93%E3%81%A0%EF%BC%81%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AF%22Bash%20on%20Ubuntu%20on%20Windows%22%E3%82%92%E3%81%93%E3%81%86%E4%BD%BF%E3%81%88%EF%BC%81%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S06" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S06&amp;t=Linux%E3%81%A8Windows%E3%81%8C%E6%89%8B%E3%82%92%E7%B5%90%E3%82%93%E3%81%A0%EF%BC%81%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AF%22Bash%20on%20Ubuntu%20on%20Windows%22%E3%82%92%E3%81%93%E3%81%86%E4%BD%BF%E3%81%88%EF%BC%81%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/kuramochi.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>倉持健史</h2>
+                      <p>
+                        <small>TIS株式会社 OSS推進室</small><br/>
+                        <ul class="userprofile">
+                          <li>OSSを推進する傍ら10年先も使える技術をもてるようインフラ技術者育成にも従事。インフラ系全般＋若干のミドルウェアあたりまでを守備範囲に最近はOpenStack、Ansible、Docker、R/RStudioあたりを好んで多用。尊敬するエバンジェリストのみなさんをめざして日々精進。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Windows 10 Insider Previewにおいて、「Bash on Ubuntu on Windows」が可能になっています。一言で言えば、Windows上でLinuxが利用できるようになっているということです。これが何を意味するか、人によってそれぞれかもしれませんが、私は技術者という観点でいくつか広がりを認識してます。開発 / 保守 / 検証 / サービス提供 / 事務処理(技術者も時としてストレスフリーにはならないもの)これらをたった一つのOSだけで利用できるようになるでしょう。時間が許す限り、そんな広がりの幾つかをデモを交えながらお伝えします。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S07">
+                    <hr/>
+                    <h3>IoTデバイスEdisonクラスタでSDNをやって苦し^H^H楽しもう! OpenVNet航海日誌（仮） <a href="#S07"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=IoT%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9Edison%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%81%A7SDN%E3%82%92%E3%82%84%E3%81%A3%E3%81%A6%E8%8B%A6%E3%81%97%5EH%5EH%E6%A5%BD%E3%81%97%E3%82%82%E3%81%86!%20OpenVNet%E8%88%AA%E6%B5%B7%E6%97%A5%E8%AA%8C%EF%BC%88%E4%BB%AE%EF%BC%89%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S07" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S07&amp;t=IoT%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9Edison%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%81%A7SDN%E3%82%92%E3%82%84%E3%81%A3%E3%81%A6%E8%8B%A6%E3%81%97%5EH%5EH%E6%A5%BD%E3%81%97%E3%82%82%E3%81%86!%20OpenVNet%E8%88%AA%E6%B5%B7%E6%97%A5%E8%AA%8C%EF%BC%88%E4%BB%AE%EF%BC%89%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/yamazakiys.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>山崎泰宏</h2>
+                          <a href="https://twitter.com/sparklegate" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/yamazakiys" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社あくしゅ</small><br/>
+                        <ul class="userprofile">
+                          <li>寿司と鰻を食べていたら、何故かここに参加することになり、プログラムをまとめたり、Tシャツの絵を描いたり、Swiftの無茶振りセッションをやらされたり、Unityの発表もしましたけど、本当はJTFの金庫番を務めております。普段は株式会社あくしゅ(http://axsh.jp)の代表をやっています。経営とか苦手なので、誰か助けてください。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Edisonは、今話題のIoTにも使えるIntel CPUが乗った強力なワンボードコンピュータです。今回、そのEdisonで物理的なクラスタを組んでネットワークで接続、その上にオーバレイの仮想ネットワークを構築するまでの、長く辛く苦しい道のりのお話をいたします。OpenVNetがそもそも動かないと言うところから始まるよ！</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S08">
+                    <hr/>
+                    <h3>IoT×AI×インフラアイデアソン with IdeaHubハンズオン <a href="#S08"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=IoT%C3%97AI%C3%97%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%82%BD%E3%83%B3%20with%20IdeaHub%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S08" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S08&amp;t=IoT%C3%97AI%C3%97%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%82%BD%E3%83%B3%20with%20IdeaHub%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/harakoji.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>原孝治</h2>
+                          <a href="https://www.facebook.com/harakoji.net" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>産業技術大学院大学 情報アーキテクチャ専攻 在学中</small><br/>
+                        <ul class="userprofile">
+                          <li>産業技術大学院大学　情報アーキテクチャ専攻　在学中 先端IT活用推進コンソーシアム　ユーザーエクスペリエンス技術部会リーダー 好きな食べ物はうなぎ</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>IoTやAIの最新技術に興味がある皆さん、アイデアソンやハッカソンに参加したことはありますか？　私たちはそういったイベントで活躍する、アイデアに対するパラダイムシフトをもたらすプラットフォーム「IdeaHub」を開発しています。JTFでは沢山の講演が行われますが、ほとんどは皆さんへのインプットですよね。そこで、私たちは、皆さんからのアウトプットの場を作りました。ここでは、「IdeaHub」を使いながら、JTF2016のテーマに沿ったちょっとしたアイデアソンを行います。気軽にふらっと立ち寄って、知りたての知識を活用できる空間です。是非ご参加ください。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S09">
+                    <hr/>
+                    <h3>HashiCorp VaultでMySQLアカウント管理はもう怖くない <a href="#S09"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=HashiCorp%20Vault%E3%81%A7MySQL%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E7%AE%A1%E7%90%86%E3%81%AF%E3%82%82%E3%81%86%E6%80%96%E3%81%8F%E3%81%AA%E3%81%84%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S09" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S09&amp;t=HashiCorp%20Vault%E3%81%A7MySQL%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E7%AE%A1%E7%90%86%E3%81%AF%E3%82%82%E3%81%86%E6%80%96%E3%81%8F%E3%81%AA%E3%81%84%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/kikumoto.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>菊本隆博</h2>
+                          <a href="https://twitter.com/takakiku" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>Hamee株式会社 IS戦略室サービスインフラチームリーダ</small><br/>
+                        <ul class="userprofile">
+                          <li>デスクトップアプリからキャリアをはじめ、Webショッピングサイトを実装し、より低レイヤー側をする人がいなかったのでそれに手を出しているうちに、そちらが本業となり現在に至る。2012年からHamee（株）に転職し、自社サービスのインフラの改善を行っている。足回りの堅牢さ柔軟さこそが長く使うシステムには重要とおもい、サーバサイドのフレームワーク含めてそれより下の部分と日々戦っている。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>http://kikumoto.hatenablog.com/entry/2015/09/07/122229 の内容を、Vaultの説明を詳しくしつつ、実戦投入してみて得られた知見などについて話します。PostgreSQLではVALID UNTILでパスワードに有効期限を設けることができますが、Vaultを使えば、MySQLでも有効期限付きアカウントを作れます。 またLDAPと連携することで、アカウント自体はLDAPで管理しつつ、権限周りの詳細はVaultに任せるなど、LDAP単体ではできなかったDBのアカウント・権限管理を柔軟にできるようになります。 表計算ソフト一覧からのパスワードコピペでログインする時代に終焉を告げましょう。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S11">
+                    <hr/>
+                    <h3>HCDの教育をHCDで考えた話 <a href="#S11"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=HCD%E3%81%AE%E6%95%99%E8%82%B2%E3%82%92HCD%E3%81%A7%E8%80%83%E3%81%88%E3%81%9F%E8%A9%B1%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S11" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S11&amp;t=HCD%E3%81%AE%E6%95%99%E8%82%B2%E3%82%92HCD%E3%81%A7%E8%80%83%E3%81%88%E3%81%9F%E8%A9%B1%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/iojun.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>飯尾淳</h2>
+                          <a href="https://twitter.com/iiojun" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/iiojun" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>中央大学 文学部 社会情報学専攻 教授</small><br/>
+                        <ul class="userprofile">
+                          <li>1994年東京大学大学院修了、株式会社三菱総合研究所にて、情報技術関連の研究開発に19年間従事し、2013年より中央大学。博士（工学）、技術士（情報工学部門）、HCD-Net認定 人間中心設計専門家。研究テーマは、人とシステムの関わり方を中心に、幅広く興味を示す。基本、アルコール燃料で動作する、雑食系研究者です。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>UX（User eXperience）やHCD（Human Centered Design、人間中心設計）、言葉は先行しているものの、あなたの組織で周知されてますか？UXもHCDも人々の体験からシステムを設計・改善する、新しい概念であり取り組みです。担当者レベルでボトムアップにUXやHCDの考え方を浸透させるには、効率的なトレーニング（UXやHCDってこんなに大切ですよ！とか、こんな課題が解決できましたよ！とかの情報提供を含む）が欠かせません。 HCD-Netの教育プログラムWGでは、HCDの手法を最大限に活用してHCD教育フレームワークを作成しました。あなたがもしUXやHCDの概念を組織内で展開しようと考えているならば、ぜひ参考にしてほしいと思っています。今回は、HCDの基礎と、HCD教育フレームワーク作成の経緯と使い方をご紹介します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S12">
+                    <hr/>
+                    <h3>OpenStack Osloを使おう - メインロジックの開発に集中するためのライブラリ活用 <a href="#S12"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=OpenStack%20Oslo%E3%82%92%E4%BD%BF%E3%81%8A%E3%81%86%20-%20%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF%E3%81%AE%E9%96%8B%E7%99%BA%E3%81%AB%E9%9B%86%E4%B8%AD%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E6%B4%BB%E7%94%A8%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S12" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S12&amp;t=OpenStack%20Oslo%E3%82%92%E4%BD%BF%E3%81%8A%E3%81%86%20-%20%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF%E3%81%AE%E9%96%8B%E7%99%BA%E3%81%AB%E9%9B%86%E4%B8%AD%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E6%B4%BB%E7%94%A8%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/saito_hideki.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>齊藤秀喜</h2>
+                          <a href="https://twitter.com/saito_hideki" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社インターネットイニシアティブ</small><br/>
+                        <small>日本OpenStackユーザ会</small><br/>
+                        <ul class="userprofile">
+                          <li>趣味はOpenStackとAnsibleへのちょっとした貢献とビール。仕事はクラウド基盤のちょっとした開発、ちょっとした運用、そしてちょっとしたリサーチ。I can develop OpenStack a little:)</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>DevOpsが定着した現在、われわれインフラエンジニアも、コードを書くのが日常的な仕事の1つとなっています。しかしながら、ある機能を提供するコマンドを1つ作るにしても、本当に書きたいロジックだけでなく、設定ファイルやコマンドラインのパーサやログ出力、DBアクセスなどの付随する機能も開発しなければない現実があります。OpenStack Osloは、OpenStackの中で最も地味なプロジェクトですが、他の主要プロジェクトに対して、上記のような付随的機能をライブラリとして提供しています。NovaやNeutronなどの主要プロジェクトでも利用されているので実績も十分！本セッションでは、みなさんのプログラムの中から実際にOsloを利用する手法について紹介します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S13">
+                    <hr/>
+                    <h3>仮想ネットワークアプライアンスで実現するネットワークエンジニアのためのDevOps <a href="#S13"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%BB%AE%E6%83%B3%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%97%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEDevOps%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S13" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S13&amp;t=%E4%BB%AE%E6%83%B3%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%97%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%82%B9%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEDevOps%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/kawamata.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>川又幸恵</h2>
+                          <a href="https://twitter.com/Strange_bird496" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社インターネットイニシアティブ</small><br/>
+                        <ul class="userprofile">
+                          <li>大学でOpenFlow 等のSoftware-Defined Network を研究。その後、オンラインゲーム提供会社での基盤ネットワーク構築運用保守業務を経て、現在は、株式会社インターネットイニシアティブにてクラウドサービス基盤ネットワークの開発、運用業務に従事。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>システムインフラの土台となるネットワーク機器にも運用の自動化が求められている昨今ではありますが、運用自動化のためのツール開発や、検証から運用につなげていくためのプロセスには、まだまだ壁が多く感じます。開発検証環境の確保が、難しい課題の１つで、物理的な開発検証用ネットワーク機器の確保はコスト的に厳しく、オペレータが触れる事が出来るネットワーク機器も本番環境の機器のみです。そこで、本セッションでは、手元の端末でVirtualBox等の仮想化ソフトウェアを用いて、ネットワーク機器ベンダが提供している実機をエミュレートした仮想ネットワークアプライアンスを利用した、仮想的な開発検証環境を構築する手法をデモをまじえて紹介します。このような仮想環境を用いることで、開発者は開発から検証、運用導入までをスムーズに行い、オペレータは実機同様のトレーニングを行いながら本番環境に導入することができます。ネットワークエンジニアのみなさんも、今回紹介する仮想検証環境を利用して運用自動化への取り組みを始めてみませんか？</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S14">
+                    <hr/>
+                    <h3>Site Reliability Engineering (SRE)で拡がる運用の世界 － Googleでの展開から、エンタープライズへの夢は見れるか <a href="#S14"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Site%20Reliability%20Engineering%20(SRE)%E3%81%A7%E6%8B%A1%E3%81%8C%E3%82%8B%E9%81%8B%E7%94%A8%E3%81%AE%E4%B8%96%E7%95%8C%20%EF%BC%8D%20Google%E3%81%A7%E3%81%AE%E5%B1%95%E9%96%8B%E3%81%8B%E3%82%89%E3%80%81%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA%E3%81%B8%E3%81%AE%E5%A4%A2%E3%81%AF%E8%A6%8B%E3%82%8C%E3%82%8B%E3%81%8B%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S14" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S14&amp;t=Site%20Reliability%20Engineering%20(SRE)%E3%81%A7%E6%8B%A1%E3%81%8C%E3%82%8B%E9%81%8B%E7%94%A8%E3%81%AE%E4%B8%96%E7%95%8C%20%EF%BC%8D%20Google%E3%81%A7%E3%81%AE%E5%B1%95%E9%96%8B%E3%81%8B%E3%82%89%E3%80%81%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA%E3%81%B8%E3%81%AE%E5%A4%A2%E3%81%AF%E8%A6%8B%E3%82%8C%E3%82%8B%E3%81%8B%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/satoruf.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>船井覚</h2>
+                          <a href="https://twitter.com/satoruf" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/satoru.funai" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>OSSラボ株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>１９８１年関西学院大学卒業。グループワンソフトウェア株式会社営業本部長、株式会社ネットマークス　マネージメントサービス技術部部長、日本IBM株式会社Webサーバー製品事業部NUMA-Q事業推進、シークエントコンピューターズジャパン株式会社 ディレクターを歴任し、ハードウェアから、サービス、ソフトウェアまで幅広い製品を、数人のベンチャーから30万人以上のグローバル企業にわたって、事業責任者または営業責任者として実績を積んできました。バロースという外資系メインフレーマーから始まり、PC、UNIX、SMPハイエンドサーバー、ERP、BI、無線技術、セキュリティ、ネットワークサービス、ソフトウェアと扱う物は変わってきましたが、最先端の技術を見極め、お客様の変化し続けるニーズに結びつけ、常に新たな付加価値とそれに伴うビジネスモデルを創出し、常にビジネスパートナー様とともにお客様に最大の満足をお届けします。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Googleによって注目を浴びるようになった Site Reliability Engineering (SRE)について、エンタープライズITの観点から考察します。<br /> 内容： <br /> 1.SREの定義 <br /> 2.dev-opsとの違い <br /> 3.エンタープライズとの違い <br /> 4.今やるべき事と理由</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S15">
+                    <hr/>
+                    <h3>今あえて試行錯誤しながら"車輪の再発明"をする意味 <a href="#S15"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%BB%8A%E3%81%82%E3%81%88%E3%81%A6%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%22%E8%BB%8A%E8%BC%AA%E3%81%AE%E5%86%8D%E7%99%BA%E6%98%8E%22%E3%82%92%E3%81%99%E3%82%8B%E6%84%8F%E5%91%B3%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S15" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S15&amp;t=%E4%BB%8A%E3%81%82%E3%81%88%E3%81%A6%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%22%E8%BB%8A%E8%BC%AA%E3%81%AE%E5%86%8D%E7%99%BA%E6%98%8E%22%E3%82%92%E3%81%99%E3%82%8B%E6%84%8F%E5%91%B3%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/yoshikawa.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>Yoshikawa Ryota</h2>
+                      <p>
+                        <small>株式会社ハートビーツ 運用エンジニア</small><br/>
+                        <ul class="userprofile">
+                          <li>1992 年生まれ。新卒 2 年目(勤続 6 年目)の株式会社ハートビーツのインフラエンジニア。最近は基盤開発グループとして新技術の検証・サーベイや開発を担当。OSC2014 や GCPUG 等で講演をしたりしました。あと趣味で mruby-ipvs というソフトウェアを作ったりしています。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>”昔から似たようなソフトウェアはあるが、時代の変化に併合出来ていない気がする。” ”UNIX やプロトコルなどの低レイヤのしっかりした知識が欲しいが、どのように勉強してよいか分からない。” ”抽象化しすぎて肥大化したライブラリではなく、自分の実現したいことにピッタリはまるような小さいライブラリが欲しい。” ”プログラミングに興味はあるが、作りたいものも思いつかず、何もせずに何ヶ月も経った。” このセッションでは、上記のような人のために、エンジニアの間で嫌われている(気がする)車輪の再発明を、スピーカーの実体験を交えながらオススメしていきます。複雑なコンポーネントが増え、エンジニアの担当領域が広がった今、車輪の再発明をあえて行う意味が増してきたと思っています。このセッションを聞くことで、聴者が来年から【やってみた】側になり、JTF2017 で登壇することを期待しています。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S16">
+                    <hr/>
+                    <h3>CIプロセスにセキュリティ診断を組み込もう！Eclipse CheとOWASP ZAPで実現する、セキュアなシステム開発のすすめ <a href="#S16"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=CI%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E8%A8%BA%E6%96%AD%E3%82%92%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86%EF%BC%81Eclipse%20Che%E3%81%A8OWASP%20ZAP%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E3%80%81%E3%82%BB%E3%82%AD%E3%83%A5%E3%82%A2%E3%81%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA%E3%81%AE%E3%81%99%E3%81%99%E3%82%81%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S16" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S16&amp;t=CI%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E8%A8%BA%E6%96%AD%E3%82%92%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%82%E3%81%86%EF%BC%81Eclipse%20Che%E3%81%A8OWASP%20ZAP%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B%E3%80%81%E3%82%BB%E3%82%AD%E3%83%A5%E3%82%A2%E3%81%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA%E3%81%AE%E3%81%99%E3%81%99%E3%82%81%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/nilfigo.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>nilfigo (松本隆則)</h2>
+                          <a href="https://twitter.com/DYOH2017" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/nilfigo" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>OWASP Japan</small><br/>
+                        <small>HASHコンサルティング株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>オープン系システム開発に10年以上従事した後、とあるきっかけからセキュリティ診断を生業としてきたが、ちょっとやり方を変えようと思い立ち上げたのが「脆弱性診断研究会」。30回以上開催してきたハンズオンセミナーによりIT関連のエンジニアやマネージャーにセキュリティ診断手法を啓蒙中。2016年からはOWASP Japanのプロモーションチームに所属して「セキュアなインターネッツ」の構築を目指す。</li>
+                          <li>脆弱性診断研究会</li>
+                          <li>https://www.facebook.com/groups/zeijakusei.shindan.kenkyukai/ （グループ）</li>
+                          <li>https://www.facebook.com/sec.testing.study.session/ （コミュニティ）</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>セキュリティの話題が事欠かない現在、システムは開発段階からセキュリティを意識して高めておきたいもの。そこで、今春に発表されたクラウドIDE「Eclipse Che」と、高機能なWebアプリケーションのセキュリティ診断ツールであるOWASP ZAPを連携させることにより、システム開発中にセキュリティ診断を自動的に実施していく手法を探ります。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S17">
+                    <hr/>
+                    <h3>Wantedly の文化を支えるインフラとビジネスの変化に強いインフラ <a href="#S17"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Wantedly%20%E3%81%AE%E6%96%87%E5%8C%96%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%81%A8%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AE%E5%A4%89%E5%8C%96%E3%81%AB%E5%BC%B7%E3%81%84%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S17" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S17&amp;t=Wantedly%20%E3%81%AE%E6%96%87%E5%8C%96%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%81%A8%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%81%AE%E5%A4%89%E5%8C%96%E3%81%AB%E5%BC%B7%E3%81%84%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/koudaiii.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>坂部広大@koudaiii</h2>
+                          <a href="https://twitter.com/koudaiii" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/koudaiii" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://github.com/koudaiii" target="_blank">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>Wantedly,Inc Engineer</small><br/>
+                        <ul class="userprofile">
+                          <li>SIer にて、 2つのSaaSのカスタマーサポートを行いながら、 サービスの運用を経験後、Wantedly にてインフラエンジニアとして、自社サービスの基盤の改善並びに運用を従事しているエンジニア。</li>
+                          <li>インタビュー： http://dev.classmethod.jp/devops/dev-ops-wantedly/</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Wantedly では、 CI や デプロイツール等ある程度の部分は、昔から当たり前の領域で行っていましたが、エンジニアの人数が増えていった時、生産性が落ちていると感じておりました。生産性の向上を目指すために文化的な側面、チームの運用的な側面等、技術以外でも様々な取り組みを行ってきました。今回 http://dev.classmethod.jp/devops/dev-ops-wantedly/ 記事にある 「Code wins Arguments」を支えるインフラ について、具体的にどうインフラを変化させてきたかをお話出来ればと思います。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S18">
+                    <hr/>
+                    <h3>人工知能の技術で有名なニューラルネットワークのフレームワークであるChainerを用いた対話Botを使った俺の屍を越えてゆけ <a href="#S18"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AE%E6%8A%80%E8%A1%93%E3%81%A7%E6%9C%89%E5%90%8D%E3%81%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A7%E3%81%82%E3%82%8BChainer%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E5%AF%BE%E8%A9%B1Bot%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E4%BF%BA%E3%81%AE%E5%B1%8D%E3%82%92%E8%B6%8A%E3%81%88%E3%81%A6%E3%82%86%E3%81%91%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S18" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S18&amp;t=%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AE%E6%8A%80%E8%A1%93%E3%81%A7%E6%9C%89%E5%90%8D%E3%81%AA%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A7%E3%81%82%E3%82%8BChainer%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E5%AF%BE%E8%A9%B1Bot%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E4%BF%BA%E3%81%AE%E5%B1%8D%E3%82%92%E8%B6%8A%E3%81%88%E3%81%A6%E3%82%86%E3%81%91%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/oogushi.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>大串正矢</h2>
+                      <p>
+                        <small>Port株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>大学で音声翻訳の精度を機械学習により向上させる研究を行った後、TIS株式会社でニューラルネットを用いた言語モデル、音声からの感情識別、機械翻訳、対話モデルの作成を行う。現在は、Port株式会社にて研究開発に従事。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>2016 年はLINE, FacebookなどがAPIを公開したことでBotの活躍する場がますます増えてきています。決めうちで回答を返したり、各企業が提供しているAPIを 使って対話用のBotを作成することも可能ですが、ご自身で中身を理解しつつ賢くなる対話Botを作成したくありませんか？</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S19">
+                    <hr/>
+                    <h3>PROCESS WARP「プロセスがデバイス間で移動する」仕組みを作る <a href="#S19"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=PROCESS%20WARP%E3%80%8C%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%8C%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E9%96%93%E3%81%A7%E7%A7%BB%E5%8B%95%E3%81%99%E3%82%8B%E3%80%8D%E4%BB%95%E7%B5%84%E3%81%BF%E3%82%92%E4%BD%9C%E3%82%8B%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S19" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S19&amp;t=PROCESS%20WARP%E3%80%8C%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%8C%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E9%96%93%E3%81%A7%E7%A7%BB%E5%8B%95%E3%81%99%E3%82%8B%E3%80%8D%E4%BB%95%E7%B5%84%E3%81%BF%E3%82%92%E4%BD%9C%E3%82%8B%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/itou.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>伊藤祐司</h2>
+                          <a href="https://www.facebook.com/ito.yuuji" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://github.com/llamerada-jp" target="_blank">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>平成27年度 総務省異能vationプログラム最終選考通過</small><br/>
+                        <ul class="userprofile">
+                          <li>2008年度から2014年までSIerとして様々なシステムの設計や開発を行っていました。平成27年度 総務省 異能vationプログラム最終選考を通過しPROCESS WARPの研究開発を行っています。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>スマートフォン、IoTデバイスやウェアラブルデバイスなど、私達の周りには様々なコンピュータが増えつつあります。私は、前述のような多くのコンピュータ同士がシームレスに協調できる仕組みが簡単に使えれば、新しいコンピュータの世界が拓けるのではないかと考えました。前述の考えから、以下の様な特徴を持つPROCESS WARPというシステムを研究開発しています。<br /> ・アプリケーションが、PCやスマートフォン、SoCなどの間で実行した状態のまま移動する<br /> ・作業スレッドを複数のコンピュータに分散させ、1台のコンピュータでは実行できない処理を行う<br /> ・特定のコンピュータが停止しても他のコンピュータで作業を継続することを可能にする<br /> デモなどを使いPROCESS WARPの特徴や目指す世界、仕組みなどについて紹介いたします。また、研究開発の一環として、RaspberryPiを32台利用した可搬型クラスタ実験環境を作成しています。そのような研究開発の過程で得た技術などについても紹介いたします。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S20">
+                    <hr/>
+                    <h3>MOM (Message Oriented Middleware) に求めるモノ <a href="#S20"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=MOM%20(Message%20Oriented%20Middleware)%20%E3%81%AB%E6%B1%82%E3%82%81%E3%82%8B%E3%83%A2%E3%83%8E%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S20" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S20&amp;t=MOM%20(Message%20Oriented%20Middleware)%20%E3%81%AB%E6%B1%82%E3%82%81%E3%82%8B%E3%83%A2%E3%83%8E%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/oyama-hiroyasu.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>大山裕泰</h2>
+                      <p>
+                        <small>株式会社 DMM.com ラボ</small><br/>
+                        <small>インフラ統括本部</small><br/>
+                        <ul class="userprofile">
+                          <li>ソフトウェアエンジニア。アリエル・ネットワーク株式会社、グリー株式会社を経て現在に至る。最近は主にインフラ基盤の運用・開発を行う。共著書に「次世代ネットワーク制御技術 OpenFlow入門」がある。NewtMQ 開発者。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>ビッグデータや IoT に代表されるような分散システムにおいて、MOM のソフトウェアが重要な役割を果たしています。これによってシステムのモデルを単純化でき、またシステムをスケーラブルにできます。MOM の代表的なソフトウェアとして RabbitMQ, Kafka, Apollo などがあり、それぞれに特徴があります。本セッションでは、それぞれにどのような特徴があるかについて紹介し、どういった用途において何が適していそうかについて考察します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S21">
+                    <hr/>
+                    <h3>オンプレミス環境もまだまだ進化！Nutanixによるハイパーコンバージドインフラ技術解説 <a href="#S21"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%82%AA%E3%83%B3%E3%83%97%E3%83%AC%E3%83%9F%E3%82%B9%E7%92%B0%E5%A2%83%E3%82%82%E3%81%BE%E3%81%A0%E3%81%BE%E3%81%A0%E9%80%B2%E5%8C%96%EF%BC%81Nutanix%E3%81%AB%E3%82%88%E3%82%8B%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B8%E3%83%89%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E6%8A%80%E8%A1%93%E8%A7%A3%E8%AA%AC%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S21" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S21&amp;t=%E3%82%AA%E3%83%B3%E3%83%97%E3%83%AC%E3%83%9F%E3%82%B9%E7%92%B0%E5%A2%83%E3%82%82%E3%81%BE%E3%81%A0%E3%81%BE%E3%81%A0%E9%80%B2%E5%8C%96%EF%BC%81Nutanix%E3%81%AB%E3%82%88%E3%82%8B%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B8%E3%83%89%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E6%8A%80%E8%A1%93%E8%A7%A3%E8%AA%AC%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/smzksts.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>島崎聡史</h2>
+                          <a href="https://twitter.com/smzksts" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/smzksts" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>Nutanix Japan</small><br/>
+                        <ul class="userprofile">
+                          <li>Nutanix Japanにて、SEとしてプリセールスに従事する傍ら、エンジニアコミュニティ(https://nutanix.connpass.com/)の運営や全国各地のITイベントでの登壇、執筆などを通じてハイパーコンバージドインフラの普及啓蒙を行っている。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>クラウドに注目が集まる昨今ですが、オンプレミス環境もまだまだ進化しています！2016年は、仮想化環境の設計・構築・管理を大幅にカンタンにできる、ハイパーコンバージドインフラという技術が注目を集めています。Nutanix社はハイパーコンバージドインフラ分野をリードしているベンダーで、分散アルゴリズムの最適化により、高いパフォーマンスの確保やデータ損失の防止、スケーラビリティの向上を実現しています。また2015年5月には「Nutanix Community Edition」というフリー版を発表したことで、さらに注目が高まりました。<br /> ・これまでのインフラ環境が抱える課題<br /> ・ハイパーコンバージドインフラとNutanixの技術解説<br /> ・Nutanix Community Editionの紹介<br /> ・Nutanix 最新アップデート情報</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S22">
+                    <hr/>
+                    <h3>変わりゆく要求に備えよ！システムアーキテクチャの新常識「マイクロサービス」を作って体験しよう！ <a href="#S22"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E5%A4%89%E3%82%8F%E3%82%8A%E3%82%86%E3%81%8F%E8%A6%81%E6%B1%82%E3%81%AB%E5%82%99%E3%81%88%E3%82%88%EF%BC%81%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%81%AE%E6%96%B0%E5%B8%B8%E8%AD%98%E3%80%8C%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E4%BD%93%E9%A8%93%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S22" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S22&amp;t=%E5%A4%89%E3%82%8F%E3%82%8A%E3%82%86%E3%81%8F%E8%A6%81%E6%B1%82%E3%81%AB%E5%82%99%E3%81%88%E3%82%88%EF%BC%81%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%81%AE%E6%96%B0%E5%B8%B8%E8%AD%98%E3%80%8C%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E4%BD%93%E9%A8%93%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/negoro.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>根来和輝</h2>
+                          <a href="https://twitter.com/negokaz" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>TIS株式会社 生産技術R&D室</small><br/>
+                        <ul class="userprofile">
+                          <li>ソフトウェアエンジニア。5年の現場経験を経て、現在は Reactive System についてのコンサルティングや技術検証を行っている。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>複数のサービスを疎結合に連携させることで、変化に強く、スケーラビリティと高い耐障害性を実現させることができると言われているマイクロサービスアーキテクチャ。そんなマイクロサービスですが、どう設計すればいいの？具体的にどう実装するの？という疑問をお持ちの方は多いと思います。このハンズオンでは Lagom というマイクロサービスの開発のために作られたフレームワークで、実際にマイクロサービスの開発を体験していただきます。Lagom の機能から、マイクロサービス開発に必要となる考え方やノウハウを読み解き、実際に動くものを開発していきます。ハンズオンでの使用言語はJavaです。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S23">
+                    <hr/>
+                    <h3>Mackerelの技術の全て。これまでの道のりと更なる発展に向けて <a href="#S23"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Mackerel%E3%81%AE%E6%8A%80%E8%A1%93%E3%81%AE%E5%85%A8%E3%81%A6%E3%80%82%E3%81%93%E3%82%8C%E3%81%BE%E3%81%A7%E3%81%AE%E9%81%93%E3%81%AE%E3%82%8A%E3%81%A8%E6%9B%B4%E3%81%AA%E3%82%8B%E7%99%BA%E5%B1%95%E3%81%AB%E5%90%91%E3%81%91%E3%81%A6%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S23" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S23&amp;t=Mackerel%E3%81%AE%E6%8A%80%E8%A1%93%E3%81%AE%E5%85%A8%E3%81%A6%E3%80%82%E3%81%93%E3%82%8C%E3%81%BE%E3%81%A7%E3%81%AE%E9%81%93%E3%81%AE%E3%82%8A%E3%81%A8%E6%9B%B4%E3%81%AA%E3%82%8B%E7%99%BA%E5%B1%95%E3%81%AB%E5%90%91%E3%81%91%E3%81%A6%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/Songmu.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>Songmu (ソンムー)</h2>
+                          <a href="https://twitter.com/songmu" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://github.com/Songmu" target="_blank">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社はてな</small><br/>
+                        <small>チーフエンジニア兼Mackerelディレクター</small><br/>
+                        <ul class="userprofile">
+                          <li>慶應義塾大学環境情報学部で中国語と機械翻訳の研究に注力。卒業後中国へ渡り、ITベンチャーの立ち上げに関わる。帰国後、語学学校での営業兼Web担当、印刷系SIerでの業務、カヤックでソーシャルゲーム開発のリードエンジニアなどの経験を経て、2014年9月にはてなに入社。東京オフィスでチーフエンジニアを務めると同時に、サーバー監視SaaSであるMackerelのディレクターを務める</li>
+                          <li>http://www.songmu.jp/riji/</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>2014年9月に正式リリースしたはてなのサーバ管理・監視サービスであるMackerelでは、サーバサイド言語にScalaが採用され、サブシステムやユーザがホストにインストールする監視agentやそのpluginにはGoが採用されています。ミドルウェアにもPostgreSQL、Redis、Graphite等、これまでのはてなには馴染みの薄かった技術を採用しています。これらの技術は決して面白がって採用したわけではありません。実際、Mackerelは順調に成長を続けており、これらの技術の採用は妥当であったと考えています。なぜMackerelはこれらの技術を採用したのか、結果としてどのような苦労がありそれを乗り越えたのか、そして現在の課題について正直にお話します。また、Mackerelの急激な成長に伴い次のアーキテクチャを考えるフェーズにも入りつつあります。さらには、ユーザ様からの要望により、よりインテリジェントな監視も求められてきています。そのような中で、次の技術選定をどう考えているかについてもお話できればと思います。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S24">
+                    <hr/>
+                    <h3>ベアメタルクラウドの運用をJupyter NotebookとAnsibleで機械化してみた <a href="#S24"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%83%99%E3%82%A2%E3%83%A1%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E9%81%8B%E7%94%A8%E3%82%92Jupyter%20Notebook%E3%81%A8Ansible%E3%81%A7%E6%A9%9F%E6%A2%B0%E5%8C%96%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S24" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S24&amp;t=%E3%83%99%E3%82%A2%E3%83%A1%E3%82%BF%E3%83%AB%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E9%81%8B%E7%94%A8%E3%82%92Jupyter%20Notebook%E3%81%A8Ansible%E3%81%A7%E6%A9%9F%E6%A2%B0%E5%8C%96%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/tanizawa.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>谷沢智史 (主発表者)</h2>
+                          <a href="https://twitter.com/yacchin1205" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://github.com/yacchin1205" target="_blank">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社ボイスリサーチ エンジニア</small><br/>
+                        <ul class="userprofile">
+                          <li>業務システム開発、オンラインゲーム開発、映像コンテンツ関連ツール開発などを経て、現在はNIIでのクラウドインフラ運用、ソフトバンクのロボットPepper関連業務に関わる。著書に「Pepperプログラミング　基本動作からアプリの企画・演出まで」など。趣味はおうちハックとお絵描き。並行して東大での学生活動も。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/maruoka.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>丸岡隆</h2>
+                          <a href="https://github.com/takasix" target="_blank">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>株式会社N.ジェン エンジニア</small><br/>
+                        <ul class="userprofile">
+                          <li>組版パッケージ開発、デジタルサイネージソリューション開発などを経て、現在はNIIでのクラウドインフラ運用業務に関わる。趣味はGTD。艦これは生活の一部。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>国立情報学研究所(NII)では、プライベートクラウドとしてベアメタルクラウドを独自に運用しています。NIIのクラウド運用チームでは、Literate Computing for Reproducible Infrastructureというコンセプトのもと、Jupyter NotebookとAnsibleを活用してインフラの運用の機械化(自動化)を試みています。この講演では、実際のNIIでの利用を例に、谷沢がJupyter NotebookとAnsibleを使ったインフラ運用の機械化の実例と苦労話を紹介します。また、丸岡がその中で開発を進めている、インフラ運用をより効果的におこなうためのNotebook Extensionsの概要とJupyterならではの開発の苦労についてお話しします。運用しているメンバーが、これらの実例を交えながら、自分たちが目指す機械化/自動化のかたちと、Literate Computing for Reproducible Infrastructureのコンセプトについてご紹介します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S25">
+                    <hr/>
+                    <h3>Linux,FreeBSD脆弱性検知ツールVulsを開発したらServerspecを超えるGitHubスターを獲得するほどバズった話 <a href="#S25"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Linux,FreeBSD%E8%84%86%E5%BC%B1%E6%80%A7%E6%A4%9C%E7%9F%A5%E3%83%84%E3%83%BC%E3%83%ABVuls%E3%82%92%E9%96%8B%E7%99%BA%E3%81%97%E3%81%9F%E3%82%89Serverspec%E3%82%92%E8%B6%85%E3%81%88%E3%82%8BGitHub%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%92%E7%8D%B2%E5%BE%97%E3%81%99%E3%82%8B%E3%81%BB%E3%81%A9%E3%83%90%E3%82%BA%E3%81%A3%E3%81%9F%E8%A9%B1%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S25" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S25&amp;t=Linux,FreeBSD%E8%84%86%E5%BC%B1%E6%80%A7%E6%A4%9C%E7%9F%A5%E3%83%84%E3%83%BC%E3%83%ABVuls%E3%82%92%E9%96%8B%E7%99%BA%E3%81%97%E3%81%9F%E3%82%89Serverspec%E3%82%92%E8%B6%85%E3%81%88%E3%82%8BGitHub%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%92%E7%8D%B2%E5%BE%97%E3%81%99%E3%82%8B%E3%81%BB%E3%81%A9%E3%83%90%E3%82%BA%E3%81%A3%E3%81%9F%E8%A9%B1%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/kanbe.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>神戸康多</h2>
+                      <p>
+                        <small>フューチャーアーキテクト株式会社 スペシャリスト</small><br/>
+                        <ul class="userprofile">
+                          <li>2004年フューチャーアーキテクト株式会社入社。技術部隊にてメッセージングミドルウェア、PostgreSQLベースの分散DBの研究開発に従事。大規模Linux運用時にOSセキュリティパッチ適用作業に怒りを覚え、その怒りを糧にLinux, FreeBSD向け脆弱性検知ツールVulsを開発し2016年4月に公開。Vulsで脆弱性をバルスできれば、世界が少し平和になると信じている。週二のサウナが生き甲斐</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Golang製Linux, FreeBSD脆弱性検知ツール https://github.com/future-architect/vuls の紹介と、開発秘話。エンジニア歴12年。今までOSS活動をほとんどしてこなかった私が、Vulsを作ろうと考えた経緯。初体験のGolangを勉強し、試行錯誤しなんとか作りあげ、日本、そして苦手な英語で今となってはServerspecを超えるGitHubスターを獲得するほど海外でバズった経緯をご紹介します。僕みたいな大したことがない人間でもOSSに貢献できることを示し、参加者の皆さんに勇気を持っていただき、OSSの楽しさ、素晴らしさをお伝えできれば幸いです。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S26">
+                    <hr/>
+                    <h3>主婦が技術書を書いてSIerに入社した話。私の732ページを超えていけ！ <a href="#S26"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%B8%BB%E5%A9%A6%E3%81%8C%E6%8A%80%E8%A1%93%E6%9B%B8%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6SIer%E3%81%AB%E5%85%A5%E7%A4%BE%E3%81%97%E3%81%9F%E8%A9%B1%E3%80%82%E7%A7%81%E3%81%AE732%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E8%B6%85%E3%81%88%E3%81%A6%E3%81%84%E3%81%91%EF%BC%81%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S26" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S26&amp;t=%E4%B8%BB%E5%A9%A6%E3%81%8C%E6%8A%80%E8%A1%93%E6%9B%B8%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6SIer%E3%81%AB%E5%85%A5%E7%A4%BE%E3%81%97%E3%81%9F%E8%A9%B1%E3%80%82%E7%A7%81%E3%81%AE732%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E8%B6%85%E3%81%88%E3%81%A6%E3%81%84%E3%81%91%EF%BC%81%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/asa.shiho.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>阿佐志保</h2>
+                          <a href="https://twitter.com/_Dr_ASA" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/asa.shiho" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>TIS株式会社 戦略技術センター</small><br/>
+                        <ul class="userprofile">
+                          <li>TIS株式会社 戦略技術センター所属。金融系シンクタンクなどでインフラ設計/構築業務を行っていました。出産を機に離職し、長きにわたり主婦業に専念していましたが、ひょんなことから「人とロボットの共生」した未来の世界を創り出したい！と思いはじめました。そして、ワークライフバランスを保ちながらも、未来の技術に挑戦できる、エンジニアにとってハッピーな環境をつくっていきたい。と、常にまじめなことばかりを考えている、まじめな人間です。</li>
+                          <li>著書</li>
+                          <li>「新米プログラマのためのAmazon Web Servicesによるクラウド超入門」(翔泳社)</li>
+                          <li>「プログラマのための Docker 教科書 インフラの基礎知識＆コードによる環境構築の自動化」（翔泳社）、</li>
+                          <li>「Windows 8 開発ポケットリファレンス」（技術評論社）</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>JTF2015～2016のあいだに、コンテナとクラウドの書籍を2冊執筆しました。私はエンジニアではなく、普通の主婦です。家事や育児の合間のすきま時間を生かして、子どもの学習塾の月謝に、、、と思って毎日数ページずつ書きました。そして、主婦だけどSIerに入社したよ！！という、わりとカオスな話をします。私と技術コミュニティとのかかわり、情報発信の重要性、家事/育児や介護などとのワークライフバランスのとりかた、リモート勤務のコツ、キャリアのAutoScalingなど、インフラエンジニアにとって幸せな働き方の一例を情報共有できればと思っています。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S27">
+                    <hr/>
+                    <h3>今エンジニアに最も必要なものは「戦略」である！孫子に学ぶ本質のつかみ方 <a href="#S27"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E4%BB%8A%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AB%E6%9C%80%E3%82%82%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%82%E3%81%AE%E3%81%AF%E3%80%8C%E6%88%A6%E7%95%A5%E3%80%8D%E3%81%A7%E3%81%82%E3%82%8B%EF%BC%81%E5%AD%AB%E5%AD%90%E3%81%AB%E5%AD%A6%E3%81%B6%E6%9C%AC%E8%B3%AA%E3%81%AE%E3%81%A4%E3%81%8B%E3%81%BF%E6%96%B9%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S27" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S27&amp;t=%E4%BB%8A%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AB%E6%9C%80%E3%82%82%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%82%E3%81%AE%E3%81%AF%E3%80%8C%E6%88%A6%E7%95%A5%E3%80%8D%E3%81%A7%E3%81%82%E3%82%8B%EF%BC%81%E5%AD%AB%E5%AD%90%E3%81%AB%E5%AD%A6%E3%81%B6%E6%9C%AC%E8%B3%AA%E3%81%AE%E3%81%A4%E3%81%8B%E3%81%BF%E6%96%B9%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/tomoaki.nakajima.jpg" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>中島倫明</h2>
+                          <a href="https://twitter.com/Irix_jp" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/tomoaki.nakajima" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>東京大学非常勤講師</small><br/>
+                        <small>国立情報学研究所／TOPSE非常勤講師</small><br/>
+                        <small>日本OpenStackユーザ会ボードメンバー</small><br/>
+                        <small>一般社団法人クラウド利用促進機構技術アドバイザー</small><br/>
+                        <ul class="userprofile">
+                          <li>日本OpenStackユーザ会の初代会長（2013-2015）として黎明期の普及啓蒙活動や運営体制の確立に従事し、現在もボードメンバーの一人として活動。人材育成の一環として、教育・研究機関での非常勤講師として講義を行いつつ、書籍や記事の執筆を行っている。最近は情報システム活用のための戦略立案支援に注力している。</li>
+                          <li>執筆書籍</li>
+                          <li>「オープンソース・クラウド基盤 OpenStack入門　構築・利用方法から内部構造の理解まで」（KADOKAWA/アスキー・メディアワークス）</li>
+                          <li>「OpenStackクラウドインテグレーション オープンソースクラウドによるサービス構築入門」（翔泳社）</li>
+                          <li>「絵で見てわかるクラウドインフラとAPIの仕組み」（翔泳社）</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>IoTやFinTech、クラウド、機械学習など、次々と新しい要素が生まれ、めまぐるしく変化する情報産業の中でエンジニアはどのように生きていけば幸せになれるのでしょうか？小手先の技術や目の前の出来事に右往左往せずに、物事の本質をつかむための考え方について、古代中国の戦略家「孫子」の教えをベースとして「世界観」というキーワードを元にお話します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S28">
+                    <hr/>
+                    <h3>自動化のための運用監視設計を皆で考えてみなイカ（仮） <a href="#S28"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E8%87%AA%E5%8B%95%E5%8C%96%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%81%8B%E7%94%A8%E7%9B%A3%E8%A6%96%E8%A8%AD%E8%A8%88%E3%82%92%E7%9A%86%E3%81%A7%E8%80%83%E3%81%88%E3%81%A6%E3%81%BF%E3%81%AA%E3%82%A4%E3%82%AB%EF%BC%88%E4%BB%AE%EF%BC%89%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S28" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S28&amp;t=%E8%87%AA%E5%8B%95%E5%8C%96%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%81%8B%E7%94%A8%E7%9B%A3%E8%A6%96%E8%A8%AD%E8%A8%88%E3%82%92%E7%9A%86%E3%81%A7%E8%80%83%E3%81%88%E3%81%A6%E3%81%BF%E3%81%AA%E3%82%A4%E3%82%AB%EF%BC%88%E4%BB%AE%EF%BC%89%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/zembutsu.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>前佛雅人</h2>
+                          <a href="https://twitter.com/zembutsu" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/zembutsu" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small></small><br/>
+                        <ul class="userprofile">
+                          <li>かつてはデータセンタで、サーバの監視や運用業務に長らく従事していました。最近は、コンピュータ技術をどう活用したら、私たちの生活はもっと良くなるんだろう、どうやって価値を生み出せばいいのだろう、などと考えています。日本酒大好きで、富山県出身。運用の効率化や自動化について考える日々。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>世間では、情報システムの運用・監視の「自動化」というキーワードがもてはやされがちで、各種のツール・プロダクト等が出てくる昨今です。しかし、「自動化」の実態は深い霧のベールに包まれていると感じていませんか。今回は、以下の現場視点でこのベールを脱がしてみたいと思います。1. 運用って何だ？ 2. 監視って何だ？ 3. 設計って何だ？ 4. 導き出される結論は…（？）</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S29">
+                    <hr/>
+                    <h3>ITインフラ・マネージド事業領域におけるデータサイエンスの取り組み～30代からはじめる本当は泥臭いデータサイエンスの話～ <a href="#S29"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=IT%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%83%BB%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%89%E4%BA%8B%E6%A5%AD%E9%A0%98%E5%9F%9F%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E5%8F%96%E3%82%8A%E7%B5%84%E3%81%BF%EF%BD%9E30%E4%BB%A3%E3%81%8B%E3%82%89%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E6%9C%AC%E5%BD%93%E3%81%AF%E6%B3%A5%E8%87%AD%E3%81%84%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E8%A9%B1%EF%BD%9E%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S29" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S29&amp;t=IT%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%83%BB%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%89%E4%BA%8B%E6%A5%AD%E9%A0%98%E5%9F%9F%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E5%8F%96%E3%82%8A%E7%B5%84%E3%81%BF%EF%BD%9E30%E4%BB%A3%E3%81%8B%E3%82%89%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E6%9C%AC%E5%BD%93%E3%81%AF%E6%B3%A5%E8%87%AD%E3%81%84%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E8%A9%B1%EF%BD%9E%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/datahotel.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>データホテル</h2>
+                          <a href="https://twitter.com/datahotel" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/datahotel.jp" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>NHN テコラス株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>現在、NHNテコラスの企画職として勤務。企業向けITサービス事業「データホテル」で長らくITエンジニアとして勤務し、2015年にサービス企画チームへ異動。経営層や社内部門からの各種要求・相談、外部企業からの協業相談に応じ、様々な役割で業務を遂行中。現在の業務における関心領域はGRC（ガバナンス・リスクマネジメント・コンプライアンスの略称）で、この領域の顧客課題とサービス化に興味を持っています。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>会社統合、社名変更、組織改革などをきっかけとして、当社ITインフラ・マネージド事業部門が取り組み出した、データサイエンス領域の活動についてご紹介します。IoT、人工知能などのキーワードに興味を持っておられる方にお届けするセッションです。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S30">
+                    <hr/>
+                    <h3>チーム仕事を円滑にする読書会のすすめ <a href="#S30"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%83%81%E3%83%BC%E3%83%A0%E4%BB%95%E4%BA%8B%E3%82%92%E5%86%86%E6%BB%91%E3%81%AB%E3%81%99%E3%82%8B%E8%AA%AD%E6%9B%B8%E4%BC%9A%E3%81%AE%E3%81%99%E3%81%99%E3%82%81%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S30" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S30&amp;t=%E3%83%81%E3%83%BC%E3%83%A0%E4%BB%95%E4%BA%8B%E3%82%92%E5%86%86%E6%BB%91%E3%81%AB%E3%81%99%E3%82%8B%E8%AA%AD%E6%9B%B8%E4%BC%9A%E3%81%AE%E3%81%99%E3%81%99%E3%82%81%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/saya.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>saya</h2>
+                      <p>
+                        <small>株式会社DMM.comラボ</small><br/>
+                        <ul class="userprofile">
+                          <li>10年間、ヘルプデスク業務を経て、DMMに入社しました。DMM.comラボでは、PCI-DSSまわりのサーバの運用保守業務を行っていました。現在は、ツチノコ企画室でメンバーの支援やイベントの主催、協賛イベントの運営業務に奮闘しています。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>［Team Geek ―Googleのギークたちはいかにしてチームを作るのか］を題材にDMM.comラボで行った読書会について話します(*´▽｀*) 準備、当日の流れ、読書会のあと業務を行う上で、どのように意識が変わったかについてまとめます。 チームとして仕事をしていくヒントになれば！</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S31">
+                    <hr/>
+                    <h3>ディープラーニング入門-DQN（Deep Q-Network）の理論解説とTensorFlowを用いたシンプルな実装例 <a href="#S31"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80-DQN%EF%BC%88Deep%20Q-Network%EF%BC%89%E3%81%AE%E7%90%86%E8%AB%96%E8%A7%A3%E8%AA%AC%E3%81%A8TensorFlow%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AA%E5%AE%9F%E8%A3%85%E4%BE%8B%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S31" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S31&amp;t=%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80-DQN%EF%BC%88Deep%20Q-Network%EF%BC%89%E3%81%AE%E7%90%86%E8%AB%96%E8%A7%A3%E8%AA%AC%E3%81%A8TensorFlow%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AA%E5%AE%9F%E8%A3%85%E4%BE%8B%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/nakai.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>中井悦司</h2>
+                      <p>
+                        <small>Google</small><br/>
+                        <ul class="userprofile">
+                          <li>Cloud Solutions Architect</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>ビデオゲームの自動プレイで有名になり、AlphaGoでも利用されているDQN（Deep Q-Network：多層ニューラルネットワークを利用した強化学習）について理論的な仕組みを解説した上で、簡単な例題でTensorFlowによる実装例を紹介します。みなさんもこの機会に、ディープラーニングに触れてみませんか。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S32">
+                    <hr/>
+                    <h3>IDCフロンティアのR&Dが福岡でやっていること <a href="#S32"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=IDC%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E3%81%AER&D%E3%81%8C%E7%A6%8F%E5%B2%A1%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S32" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S32&amp;t=IDC%E3%83%95%E3%83%AD%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A2%E3%81%AER&D%E3%81%8C%E7%A6%8F%E5%B2%A1%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/ooya.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>大屋誠</h2>
+                      <p>
+                        <small>株式会社IDCフロンティア</small><br/>
+                        <ul class="userprofile">
+                          <li>2008年よりクラウドサービス開発をリードし、2013年よりR＆D室長。2015年より福岡に移住、IoTや中心とした技術開発やサービス企画を福岡で行ないつつ、Civic Tech 推進担当として地域課題解決の支援に従事する。Yahoo Japanの"myThings"のエヴァンジェリストとして、グループをこえて活躍。週末は趣味で田畑や養鶏を楽しみ汗をながす。社内でのリモートワーク推進、整備を進めている。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>IDCフロンティアの技術的な次の一手を考えるR&D部隊。IoTをはじめとして最近の取り組みから、ワークスタイルの試行錯誤までにスポットをあてて紹介します</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S33">
+                    <hr/>
+                    <h3>さくらのDockerコンテナホスティング-Arukasの解説とインフラを支える技術 <a href="#S33"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEDocker%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-Arukas%E3%81%AE%E8%A7%A3%E8%AA%AC%E3%81%A8%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S33" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S33&amp;t=%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEDocker%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-Arukas%E3%81%AE%E8%A7%A3%E8%AA%AC%E3%81%A8%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/s-yamada.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>山田修司</h2>
+                          <a href="https://twitter.com/uzyexe" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/shuji.yamada.798" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>さくらインターネット株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>2007年さくらインターネット株式会社に入社。Dockerコンテナホスティング「Arukas」の企画/開発/運用担当。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>さくらインターネットは、Dockerコンテナホスティングサービス「Arukas」(https://arukas.io/)を開発し、無償試用できるオープンβテストを開始しました。ArukasはDockerコンテナホスティングとしてはまだ珍しい共用（シェアード）型のホスティングサービスです。今回はこのArukasのサービス内容の簡単なご紹介と、裏側のインフラなどを解説します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S34">
+                    <hr/>
+                    <h3>ロボットに関する多くのオープンソース共通基盤 ROS（robot operating system）を触ってみよう <a href="#S34"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%A4%9A%E3%81%8F%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E9%80%9A%E5%9F%BA%E7%9B%A4%20ROS%EF%BC%88robot%20operating%20system%EF%BC%89%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S34" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S34&amp;t=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%A4%9A%E3%81%8F%E3%81%AE%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B9%E5%85%B1%E9%80%9A%E5%9F%BA%E7%9B%A4%20ROS%EF%BC%88robot%20operating%20system%EF%BC%89%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/ueda.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>上田隆一</h2>
+                          <a href="https://twitter.com/ryuichiueda" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.facebook.com/675930229170437" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>千葉工業大学先進工学部未来ロボティクス学科准教授</small><br/>
+                        <ul class="userprofile">
+                          <li>千葉工業大学先進工学部未来ロボティクス学科准教授。巷ではシェル芸おじさんで知られる。著書に「シェルスクリプト高速開発手法入門」「シェルプログラミング実用テクニック」。日経Linuxにて「RaspberryPiで作ろう お手軽ロボット教室」連載中。博士（工学）</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>ロボットに関する多くのオープンソースを利用するための共通基盤となっているROS（robot operating system）を使ってみるハンズオンです。<br /> お願い:<br /> Ubuntu Server/Desktop 14.04 LTS（仮想マシン可）環境をご準備ください。また、できる人は、https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu14.04_server のREADME.ja.mdに従って、ROSのインストールを行ってから参加ください。（ハンズオンはインストールから行いますが、トラフィック削減のため）</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S35">
+                    <hr/>
+                    <h3>マルチテナント メッセージング基盤を刷新して一年運用した話 <a href="#S35"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%83%9E%E3%83%AB%E3%83%81%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88%20%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0%E5%9F%BA%E7%9B%A4%E3%82%92%E5%88%B7%E6%96%B0%E3%81%97%E3%81%A6%E4%B8%80%E5%B9%B4%E9%81%8B%E7%94%A8%E3%81%97%E3%81%9F%E8%A9%B1%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S35" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S35&amp;t=%E3%83%9E%E3%83%AB%E3%83%81%E3%83%86%E3%83%8A%E3%83%B3%E3%83%88%20%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0%E5%9F%BA%E7%9B%A4%E3%82%92%E5%88%B7%E6%96%B0%E3%81%97%E3%81%A6%E4%B8%80%E5%B9%B4%E9%81%8B%E7%94%A8%E3%81%97%E3%81%9F%E8%A9%B1%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/a.tomohisa.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>青嶋智久</h2>
+                      <p>
+                        <small>ニフティ株式会社 IoTデザインセンター</small><br/>
+                        <ul class="userprofile">
+                          <li>ソフトウェアエンジニア。元々はiOS, Androidアプリの開発を行っていました。2年前にクラウド技術に携わりたくてニフティに入社。現在はニフティクラウド mobile backend サーバサイドの開発・運用を担当しています。最近気になっている分野はSREや分散処理。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>ニフティクラウド mobile backend はスマートフォン向けアプリケーションを作る上で、汎用的な機能を提供するクラウドサービスです。提供機能は複数あるわけですが、当セッションではニフティクラウド mobile backend でも人気の高いプッシュ通知機能の裏側をお話しします。個別配信、大量配信が混じり合うメッセージの分散処理を実現する上で分散KVSを選択した背景や、運用してみた見解などを紹介できればと考えています。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S36">
+                    <hr/>
+                    <h3>AWSをフル活用してマイナンバーを管理するサービスを作った話 <a href="#S36"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=AWS%E3%82%92%E3%83%95%E3%83%AB%E6%B4%BB%E7%94%A8%E3%81%97%E3%81%A6%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%E3%82%92%E7%AE%A1%E7%90%86%E3%81%99%E3%82%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S36" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S36&amp;t=AWS%E3%82%92%E3%83%95%E3%83%AB%E6%B4%BB%E7%94%A8%E3%81%97%E3%81%A6%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%E3%82%92%E7%AE%A1%E7%90%86%E3%81%99%E3%82%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F%E8%A9%B1%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/endo.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>遠藤博樹</h2>
+                      <p>
+                        <small>株式会社ワークスアプリケーションズ　HUE&ATE Div.所属</small><br/>
+                        <ul class="userprofile">
+                          <li>産業技術大学院大学 修了。2009年にワークスアプリケーションズ入社。主力製品『COMPANY』のクラウド対応に尽力。アマゾン ウェブ サービス ジャパンに転じ、エンタープライズカスタマーの技術支援に従事。その後カムバック制度を利用してワークスアプリケーションズに復職し、先端テクノロジーの先行研究やマイナンバー管理サービスのアーキテクチャ設計に携わる。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>SaaSの提供経験の無い私がAWSをフル活用することで高度なセキュリティを求められるマイナンバーの管理サービスを作った話です。AWSのDynamoDB、Beanstalk、CloudFormation、IAM、KMSなどを活用し、稼働率100%を目指し設計しました。特にどのように厳しいセキュリティ要件を満たし、どのように稼働率100%を目指して設計し、障害のないサービスにできたのか解説します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S37">
+                    <hr/>
+                    <h3>Mesosphere DC/OS-データセンターOSの世界 <a href="#S37"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Mesosphere%20DC/OS-%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BCOS%E3%81%AE%E4%B8%96%E7%95%8C%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S37" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S37&amp;t=Mesosphere%20DC/OS-%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BCOS%E3%81%AE%E4%B8%96%E7%95%8C%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/m-kiuchi_001.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>木内満歳</h2>
+                          <a href="https://twitter.com/creationline" target=="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>クリエーションライン(株)</small><br/>
+                        <ul class="userprofile">
+                          <li>外資系コンピュータメーカーにてプリセールス・インテグレーションエンジニアとしてスーパーコンピュータシステム、教育システム、ISP、IP放送システムの設計・構築を担当。クリエーションラインではデータ分析、グラフデータベース、IoTシステム、マイクロサービスのコンサルティング、構築を担当</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>クラウド時代（Cloud Era）に入った現在、アプリケーションの開発手法、インフラの構築、データのハンドリング手法など、様々な要素が同時並行的に変化しつつあります。DC/OSは、Big Dataアプリケーションやマイクロサービスをサーバーの集合体上に構成するOSであり、企業特有のスケーリング要求に合った利用環境をすばやく構築することを可能とします。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S38">
+                    <hr/>
+                    <h3>Kubernetesにまつわるエトセトラ（主に苦労話） <a href="#S38"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Kubernetes%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E3%82%A8%E3%83%88%E3%82%BB%E3%83%88%E3%83%A9%EF%BC%88%E4%B8%BB%E3%81%AB%E8%8B%A6%E5%8A%B4%E8%A9%B1%EF%BC%89%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S38" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S38&amp;t=Kubernetes%E3%81%AB%E3%81%BE%E3%81%A4%E3%82%8F%E3%82%8B%E3%82%A8%E3%83%88%E3%82%BB%E3%83%88%E3%83%A9%EF%BC%88%E4%B8%BB%E3%81%AB%E8%8B%A6%E5%8A%B4%E8%A9%B1%EF%BC%89%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/inoue.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>井上誠一郎</h2>
+                      <p>
+                        <small>株式会社ワークスアプリケーションズ　Partner/Executive Fellow</small><br/>
+                        <ul class="userprofile">
+                          <li>株式会社ワークスアプリケーションズのエグゼクティブフェローとして、製品横断のパフォーマンス改善、開発インフラの改善、採用(グローバル)、教育等に従事。新製品である世界初の人工知能型ERP「HUE」開発のアーキテクチャー責任者を務め、グローバルでの開発を指揮している。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Dockerをちゃんと使おうと考えていたらKubernetesに出会いました。ERPのシステム開発でkubernetesを使おうとして苦労した、あるいは現在進行形で苦労していることを、そもそもKubernetesが解決しようとしている課題やそのアーキテクチャそのものにも言及しながらお話します。Dockerをベースにシステム設計を行おうとしている方にノウハウ（主に苦労話）を共有します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S39">
+                    <hr/>
+                    <h3>PostgreSQL女子エンジニアの東海道歩き旅 <a href="#S39"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=PostgreSQL%E5%A5%B3%E5%AD%90%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E6%9D%B1%E6%B5%B7%E9%81%93%E6%AD%A9%E3%81%8D%E6%97%85%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S39" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S39&amp;t=PostgreSQL%E5%A5%B3%E5%AD%90%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E6%9D%B1%E6%B5%B7%E9%81%93%E6%AD%A9%E3%81%8D%E6%97%85%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/shimogai.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>下雅意美紀</h2>
+                          <a href="https://www.facebook.com/profile.php?id=100007641377040" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                      <p>
+                        <small>TIS株式会社</small><br/>
+                        <ul class="userprofile">
+                          <li>TIS株式会社勤務、PostgreSQL女子エンジニア</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>東海道は慶長6年に江戸-大坂間の幹線として整備され、昔から現在まで日本の大動脈としての役割を果たし、江戸後期の歌川広重の「東海道五十三次」はあまりに有名である。東海道には、箱根、大井川等の難所があり、女性には中山道のほうが好まれたとも言われている。しかし、難所に立ち向かうのがPostgreSQL女子エンジニアである。今回はエンジニアとしてのレベルアップのための東海道歩き旅の体験談とPostgreSQLのカスタマイズへの活用を取り上げ、後進へのノウハウを提供したい。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S40">
+                    <hr/>
+                    <h3>サーバ構築をbashスクリプトから自動化ツールに変えてみませんか？ <a href="#S40"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E3%82%B5%E3%83%BC%E3%83%90%E6%A7%8B%E7%AF%89%E3%82%92bash%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%8B%E3%82%89%E8%87%AA%E5%8B%95%E5%8C%96%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AB%E5%A4%89%E3%81%88%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%EF%BC%9F%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S40" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S40&amp;t=%E3%82%B5%E3%83%BC%E3%83%90%E6%A7%8B%E7%AF%89%E3%82%92bash%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%8B%E3%82%89%E8%87%AA%E5%8B%95%E5%8C%96%E3%83%84%E3%83%BC%E3%83%AB%E3%81%AB%E5%A4%89%E3%81%88%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%EF%BC%9F%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/morimoto.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>森元敏雄</h2>
+                      <p>
+                        <small>TIS株式会社 戦略技術センター</small><br/>
+                        <ul class="userprofile">
+                          <li>金融系システムの開発部門から、R&D部門である戦略技術センターに異動。戦略技術センターではインフラ設計・保守および、OSSを中心とした技術検証を担当している。Impress Think IT(https://thinkit.co.jp/)やITmedia @IT(http://www.atmarkit.co.jp/)に技術情報記事を寄稿や、社内技術blog(http://tech-sketch.jp/author/morimoto)を執筆している。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>手作業でサーバ構築をされている方、これからサーバ構築作業を担当される方、大量のサーバの保守にうんざりされている方など、皆さまの作業負荷を軽減できるサーバ構築自動化（構成管理）ツールをご紹介させて頂きます。<br /> サーバ構築自動化（構成管理）ツールの中でも特に利用者の多い、「Chef」「Ansible」「Puppet」「Itamae」の4製品の概要のご紹介と、インストール時のコマンド上での操作と「Ansible」で実装した場合との比較を行いながら機能の解説を行います。<br /> 初心者の方向けですので、中上級者の方には、既知の情報になってしまうことをご容赦ください。<br /> ※本公演は以下の＠IT上の以下の記事をベースにしております。OSSのサーバ構築自動化ツール、4製品徹底検証 2016年版<br /> http://www.atmarkit.co.jp/ait/articles/1606/14/news011.html <br /> http://www.atmarkit.co.jp/ait/articles/1606/15/news017.html</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S41">
+                    <hr/>
+                    <h3>機械学習を用いたAWS CloudTrailログの積極的活用 <a href="#S41"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%92%E7%94%A8%E3%81%84%E3%81%9FAWS%20CloudTrail%E3%83%AD%E3%82%B0%E3%81%AE%E7%A9%8D%E6%A5%B5%E7%9A%84%E6%B4%BB%E7%94%A8%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S41" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S41&amp;t=%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%92%E7%94%A8%E3%81%84%E3%81%9FAWS%20CloudTrail%E3%83%AD%E3%82%B0%E3%81%AE%E7%A9%8D%E6%A5%B5%E7%9A%84%E6%B4%BB%E7%94%A8%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/white.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>高橋和也</h2>
+                      <p>
+                        <small>TIS株式会社 戦略技術センター</small><br/>
+                        <ul class="userprofile">
+                          <li>運用業務やAWSをはじめとする各種クラウドサービスの検証を経て、クラウドやOSSを活用したシステムの設計・構築や運用の自動化などに従事。現在は運用業務における機械学習の活用についても模索中。</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>AWSにはCloudTrail、VPC Flow Logs、S3 Bucket Loggingなど、AWS上の様々なログを記録･保管するサービスが存在します。これらのログはうまく活用すれば不審な操作の検出からIAM Policy設定不備の検出まで様々なことに役立ちますが、大量に記録されるログを日々管理者が確認して判断することは現実的ではありません。そこでこれらのログをさらに有効活用すべく、機械学習を用いて試行錯誤した軌跡についてお話します。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row" id="S42">
+                    <hr/>
+                    <h3>Walti.ioで簡単にWordPressで作ったサイトの脆弱性スキャンをしてみる <a href="#S42"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                      <a class="fa fa-twitter fa-lg" style="color: blue;" href="http://twitter.com/intent/tweet?text=Walti.io%E3%81%A7%E7%B0%A1%E5%8D%98%E3%81%ABWordPress%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%20%23jtf2016&amp;url=http://2016.techfesta.jp/speaker.html%23S42" target="_blank" title="Share on Twitter"></a>
+                      <a class="fa fa-facebook-official fa-lg" style="color: blue;" href="http://www.facebook.com/sharer.php?u=http://2016.techfesta.jp/speaker.html%23S42&amp;t=Walti.io%E3%81%A7%E7%B0%A1%E5%8D%98%E3%81%ABWordPress%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%82%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B%23jtf2016" target="_blank" title="Share on facebook"></a>
+                    </h3>
+                  <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                        <img src="assets/img/fj.png" alt="userprofileimg" class="userprofileimg">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                      <h2>藤崎正範</h2>
+                      <p>
+                        <small></small><br/>
+                        <ul class="userprofile">
+                          <li></li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+                  </div>
+                  <div class="col-md-6">
+                     <h4>講演内容</h4>
+                    <small>Walti.ioは、ペネトレーションテスト系のOSSでWebシステムに対して脆弱性スキャンをすることができるSaaSです。</small>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="site-footer">
+  <div class="footerback">
+<!--    <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default" id="btn-ticket-footer">
+      <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
+    </a>
+-->
+    <div class="container">
+      <div class="row text-center">
+        <p>
+          <img src="assets/img/footer.png" alt="">
+        </p>
+        <small class="copyright">©&ensp;July&ensp;Tech&ensp;Festa&ensp;2016実行委員会</small>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="mailto:info@techfesta.jp?subject=techfestaへのお問い合わせ">info@techfesta.jp</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+</html>

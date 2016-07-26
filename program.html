@@ -1,0 +1,954 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="JTF2016 IoT AI 機械学習 クラウド最新事情 コンテナ技術 DevOps" name="Keywords">
+    <meta content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp" name="description">
+    <meta content="JTF2016 Member" name="author">
+    <meta content="JTF2016, Sunday, July 24 at 10:00. at AIIT." property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp" property="og:description">
+    <meta content="http://2016.techfesta.jp/" property="og:url">
+    <meta content="http://2016.techfesta.jp/assets/img/topback_min.png" property="og:image">
+    <meta content="JTF2016" property="og:site_name">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@techfesta">
+    <meta name="twitter:creator" content="@techfesta">
+    <meta name="twitter:title" content="JTF2016, Sunday, July 24 at 10:00. at AIIT.">
+    <meta name="twitter:description" content="インフラエンジニアの夏の祭典 July Tech Festa を7/24(日)に開催します。IoT、AI、機械学習、クラウド最新事情、コンテナ技術、DevOpsなど多岐に渡ります。 http://2016.techfesta.jp">
+    <meta name="twitter:image" content="http://2016.techfesta.jp/assets/img/topback_min.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>July Tech Festa 2016 - JTF2016</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+  <body class="">
+    <nav class="navbar navbar-default jtfnav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="assets/img/logo.png" class="jtflogo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav jtfnavlist navbar-right">
+        <li><a href="/">ホーム</a></li>
+<!--        <li>
+          <a href="http://jtf2016.peatix.com/" target="_blank">
+            チケット購入
+          </a>
+        </li>
+-->
+        <li><a href="speaker.html">登壇者一覧</a></li>
+        <li><a href="program.html">タイムテーブル</a></li>
+        <li><a href="englishcafe.html">English Cafe</a></li>
+        <li><a href="sponsor.html">スポンサー紹介</a></li>
+        <li><a href="members.html">実行委員会</a></li>
+        <li>
+          <a href="https://www.facebook.com/techfesta/" target="_blank">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+            <span class="mobile_show">&ensp;facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/techfesta" target="_blank">
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="mobile_show">&ensp;twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <div class="program-page">
+  <div class="headback">
+    <div class="container">
+      <div class="headtopcontents program">
+        <img src="assets/img/program/program-title.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="section-view">
+    <div class="section-backview colorview1"></div>
+    <div class="section-backview colorview2"></div>
+    <div class="section-backview colorview3"></div>
+    <div class="container">
+      <div class="backwhite-inner">
+        <!--
+<div class="col-md-12 ticketbar">
+  <div class="pull-right">
+    <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default btn-ticket">
+      <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
+    </a>
+  </div>
+</div>
+-->
+
+        <div class="row">
+          <div class="col-md-12 box-section">
+            <div class="col-md-5 col-sm-5 col-xs-12 pull-right">
+              <img src="assets/img/program/dateplate.png" alt="" style="width:100%;">
+            </div>
+
+            <div class="col-md-7 col-sm-7 col-xs-12">
+              <h1>July Tech Festa 2016 当日のプログラム</h1>
+              <p>JulyTechFesta2016は以下のプログラムで開催されます。同時に多数のセッションが開催されますので、お誘い合わせの上お越しくださいませ。スケジュールや開催教室・講演内容は予告なく変更されることがありますのでご了承下さい。</p>
+            </div>
+          </div>
+
+          <div class="col-md-12 box-section">
+            <h3>ベスト参加レポート賞のご案内</h3>
+            <p>JTF2016へご参加いただきましたことを、ご自身のブログなどでご公表なさった方の記事を募集しております。<br /> ご応募いただいた方の中から、ベスト参加レポート賞として抽選で1名様に、なんと<span style="font-weight: bold;">豪華12.9インチのタブレットをプレゼント</span>いたします！奮ってご応募ください！<br /> 期日は2016年7月末までですので、お早めに！<br /> (当選の発表は、発送をもって代えさせていただきます。) </p>
+            <div class="pull-right">
+              <a href="http://goo.gl/forms/6Uyswnm8mwQ8nnKJ2" target="_blank" class="btn btn-default btn-award">
+                <i class="fa fa-caret-right yellow"></i>&ensp;ベスト参加レポート賞に応募する
+              </a>
+            </div>
+          </div>
+  
+          <div class="mobile_hide col-md-12 box-section">
+            <h3>スケジュール (テーブル表示)</h3>
+            <span>※左右にスクロールすることができます。</span>
+            <div class="ui-flickable-wrapper">
+              <div class="ui-flickable-content" style="overflow: scroll;">
+                <table border="1" cellpadding="0" cellspacing="0" style="width:1200px;">
+                 <tbody class="programtable">
+                   <tr>
+                    <td rowspan="2">時間</td>
+                    <td>A会場</td><td>B会場</td><td>C会場</td><td>D会場</td><td>E会場</td><td>F会場</td><td>G会場</td><td>H会場</td><td>英会話カフェ</td>
+                  </tr>
+                  <tr>
+                    <td>Hall</td><td>433</td><td>351</td><td>354</td><td>358A-358B</td><td>452-453</td><td>357</td><td>259</td><td>269</td>
+                  </tr>
+                  <tr>
+                    <td>9:00-<br>10:00</td>
+                    <td rowspan="1" colspan="9">
+                          受付
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10:00-<br>11:00</td>
+                    <td rowspan="1" colspan="1">
+                          基調講演<br/>
+                          <a href="speaker.html#S00">現実が正解だ！ やってみんとわからんことだらけ。 さくらのIoT企画・開発365日の軌跡。そして、次の365日へ。</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:15-<br>12:00</td>
+                    <td rowspan="1" colspan="1">
+                          A10<br/>
+                          <a href="speaker.html#S17">Wantedly の文化を支えるインフラとビジネスの変化に強いインフラ</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          B10<br/>
+                          <a href="speaker.html#S36">AWSをフル活用してマイナンバーを管理するサービスを作った話</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          C10<br/>
+                          <a href="speaker.html#S02">今話題のCognitive/AI系サービスを徹底分析！あなたに最適な選択を。</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          D10<br/>
+                          <a href="speaker.html#S33">さくらのDockerコンテナホスティング-Arukasの解説とインフラを支える技術</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          E10<br/>
+                          <a href="speaker.html#S05">情シス戦線異状アリ！？ 自作のパケットレコーダーで海外拠点のLANを自動監視してみた</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          F10<br/>
+                          <a href="speaker.html#S07">IoTデバイスEdisonクラスタでSDNをやって苦し^H^H楽しもう! OpenVNet航海日誌（仮）</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          H10<br/>
+                          <a href="speaker.html#S08">IoT×AI×インフラアイデアソン with IdeaHubハンズオン</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12:00-<br>13:00</td>
+                    <td rowspan="1" colspan="9">
+                          スカウティングセッション(A会場)
+                        <br />Wantedly → ワークスアプリケーションズ → さくらインターネット → Nutanix → ハートビーツ → はてな
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13:00-<br>13:45</td>
+                    <td rowspan="1" colspan="1">
+                          A20<br/>
+                          <a href="speaker.html#S23">Mackerelの技術の全て。これまでの道のりと更なる発展に向けて</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          B20<br/>
+                          <a href="speaker.html#S18">人工知能の技術で有名なニューラルネットワークのフレームワークであるChainerを用いた対話Botを使った俺の屍を越えてゆけ</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          C20<br/>
+                          <a href="speaker.html#S38">Kubernetesにまつわるエトセトラ（主に苦労話）</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          D20<br/>
+                          <a href="speaker.html#S15">今あえて試行錯誤しながら"車輪の再発明"をする意味</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          E20<br/>
+                          <a href="speaker.html#S39">PostgreSQL女子エンジニアの東海道歩き旅</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          F20<br/>
+                          <a href="speaker.html#S11">HCDの教育をHCDで考えた話</a><br />
+                        
+                    </td>
+                    <td rowspan="2" colspan="1">
+                          G20<br/>
+                          <a href="speaker.html#S34">ロボットに関する多くのオープンソース共通基盤 ROS（robot operating system）を触ってみよう</a><br />
+                        
+                    </td>
+                    <td rowspan="2" colspan="1">
+                          H20<br/>
+                          <a href="speaker.html#S08">IoT×AI×インフラアイデアソン with IdeaHubハンズオン</a><br />
+                        
+                    </td>
+                    <td rowspan="2" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14:00-<br>14:45</td>
+                    <td rowspan="1" colspan="1">
+                          A30<br/>
+                          <a href="speaker.html#S41">機械学習を用いたAWS CloudTrailログの積極的活用</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          B30<br/>
+                          <a href="speaker.html#S16">CIプロセスにセキュリティ診断を組み込もう！Eclipse CheとOWASP ZAPで実現する、セキュアなシステム開発のすすめ</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          C30<br/>
+                          <a href="speaker.html#S01">便利に使えるプライベートオンラインストレージ　ownCloudのあれこれと、一歩進んだチューニングを大公開！</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          D30<br/>
+                          <a href="speaker.html#S12">OpenStack Osloを使おう - メインロジックの開発に集中するためのライブラリ活用</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          E30<br/>
+                          <a href="speaker.html#S20">MOM (Message Oriented Middleware) に求めるモノ</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          F30<br/>
+                          <a href="speaker.html#S19">PROCESS WARP「プロセスがデバイス間で移動する」仕組みを作る</a><br />
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14:45-<br>15:15</td>
+                    <td rowspan="1" colspan="9">
+                          スカウティングセッション(A会場)
+                        <br />TIS → IDCフロンティア → NHNテコラス
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15:15-<br>16:00</td>
+                    <td rowspan="1" colspan="1">
+                          A40<br/>
+                          <a href="speaker.html#S28">自動化のための運用監視設計を皆で考えてみなイカ（仮）</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          B40<br/>
+                          <a href="speaker.html#S40">サーバ構築をbashスクリプトから自動化ツールに変えてみませんか？</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          C40<br/>
+                          <a href="speaker.html#S24">ベアメタルクラウドの運用をJupyter NotebookとAnsibleで機械化してみた</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          D40<br/>
+                          <a href="speaker.html#S14">Site Reliability Engineering (SRE)で拡がる運用の世界 － Googleでの展開から、エンタープライズへの夢は見れるか</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          E40<br/>
+                          <a href="speaker.html#S32">IDCフロンティアのR&Dが福岡でやっていること</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          F40<br/>
+                          <a href="speaker.html#S03">Microservices の効率化について熟考したところ、 12Factor App にたどり着いたというお話</a><br />
+                        
+                          F41<br/>
+                          <a href="speaker.html#S04">「寝ている間に儲かる」、RT-Seedが実現する自動売買の未来</a><br />
+                        
+                          F42<br/>
+                          <a href="speaker.html#S06">LinuxとWindowsが手を結んだ！これからのインフラエンジニアは"Bash on Ubuntu on Windows"をこう使え！</a><br />
+                        
+                    </td>
+                    <td rowspan="2" colspan="1">
+                          G40<br/>
+                          <a href="speaker.html#S22">変わりゆく要求に備えよ！システムアーキテクチャの新常識「マイクロサービス」を作って体験しよう！</a><br />
+                        
+                    </td>
+                    <td rowspan="2" colspan="1">
+                          H40<br/>
+                          <a href="speaker.html#S08">IoT×AI×インフラアイデアソン with IdeaHubハンズオン</a><br />
+                        
+                    </td>
+                    <td rowspan="2" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16:15-<br>17:00</td>
+                    <td rowspan="1" colspan="1">
+                          A50<br/>
+                          <a href="speaker.html#S25">Linux,FreeBSD脆弱性検知ツールVulsを開発したらServerspecを超えるGitHubスターを獲得するほどバズった話</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          B50<br/>
+                          <a href="speaker.html#S31">ディープラーニング入門-DQN（Deep Q-Network）の理論解説とTensorFlowを用いたシンプルな実装例</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          C50<br/>
+                          <a href="speaker.html#S13">仮想ネットワークアプライアンスで実現するネットワークエンジニアのためのDevOps</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          D50<br/>
+                          <a href="speaker.html#S09">HashiCorp VaultでMySQLアカウント管理はもう怖くない</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          E50<br/>
+                          <a href="speaker.html#S21">オンプレミス環境もまだまだ進化！Nutanixによるハイパーコンバージドインフラ技術解説</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          F50<br/>
+                          <a href="speaker.html#S29">ITインフラ・マネージド事業領域におけるデータサイエンスの取り組み～30代からはじめる本当は泥臭いデータサイエンスの話～</a><br />
+                        
+                          F51<br/>
+                          <a href="speaker.html#S30">チーム仕事を円滑にする読書会のすすめ</a><br />
+                        
+                          F52<br/>
+                          <a href="speaker.html#S42">Walti.ioで簡単にWordPressで作ったサイトの脆弱性スキャンをしてみる</a><br />
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17:00-<br>17:30</td>
+                    <td rowspan="1" colspan="9">
+                          スカウティングセッション(A会場)
+                        <br />DMM.comラボ → ニフティ → クリエーションライン
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17:30-<br>18:15</td>
+                    <td rowspan="1" colspan="1">
+                          A60<br/>
+                          <a href="speaker.html#S27">今エンジニアに最も必要なものは「戦略」である！孫子に学ぶ本質のつかみ方</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          B60<br/>
+                          <a href="speaker.html#S26">主婦が技術書を書いてSIerに入社した話。私の732ページを超えていけ！</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          C60<br/>
+                          <a href="speaker.html#S37">Mesosphere DC/OS-データセンターOSの世界</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          D60<br/>
+                          <a href="speaker.html#S35">マルチテナント メッセージング基盤を刷新して一年運用した話</a><br />
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                    <td rowspan="1" colspan="1">
+                          &nbsp;
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:15-<br>18:30</td>
+                    <td rowspan="1" colspan="9">
+                          クロージングセッション(A会場)
+                        
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19:00-<br>21:00</td>
+                    <td rowspan="1" colspan="9">
+                          懇親会(ハートンホテル)
+                        
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 box-section">
+          <h3>スケジュール (縦表示)</h3>
+          <table border="1" class="vertical_table">
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">9:00-10:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      受付
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">10:00-11:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [基調講演] <a href="speaker.html#S00">現実が正解だ！ やってみんとわからんことだらけ。 さくらのIoT企画・開発365日の軌跡。そして、次の365日へ。</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">11:15-12:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [A10] <a href="speaker.html#S17">Wantedly の文化を支えるインフラとビジネスの変化に強いインフラ</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    B会場 (433)<br />
+                      [B10] <a href="speaker.html#S36">AWSをフル活用してマイナンバーを管理するサービスを作った話</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    C会場 (351)<br />
+                      [C10] <a href="speaker.html#S02">今話題のCognitive/AI系サービスを徹底分析！あなたに最適な選択を。</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    D会場 (354)<br />
+                      [D10] <a href="speaker.html#S33">さくらのDockerコンテナホスティング-Arukasの解説とインフラを支える技術</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    E会場 (358A-358B)<br />
+                      [E10] <a href="speaker.html#S05">情シス戦線異状アリ！？ 自作のパケットレコーダーで海外拠点のLANを自動監視してみた</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    F会場 (452-453)<br />
+                      [F10] <a href="speaker.html#S07">IoTデバイスEdisonクラスタでSDNをやって苦し^H^H楽しもう! OpenVNet航海日誌（仮）</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    H会場 (259)<br />
+                      [H10] <a href="speaker.html#S08">IoT×AI×インフラアイデアソン with IdeaHubハンズオン</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">12:00-13:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      スカウティングセッション(A会場)
+                    <br />Wantedly → ワークスアプリケーションズ → さくらインターネット → Nutanix → ハートビーツ → はてな
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">13:00-13:45</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [A20] <a href="speaker.html#S23">Mackerelの技術の全て。これまでの道のりと更なる発展に向けて</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    B会場 (433)<br />
+                      [B20] <a href="speaker.html#S18">人工知能の技術で有名なニューラルネットワークのフレームワークであるChainerを用いた対話Botを使った俺の屍を越えてゆけ</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    C会場 (351)<br />
+                      [C20] <a href="speaker.html#S38">Kubernetesにまつわるエトセトラ（主に苦労話）</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    D会場 (354)<br />
+                      [D20] <a href="speaker.html#S15">今あえて試行錯誤しながら"車輪の再発明"をする意味</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    E会場 (358A-358B)<br />
+                      [E20] <a href="speaker.html#S39">PostgreSQL女子エンジニアの東海道歩き旅</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    F会場 (452-453)<br />
+                      [F20] <a href="speaker.html#S11">HCDの教育をHCDで考えた話</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    G会場 (357)<br />
+                      [G20] <a href="speaker.html#S34">ロボットに関する多くのオープンソース共通基盤 ROS（robot operating system）を触ってみよう</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    H会場 (259)<br />
+                      [H20] <a href="speaker.html#S08">IoT×AI×インフラアイデアソン with IdeaHubハンズオン</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">14:00-14:45</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [A30] <a href="speaker.html#S41">機械学習を用いたAWS CloudTrailログの積極的活用</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    B会場 (433)<br />
+                      [B30] <a href="speaker.html#S16">CIプロセスにセキュリティ診断を組み込もう！Eclipse CheとOWASP ZAPで実現する、セキュアなシステム開発のすすめ</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    C会場 (351)<br />
+                      [C30] <a href="speaker.html#S01">便利に使えるプライベートオンラインストレージ　ownCloudのあれこれと、一歩進んだチューニングを大公開！</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    D会場 (354)<br />
+                      [D30] <a href="speaker.html#S12">OpenStack Osloを使おう - メインロジックの開発に集中するためのライブラリ活用</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    E会場 (358A-358B)<br />
+                      [E30] <a href="speaker.html#S20">MOM (Message Oriented Middleware) に求めるモノ</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    F会場 (452-453)<br />
+                      [F30] <a href="speaker.html#S19">PROCESS WARP「プロセスがデバイス間で移動する」仕組みを作る</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">14:45-15:15</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      スカウティングセッション(A会場)
+                    <br />TIS → IDCフロンティア → NHNテコラス
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">15:15-16:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [A40] <a href="speaker.html#S28">自動化のための運用監視設計を皆で考えてみなイカ（仮）</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    B会場 (433)<br />
+                      [B40] <a href="speaker.html#S40">サーバ構築をbashスクリプトから自動化ツールに変えてみませんか？</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    C会場 (351)<br />
+                      [C40] <a href="speaker.html#S24">ベアメタルクラウドの運用をJupyter NotebookとAnsibleで機械化してみた</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    D会場 (354)<br />
+                      [D40] <a href="speaker.html#S14">Site Reliability Engineering (SRE)で拡がる運用の世界 － Googleでの展開から、エンタープライズへの夢は見れるか</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    E会場 (358A-358B)<br />
+                      [E40] <a href="speaker.html#S32">IDCフロンティアのR&Dが福岡でやっていること</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    F会場 (452-453)<br />
+                      [F40] <a href="speaker.html#S03">Microservices の効率化について熟考したところ、 12Factor App にたどり着いたというお話</a><br />
+                    
+                      [F41] <a href="speaker.html#S04">「寝ている間に儲かる」、RT-Seedが実現する自動売買の未来</a><br />
+                    
+                      [F42] <a href="speaker.html#S06">LinuxとWindowsが手を結んだ！これからのインフラエンジニアは"Bash on Ubuntu on Windows"をこう使え！</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    G会場 (357)<br />
+                      [G40] <a href="speaker.html#S22">変わりゆく要求に備えよ！システムアーキテクチャの新常識「マイクロサービス」を作って体験しよう！</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    H会場 (259)<br />
+                      [H40] <a href="speaker.html#S08">IoT×AI×インフラアイデアソン with IdeaHubハンズオン</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">16:15-17:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [A50] <a href="speaker.html#S25">Linux,FreeBSD脆弱性検知ツールVulsを開発したらServerspecを超えるGitHubスターを獲得するほどバズった話</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    B会場 (433)<br />
+                      [B50] <a href="speaker.html#S31">ディープラーニング入門-DQN（Deep Q-Network）の理論解説とTensorFlowを用いたシンプルな実装例</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    C会場 (351)<br />
+                      [C50] <a href="speaker.html#S13">仮想ネットワークアプライアンスで実現するネットワークエンジニアのためのDevOps</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    D会場 (354)<br />
+                      [D50] <a href="speaker.html#S09">HashiCorp VaultでMySQLアカウント管理はもう怖くない</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    E会場 (358A-358B)<br />
+                      [E50] <a href="speaker.html#S21">オンプレミス環境もまだまだ進化！Nutanixによるハイパーコンバージドインフラ技術解説</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    F会場 (452-453)<br />
+                      [F50] <a href="speaker.html#S29">ITインフラ・マネージド事業領域におけるデータサイエンスの取り組み～30代からはじめる本当は泥臭いデータサイエンスの話～</a><br />
+                    
+                      [F51] <a href="speaker.html#S30">チーム仕事を円滑にする読書会のすすめ</a><br />
+                    
+                      [F52] <a href="speaker.html#S42">Walti.ioで簡単にWordPressで作ったサイトの脆弱性スキャンをしてみる</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">17:00-17:30</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      スカウティングセッション(A会場)
+                    <br />DMM.comラボ → ニフティ → クリエーションライン
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">17:30-18:15</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      [A60] <a href="speaker.html#S27">今エンジニアに最も必要なものは「戦略」である！孫子に学ぶ本質のつかみ方</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    B会場 (433)<br />
+                      [B60] <a href="speaker.html#S26">主婦が技術書を書いてSIerに入社した話。私の732ページを超えていけ！</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row0">
+                <td>
+                    C会場 (351)<br />
+                      [C60] <a href="speaker.html#S37">Mesosphere DC/OS-データセンターOSの世界</a><br />
+                    
+                </td>
+              </tr>
+              <tr class="vertical_table_row1">
+                <td>
+                    D会場 (354)<br />
+                      [D60] <a href="speaker.html#S35">マルチテナント メッセージング基盤を刷新して一年運用した話</a><br />
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">18:15-18:30</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                    A会場 (Hall)<br />
+                      クロージングセッション(A会場)
+                    
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td class="vertical_table_headline">19:00-21:00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="vertical_table_row0">
+                <td>
+                      懇親会(ハートンホテル)
+                    
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <footer class="site-footer">
+  <div class="footerback">
+<!--    <a href="http://jtf2016.peatix.com/" target="_blank" class="btn btn-default" id="btn-ticket-footer">
+      <i class="fa fa-caret-right yellow"></i>&ensp;チケット購入はこちらから
+    </a>
+-->
+    <div class="container">
+      <div class="row text-center">
+        <p>
+          <img src="assets/img/footer.png" alt="">
+        </p>
+        <small class="copyright">©&ensp;July&ensp;Tech&ensp;Festa&ensp;2016実行委員会</small>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="mailto:info@techfesta.jp?subject=techfestaへのお問い合わせ">info@techfesta.jp</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+</html>
